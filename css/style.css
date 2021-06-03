@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
