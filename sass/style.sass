@@ -1,0 +1,282 @@
+@import ./font.sass
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background: #FFFFFF;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 8px 24px
+.menu
+    background: none
+    box-shadow: none
+    width: auto
+    height: auto
+    &-list
+        display: flex
+        align-items: center
+    &-item
+        margin-right: 24px
+        &:last-of-type
+            margin-right: 0
+    &-link
+        padding: 0
+        font-size: 14px;
+        font-weight: 400
+        line-height: 22px;
+        color: #333333;
+        transition: color .35s
+        &:hover
+            background: none
+            color: #5947B3
+    &-logo
+        width: 72px
+        height: 32px
+        object-fit: contain
+        object-position: center
+.profile
+    display: flex
+    align-items: center
+    &-alert
+        display: block
+        width: 32px
+        height: 32px
+        background: #999999
+        mask: url('./../image/bell-24.svg') center / 24px no-repeat;
+        margin-right: 16px
+        cursor: pointer
+        transition: background .35s
+        &:hover
+            background: #5947B3
+    &-search
+        display: block
+        width: 32px
+        height: 32px
+        background: #999999
+        mask: url('./../image/search-24.svg') center / 24px no-repeat;
+        margin-right: 16px
+        cursor: pointer
+        transition: background .35s
+        &:hover
+            background: #5947B3
+    &-avatar
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #01B957
+        margin-right: 8px
+        span
+            font-size: 12px;
+            font-weight: 400
+            line-height: 12px;
+            color: #fff
+        img
+            display: none
+    &-avatar__photo
+        background: #fff
+        span
+            display: none
+        img
+            display: block
+            width: 32px
+            height: 32px
+            border-radius: 50%
+            object-fit: cover
+            object-position: center
+    &-user
+        font-size: 14px;
+        font-weight: 400
+        line-height: 16px;
+        color: #333333;
+        display: flex
+        align-items: center
+        margin: 0 16px 0 0
+        span
+            display: block
+            background: #999999
+            width: 23px
+            height: 16px
+            mask: url('./../image/arrow-down.svg') center / 7px no-repeat;
+            transition: background .35s
+            cursor: pointer
+            &:hover
+                background: #5947B3
+    &-btn
+        background: #5947B3;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400
+        line-height: 28px;
+        color: #FFFFFF;
+        display: flex
+        align-items: center
+        border: 1px solid #5947B3
+        padding: 0 12px
+        cursor: pointer
+        transition: background .35s, border .35s, color .35s
+        span
+            display: block
+            background: #fff
+            width: 16px
+            height: 16px
+            margin-right: 8px
+            mask: url('./../image/plus.svg') center / 16px no-repeat;
+            transition: background .35s
+        &:hover
+            color: #333
+            background: rgba(172, 163, 217, 0.1);
+            border: 1px solid #ACA3D9;
+        &:hover span
+            background: #333
+.wrapiner
+    display: flex
+    align-items: stretch
+    justify-content: stretch
+    height: 100%
+.sidebar
+    flex-shrink: 0
+    padding: 20px 24px
+    background: #FFFFFF;
+    &-list
+        display: flex
+        flex-direction: column
+    &-item
+        position: relative
+    &-link
+        display: flex
+        align-items: center
+        font-size: 15px;
+        font-weight: 400
+        line-height: 48px
+        color: #808080;
+        transition: color .35s
+        &:hover
+            color: #5947B3
+            .sidebar-icon
+                background: #5947B3;
+    &-icon
+        display: block
+        width: 24px
+        height: 24px
+        background: #808080
+        mask: center / 24px no-repeat
+        margin-right: 12px
+        transition: background .35s
+        &__pro
+            mask-image: url('./../image/person-24.svg')
+        &__com
+            mask-image: url('./../image/briefcase-24.svg')
+        &__obj
+            mask-image: url('./../image/organization-24.svg')
+        &__fav
+            mask-image: url('./../image/star-24.svg')
+        &__sub
+            mask-image: url('./../image/mail-24.svg')
+        &__que
+            mask-image: url('./../image/clippy-24.svg')
+        &__cabc
+            mask-image: url('./../image/desktop-download-24.svg')
+        &__cabb
+            mask-image: url('./../image/desktop-device-24.svg')
+        &__set
+            mask-image: url('./../image/gear-24.svg')
+    &-link__active
+        color: #5947B3
+        .sidebar-icon
+            background: #5947B3;
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            bottom: 0
+            left: -24px
+            width: 2px
+            height: 100%
+            background: #5947B3;
+.content
+    width: 100%
+    background: #EBEBEB;
+    display: flex
+    justify-content: center
+
+.card
+    &-list
+        display: flex
+        align-items: stretch
+        flex-wrap: wrap
+        width: fit-content
+        height: fit-content
+        margin: 80px -16px
+    &-item
+        position: relative
+        width: 280px
+        padding: 14px 20px 38px
+        background: #fff
+        box-shadow: 0px 4px 4px rgba(37, 36, 41, 0.07);
+        border-radius: 4px;
+        margin: 0 16px
+    &-title
+        font-size: 18px;
+        font-weight: 600
+        line-height: 24px;
+        color: #333333;
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        &__amount
+            font-size: 14px;
+            font-weight: 400
+            line-height: 21px;
+            color: #CCCCCC;
+    &-text
+        display: flex
+        align-items: flex-end
+        font-size: 15px;
+        line-height: 15px;
+        height: 22px
+        color: #333333;
+        margin: 0 0 10px
+        &__devider
+            display: block
+            width: 100%
+            border-bottom: 1px dashed #DEDEE0;
+            margin: 0 4px
+        &__amount
+            font-size: 14px;
+            line-height: 14px;
+            color: #5947B3;
+            cursor: pointer
+            transition: color .35s
+            &:hover
+                color: #808880
+    &-btn
+        position: absolute
+        right: 20px
+        left: 20px
+        bottom: 16px
+        display: flex
+        align-items: center
+        border: 0
+        background: 0
+        font-size: 15px;
+        line-height: 22px;
+        color:#5947B3
+        padding: 0
+        cursor: pointer
+        transition: color .35s
+        span
+            display: block
+            background: #5947B3
+            width: 16px
+            height: 16px
+            margin-right: 8px
+            mask: url('./../image/plus.svg') center / 16px no-repeat;
+            transition: background .35s
+        &:hover
+            color: #808880
+            span
+                background: #808080

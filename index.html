@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="/" class="menu-link">
+                        <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">О проекте</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Агентства недвижимости</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Блог</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Новости</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <span class="profile-alert"></span>
+            <span class="profile-search"></span>
+            <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+            <div class="profile-avatar">
+                <span>ЯК</span>
+                <img src="./image/avatar.png" alt="ЯК">
+            </div>
+            <p class="profile-user">
+                Ярослав К.
+                <span></span>
+            </p>
+            <button class="profile-btn">
+                <span></span>
+                Добавить объект
+            </button>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <ul class="card-list">
+                <li class="card-item">
+                    <p class="card-title">
+                        Объекты
+                        <span class="card-title__amount">420</span>
+                    </p>
+                    <p class="card-text">
+                        Город
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">238</a>
+                    </p>
+                    <p class="card-text">
+                        Загород
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">182</a>
+                    </p>
+                    <p class="card-text">
+                        Эксклюзивы
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">45</a>
+                    </p>
+                    <p class="card-text">
+                        Флагманы
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">56</a>
+                    </p>
+                    <button class="card-btn">
+                        <span></span>
+                        Новый объект
+                    </button>
+                </li>
+                <li class="card-item">
+                    <p class="card-title">
+                        Заявки
+                    </p>
+                    <p class="card-text">
+                        Город
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">12</a>
+                    </p>
+                    <p class="card-text">
+                        Загород
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">8</a>
+                    </p>
+                    <p class="card-text">
+                        Неактуальные
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">33</a>
+                    </p>
+                    <button class="card-btn">
+                        <span></span>
+                        Новая заявка
+                    </button>
+                </li>
+                <li class="card-item">
+                    <p class="card-title">
+                        Аккаунты
+                    </p>
+                    <p class="card-text">
+                        Брокеры
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">4</a>
+                    </p>
+                    <p class="card-text">
+                        Собственники
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">19</a>
+                    </p>
+                    <p class="card-text">
+                        Покупатели
+                        <span class="card-text__devider"></span>
+                        <a link="#" class="card-text__amount">20</a>
+                    </p>
+                    <button class="card-btn">
+                        <span></span>
+                        Новый аккаунт
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
