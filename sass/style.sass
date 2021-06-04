@@ -499,13 +499,19 @@ html, body
                 input
                     margin-bottom: 0
             .form-price
+                width: 100%
                 margin-bottom: 0
                 .form-input
                     margin-right: 0
                     width: auto
                 input
+                    padding-right: 12px
                     width: 100%
                     margin-right: 0
+                input:not(:placeholder-shown)
+                    padding-right: 12px
+                .form-input__reset
+                    right: 0px
                 margin-left: 12px
         &-parther
             position: relative
@@ -544,7 +550,7 @@ html, body
                 box-sizing: border-box
                 width: 100%
                 height: 46px
-                padding: 13px 12px 13px
+                padding: 13px 48px 13px 12px
                 margin: 0 0 16px
                 font-size: 15px;
                 line-height: 18px;
@@ -553,7 +559,7 @@ html, body
                 &:focus
                     background: #F7F6FB;
                     border: 1px solid #ACA3D9 !important;
-                    padding: 20px 12px 6px
+                    padding: 20px 48px 6px 12px
                     box-shadow: none !important
                 &:focus ~ label
                     top: 7px
@@ -566,13 +572,16 @@ html, body
                 &:not(:placeholder-shown)
                     background: #F7F6FB;
                     border: 1px solid #ACA3D9 !important;
-                    padding: 20px 12px 6px
+                    padding: 20px 48px 6px 12px
                 &:not(:placeholder-shown) ~ label
                     top: 7px
                     transform: translateY(0)
                     font-size: 11px;
                     line-height: 11px;
                     color: #808080 !important;
+                &:not(:placeholder-shown) ~ .form-input__reset
+                    opacity: 1
+                    visibility: visible
             .newObjectForm-answer
                 position: absolute
                 top: 50%
@@ -618,6 +627,130 @@ html, body
                 transition: background .35s
                 &:hover
                     background: #5947B3;
+            &__reset
+                display: block
+                width: 32px
+                height: 32px
+                position: absolute
+                right: 13px 
+                top: calc(50%)
+                transform: translateY(-50%)
+                cursor: pointer
+                transition: all .35s
+                visibility: hidden
+                opacity: 0
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 16px
+                    left: 16px
+                    transform: translate(-50%, -50%)
+                    display: block
+                    width: 16px
+                    height: 16px
+                    border-radius: 50%
+                    background: #B3B3B3
+                    transition: all .35s
+                    z-index: 0
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 16px
+                    left: 16px
+                    transform: translate(-50%, -50%)
+                    display: block
+                    width: 16px
+                    height: 16px
+                    border-radius: 50%
+                    background: url('./../image/x-circle-fill.svg') center / 8px no-repeat
+                    transition: all .35s
+                    z-index: 1
+                &:hover::after
+                    background: #5947B3
+        &-select
+            position: relative
+            label
+                z-index: 1
+                position: absolute
+                left: 13px
+                top: 7px
+                font-size: 11px;
+                line-height: 11px;
+                color: #808080
+                pointer-events: none
+                transition: all .35s
+            .select-wrapper
+                position: relative
+                &::after
+                    content: ''
+                    display: block
+                    position: absolute
+                    right: 14px
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 16px
+                    height: 16px
+                    background: #B3B3B3;
+                    mask: url('./../image/chevron-down.svg') center / 16px no-repeat
+                    z-index: 1
+                input
+                    display: block
+                    background: #fff;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 4px;
+                    box-sizing: border-box
+                    width: 100%
+                    height: 46px
+                    padding: 20px 48px 6px 12px
+                    margin: 0 0 16px
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #333333;
+                    transition: all .35s
+                    &:focus
+                        background: #F7F6FB;
+                        border: 1px solid #ACA3D9 !important;
+                        padding: 20px 48px 6px 12px
+                        box-shadow: none !important
+                .dropdown-content
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+                    border-radius: 4px;
+                    top: calc(100% + 6px) !important
+                    li.disabled
+                        display: none
+                    li.selected
+                        position: relative
+                        background: none
+                        &::after
+                            content: ''
+                            display: block
+                            position: absolute
+                            right: 14px
+                            top: 50%
+                            transform: translateY(-50%)
+                            width: 16px
+                            height: 16px
+                            background: #5947B3;
+                            mask: url('./../image/check-select.svg') center / 16px no-repeat
+                    li
+                        span
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #333333;
+                        &:hover
+                            background: #F7F6FB;
+                            border-radius: 4px;
+            .newObjectForm-answer
+                position: absolute
+                top: 50%
+                right: -36px
+                transform: translateY(-50%)
+            .newObjectForm-plus
+                position: absolute
+                top: 50%
+                right: -36px
+                transform: translateY(-50%)
         &-textarea
             position: relative
             label
@@ -637,7 +770,7 @@ html, body
                 width: 100%
                 height: 100px
                 border-radius: 4px;
-                padding: 12px
+                padding: 12px 48px 12px 12px
                 margin: 0 0 16px
                 font-size: 15px;
                 line-height: 18px;
@@ -657,6 +790,9 @@ html, body
                     border: 1px solid #ACA3D9 !important;
                 &:not(:placeholder-shown) ~ label
                     opacity: 0
+                &:not(:placeholder-shown) ~ .form-input__reset
+                    opacity: 1
+                    visibility: visible
             .newObjectForm-answer
                 position: absolute
                 top: 50%
