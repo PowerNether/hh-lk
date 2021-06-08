@@ -395,6 +395,26 @@ html, body
         transition: background .35s
         &:hover
             background: #333;
+    &-kebab
+        display: block
+        width: 24px
+        height: 24px
+        mask: url('./../image/kebab-horizontal-24.svg') center / 24px no-repeat
+        background: #B3B3B3;
+        cursor: pointer
+        transition: background .35s
+        &:hover
+            background: #333;
+    &-minus
+        display: block
+        width: 24px
+        height: 24px
+        mask: url('./../image/minus-circle.svg') center / 16px no-repeat
+        background: #B3B3B3;
+        cursor: pointer
+        transition: background .35s
+        &:hover
+            background: #333;
     .form
         max-width: 592px
         width: 100%
@@ -409,6 +429,34 @@ html, body
             align-items: center
             justify-content: space-between
             margin-bottom: 32px
+        &-back
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &__link
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                position: relative
+                display: block
+                padding-left: 40px
+                transition: color .35s back
+                &::before
+                    content: ''
+                    display: block
+                    width: 24px
+                    height: 24px
+                    position: absolute
+                    top: 50%
+                    left: 0px
+                    transform: translateY(-50%)
+                    background: #5947B3;
+                    mask: url('./../image/arrow-left-24.svg') center / 24px no-repeat;
+                    transition: background .35s
+                &:hover
+                    color: #5947B3
+                &:hover::before
+                    background: #333333;
         &-reset
             font-size: 14px;
             line-height: 30px
@@ -457,6 +505,16 @@ html, body
                     margin-right: 0
                 input
                     margin-bottom: 0
+        &-checks
+            display: flex
+            align-items: center
+            margin-bottom: 16px
+            .form-check
+                width: 100%
+                margin-right: 16px
+                margin-bottom: 0
+                &:last-of-type
+                    margin-right: 0
         &-price
             display: flex
             align-items: center
@@ -466,6 +524,35 @@ html, body
             border-radius: 4px
             margin-bottom: 16px
             .form-input
+                input
+                    margin-bottom: 0
+                    border: none
+                    background: #F7F6FB;
+                    &:focus
+                        background: #F7F6FB;
+                        border: none !important;
+                        padding: 20px 12px 6px
+                        box-shadow: none !important
+                    &:not(:placeholder-shown)
+                        background: #F7F6FB;
+                        border: none !important;
+                        padding: 20px 12px 6px
+            .form-radios
+                margin-bottom: 0
+            .form-radio
+                width: fit-content
+                label
+                    padding: 0 12px
+        &-cadPrice
+            display: flex
+            align-items: center
+            background: #F7F6FB;
+            border: 1px solid #ACA3D9;
+            width: 100%
+            border-radius: 4px
+            margin-bottom: 16px
+            .form-input
+                width: 100%
                 input
                     margin-bottom: 0
                     border: none
@@ -667,6 +754,15 @@ html, body
                     z-index: 1
                 &:hover::after
                     background: #5947B3
+        &-input__double
+            .form-input:first-of-type
+                input
+                    margin-bottom: 0
+                    border-bottom: 0
+                    border-radius: 4px 4px 0 0
+            .form-input:last-of-type
+                input
+                    border-radius: 0 0 4px 4px
         &-select
             position: relative
             label
@@ -798,6 +894,9 @@ html, body
                 top: 50%
                 right: -36px
                 transform: translateY(-50%)
+            &__middle
+                textarea
+                    height: 60px
         &-radios
             display: flex
             align-items: center
@@ -893,6 +992,168 @@ html, body
                 top: 50%
                 right: -36px
                 transform: translateY(-50%)
+        &-action
+            background: #FFFFFF;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+            padding: 16px
+            &::before
+                content: ''
+                display: block
+                width: 8px
+                height: 20px
+                position: absolute
+                left: -8px
+                top: 50%
+                transform: translateY(-50%)
+                background: #fff
+                mask: url('./../image/LCTip.svg') center / contain no-repeat
+                box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+            &__addChild
+                display: block
+                white-space: nowrap
+                color: #333333;
+                margin-bottom: 24px
+                padding-left: 28px
+                position: relative
+                &::before
+                    content: ''
+                    display: block
+                    width: 16px
+                    height: 16px
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #333
+                    mask: url('./../image/add.svg') center / 16px no-repeat
+            &__addPhoto
+                display: block
+                white-space: nowrap
+                color: #333333;
+                margin-bottom: 24px
+                padding-left: 28px
+                position: relative
+                &::before
+                    content: ''
+                    display: block
+                    width: 16px
+                    height: 16px
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #333
+                    mask: url('./../image/image.svg') center / 16px no-repeat
+            &__delete
+                display: block
+                white-space: nowrap
+                color: #FF5050;
+                padding-left: 28px
+                position: relative
+                &::before
+                    content: ''
+                    display: block
+                    width: 16px
+                    height: 16px
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #FF5050
+                    mask: url('./../image/delete.svg') center / 16px no-repeat
+        &-block
+            padding: 16px 52px 16px 16px
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+            border-radius: 4px;
+            margin-bottom: 16px
+            margin-right: -52px
+            .form-select
+                input
+                    margin: 0
+            .form-input
+                input
+                    margin: 0
+            .form-inputs
+                display: flex
+                align-items: center
+                margin: 0
+                position: relative
+                &__action
+                    position: absolute
+                    left: calc(100% + 12px)
+                    .form-action
+                        position: absolute
+                        top: 50%
+                        left: calc(100% + 8px)
+                        transform: translateY(-50%)
+                        opacity: 0
+                        display: none
+                    &:hover
+                        .form-action
+                            display: block
+                            opacity: 1
+                .form-select
+                    width: 100%
+                    margin: 0
+                    input
+                        border-radius: 0px
+                .form-input
+                    width: 100%
+                    margin: 0
+                    input
+                        border-radius: 0px
+                .form-select:first-of-type
+                    input
+                        border-right: 0px
+                        border-radius: 4px 0 0 4px
+                div:nth-of-type(4)
+                    input
+                        border-left: 0px
+                        border-radius: 0 4px 4px 0
+            .form-chenput
+                display: flex
+                align-items: center
+                .form-select
+                    width: 100%
+                .form-check
+                    width: calc(100% - 16px)
+                    margin: 0
+                    margin-left: 16px
+            .form-inputs__child
+                position: relative
+                .newObjectForm-minus
+                    position: absolute
+                    top: 50%
+                    left: -32px
+                    transform: translateY(-50%)
+                .form-select
+                    width: 180%
+            &__add
+                display: block
+                padding-left: 22px
+                position: relative
+                font-size: 15px;
+                line-height: 18px;
+                color: #5947B3;
+                transition: all .35s
+                &::before
+                    content: ''
+                    display: block
+                    width: 16px
+                    height: 16px
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%)
+                    mask: url('./../image/plus-16.svg') center / 16px no-repeat
+                    background: #5947B3
+                    transition: all .35s
+                &:hover
+                    color: #333
+                    &::before
+                        background: #333
         &-req
             color: #FF4242
         &-points
@@ -917,12 +1178,16 @@ html, body
                 position: absolute
                 left: 0px
                 bottom: -20px
+        &-mt16
+            margin-top: 16px !important
         &-mb32
-            margin-bottom: 32px
+            margin-bottom: 32px !important
         &-mb58
-            margin-bottom: 58px
+            margin-bottom: 58px !important
         &-ml32
-            margin-left: 30px
+            margin-left: 30px !important
+        &-mw280
+            max-width: 280px
         &-buttons
             button
                 line-height: 46px
