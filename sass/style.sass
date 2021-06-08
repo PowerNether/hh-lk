@@ -415,6 +415,60 @@ html, body
         transition: background .35s
         &:hover
             background: #333;
+    &-select
+        font-size: 15px;
+        line-height: 18px;
+        color: #5947B3;
+        cursor: pointer
+        position: absolute
+        top: 50%
+        right: 12px
+        transform: translateY(-50%)
+    &-list
+        position: absolute
+        left: 0
+        right: 0
+        top: calc(100% + 6px)
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+        border-radius: 4px;
+        z-index: 10
+        margin: 0
+        display: none
+        &__active
+            display: block !important
+    &-title
+        font-size: 15px;
+        font-weight: 600
+        line-height: 44px;
+        padding: 0 12px
+        color: #333333;
+        margin: 0
+    &-item
+        font-size: 15px;
+        line-height: 44px;
+        color: #333333;
+        padding: 0 12px
+        cursor: pointer
+        &:hover
+            background: #F7F6FB;
+            border-radius: 4px;
+        &__active
+            position: relative
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                right: 14px
+                top: 50%
+                transform: translateY(-50%)
+                width: 16px
+                height: 16px
+                background: #5947B3;
+                mask: url('./../image/check-select.svg') center / 16px no-repeat
+
+
+
     .form
         max-width: 592px
         width: 100%

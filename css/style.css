@@ -741,6 +741,77 @@ html, body {
   background: #333;
 }
 
+.newObjectForm-select {
+  font-size: 15px;
+  line-height: 18px;
+  color: #5947B3;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.newObjectForm-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+          box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+  border-radius: 4px;
+  z-index: 10;
+  margin: 0;
+  display: none;
+}
+
+.newObjectForm-list__active {
+  display: block !important;
+}
+
+.newObjectForm-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 44px;
+  padding: 0 12px;
+  color: #333333;
+  margin: 0;
+}
+
+.newObjectForm-item {
+  font-size: 15px;
+  line-height: 44px;
+  color: #333333;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.newObjectForm-item:hover {
+  background: #F7F6FB;
+  border-radius: 4px;
+}
+
+.newObjectForm-item__active {
+  position: relative;
+}
+
+.newObjectForm-item__active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #5947B3;
+  -webkit-mask: url("./../image/check-select.svg") center/16px no-repeat;
+          mask: url("./../image/check-select.svg") center/16px no-repeat;
+}
+
 .newObjectForm .form {
   max-width: 592px;
   width: 100%;
