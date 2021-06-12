@@ -818,6 +818,44 @@ html, body {
   margin-right: 136px;
 }
 
+.newObjectForm .form-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px -4px 16px;
+}
+
+.newObjectForm .form-tags__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5947B3;
+  padding: 0 4px 0 12px;
+  margin: 0 4px 0;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.newObjectForm .form-tags__delete {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  -webkit-mask: url("./../image/close.svg") center/6px no-repeat;
+          mask: url("./../image/close.svg") center/6px no-repeat;
+  cursor: pointer;
+}
+
 .newObjectForm .form-title {
   font-size: 36px;
   font-weight: 600;
@@ -1161,7 +1199,27 @@ html, body {
 }
 
 .newObjectForm .form-parther .form-input input {
+  border-radius: 0px;
   margin-bottom: 0;
+}
+
+.newObjectForm .form-parther .form-select {
+  width: 100%;
+}
+
+.newObjectForm .form-parther .form-select:first-of-type input {
+  border-radius: 4px 0 0 4px !important;
+  margin-right: -1px !important;
+}
+
+.newObjectForm .form-parther .form-select:last-of-type input {
+  border-radius: 0 4px 4px 0 !important;
+  margin-left: -1px !important;
+}
+
+.newObjectForm .form-parther .form-select input {
+  border-radius: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 .newObjectForm .form-input {
@@ -1328,6 +1386,48 @@ html, body {
 
 .newObjectForm .form-input__plus:hover {
   background: #5947B3;
+}
+
+.newObjectForm .form-input__toggle {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 13px;
+  top: calc(50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.newObjectForm .form-input__toggle::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-mask: url("./../image/visibility_off.svg") center/16px no-repeat;
+          mask: url("./../image/visibility_off.svg") center/16px no-repeat;
+  background: #ccc;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  z-index: 1;
+}
+
+.newObjectForm .form-input__toggle:hover::before {
+  background: #5947B3;
+}
+
+.newObjectForm .form-input__toggle-active::before {
+  -webkit-mask: url("./../image/visibility.svg") center/16px no-repeat;
+          mask: url("./../image/visibility.svg") center/16px no-repeat;
 }
 
 .newObjectForm .form-input__reset {
@@ -2024,6 +2124,62 @@ html, body {
   bottom: -20px;
 }
 
+.newObjectForm .form-socialAccount {
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newObjectForm .form-socialAccount__delete {
+  width: 40px;
+  height: 32px;
+  -webkit-mask: url("./../image/close.svg") center/9px no-repeat;
+          mask: url("./../image/close.svg") center/9px no-repeat;
+  background: #b3b3b3;
+  cursor: pointer;
+  -webkit-transition: background .35s;
+  transition: background .35s;
+}
+
+.newObjectForm .form-socialAccount__delete:hover {
+  background: #5947B3;
+}
+
+.newObjectForm .form-socialAccount__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+}
+
+.newObjectForm .form-socialAccount__icon-vk {
+  background: url("./../image/vk.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-socialAccount__icon-fb {
+  background: url("./../image/facebook.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-socialAccount__edit {
+  font-size: 15px;
+  line-height: 18px;
+  color: #5947B3;
+  margin-left: auto;
+  cursor: pointer;
+  -webkit-transition: color .35s;
+  transition: color .35s;
+}
+
+.newObjectForm .form-socialAccount__edit:hover {
+  color: #333333;
+}
+
 .newObjectForm .form-mt16 {
   margin-top: 16px !important;
 }
@@ -2040,8 +2196,107 @@ html, body {
   margin-left: 30px !important;
 }
 
+.newObjectForm .form-ml45 {
+  margin-left: 45px;
+}
+
+.newObjectForm .form-mw240 {
+  max-width: 240px;
+}
+
 .newObjectForm .form-mw280 {
   max-width: 280px;
+}
+
+.newObjectForm .form-teleg::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/telegram.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-whats::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/whatsapp.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-viber::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/viber.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-inst::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/instagram.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-faceb::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/facebook.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-vk::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/vk.svg") center/cover no-repeat;
+}
+
+.newObjectForm .form-yout::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("./../image/youtube.svg") center/cover no-repeat;
 }
 
 .newObjectForm .form-buttons button {
@@ -2170,4 +2425,56 @@ html, body {
   -webkit-mask: url("./../image/circle-check-24.svg") center/24px no-repeat;
           mask: url("./../image/circle-check-24.svg") center/24px no-repeat;
   background: #EBEBEB;
+}
+
+.profileAvatar {
+  max-width: 280px;
+  padding: 40px 16px;
+  background: #F7F6FB;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profileAvatar:hover .profileAvatar-icon {
+  background: #b3b3b3;
+}
+
+.profileAvatar:hover .profileAvatar-title {
+  color: #b3b3b3;
+}
+
+.profileAvatar:hover .profileAvatar-text {
+  color: #b3b3b3;
+}
+
+.profileAvatar-icon {
+  display: block;
+  width: 100px;
+  height: 90px;
+  background: #5947B3;
+  -webkit-mask: url("./../image/add-photo.svg") center/100px no-repeat;
+          mask: url("./../image/add-photo.svg") center/100px no-repeat;
+  margin: 0 auto 32px;
+  -webkit-transition: background .35s;
+  transition: background .35s;
+}
+
+.profileAvatar-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #333;
+  text-align: center;
+  -webkit-transition: color .35s;
+  transition: color .35s;
+}
+
+.profileAvatar-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333;
+  text-align: center;
+  -webkit-transition: color .35s;
+  transition: color .35s;
 }
