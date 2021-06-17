@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab">
+                    Настройки
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Сотрудники
+                </a>
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    Профиль
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Дежурства
+                </a>
+            </div>
+            <div class="newObjectForm">
+                <form action="" class="form">
+                    <p class="form-title">
+                        Профиль компании
+                    </p>
+                    <p class="form-subtitle">
+                        О компании
+                    </p>
+                    <div class="form-input">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Название
+                            <span class="form-req">*</span>
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-input form-sublabel">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Сокращенное название
+                        </label>
+                        <span class="form-input__reset"></span>
+                        <p class="form-sublabel__text">
+                            должно состоять из 3 латинских букв
+                        </p>
+                    </div>
+                    <div class="form-textarea">
+                        <textarea type="text" name="category" placeholder="Категория"></textarea>
+                        <label for="category">
+                            Описание
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Участник AREA
+                        </label>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Дата основания
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Адрес центрального офиса
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-input form-mb32">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Сайт
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <p class="form-subtitle">
+                        Телефоны
+                    </p>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Городская, продажа
+                        </label>
+                    </div>
+                    <div class="form-input form-ml32 form-mw240">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Номер телефона
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Городская, аренда
+                        </label>
+                    </div>
+                    <div class="form-input form-ml32 form-mw240">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Номер телефона
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Загородная, продажа
+                        </label>
+                    </div>
+                    <div class="form-input form-ml32 form-mw240">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Номер телефона
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Загородная, аренда
+                        </label>
+                    </div>
+                    <div class="form-input form-ml32 form-mw240 form-mb32">
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Новостройки
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <p class="form-subtitle">
+                        Логотипы и водяной знак
+                    </p>
+                    <div class="form-photo">
+                        <p class="form-photo__title">
+                            Логотипы
+                        </p>
+                        <div class="form-photo__files"></div>
+                    </div>
+                    <div class="form-photo form-mb32">
+                        <p class="form-photo__title">
+                            Водяной знак для ваших фото
+                        </p>
+                        <div class="form-photo__files"></div>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="form-buttons__dark">Сохранить изменения</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
