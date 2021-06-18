@@ -14,7 +14,10 @@
 }
 
 html, body {
+  min-height: 100%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
@@ -22,47 +25,62 @@ html, body {
   border-bottom: 1px solid #EBEBEB;
 }
 
-.header-container {
+.header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 8px 24px;
 }
 
-.menu {
+.header .header-logo {
+  width: 72px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+.header .header-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header .menu {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   width: auto;
   height: auto;
+  margin-right: auto;
 }
 
-.menu-list {
+.header .menu .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
-.menu-item {
+.header .menu .menu-item {
   margin-right: 24px;
 }
 
-.menu-item:last-of-type {
+.header .menu .menu-item:last-of-type {
   margin-right: 0;
 }
 
-.menu-link {
+.header .menu .menu-link {
   padding: 0;
   font-size: 14px;
+  font-family: "Graphik";
   font-weight: 400;
   line-height: 22px;
   color: #333333;
@@ -70,21 +88,12 @@ html, body {
   transition: color .35s;
 }
 
-.menu-link:hover {
+.header .menu .menu-link:hover {
   background: none;
   color: #5947B3;
 }
 
-.menu-logo {
-  width: 72px;
-  height: 32px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.profile {
+.header .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +102,7 @@ html, body {
           align-items: center;
 }
 
-.profile-alert {
+.header .profile .profile-alert {
   display: block;
   width: 32px;
   height: 32px;
@@ -106,11 +115,11 @@ html, body {
   transition: background .35s;
 }
 
-.profile-alert:hover {
+.header .profile .profile-alert:hover {
   background: #5947B3;
 }
 
-.profile-search {
+.header .profile .profile-search {
   display: block;
   width: 32px;
   height: 32px;
@@ -123,11 +132,11 @@ html, body {
   transition: background .35s;
 }
 
-.profile-search:hover {
+.header .profile .profile-search:hover {
   background: #5947B3;
 }
 
-.profile-avatar {
+.header .profile .profile-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -144,26 +153,26 @@ html, body {
   margin-right: 8px;
 }
 
-.profile-avatar span {
+.header .profile .profile-avatar span {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   color: #fff;
 }
 
-.profile-avatar img {
+.header .profile .profile-avatar img {
   display: none;
 }
 
-.profile-avatar__photo {
+.header .profile .profile-avatar__photo {
   background: #fff;
 }
 
-.profile-avatar__photo span {
+.header .profile .profile-avatar__photo span {
   display: none;
 }
 
-.profile-avatar__photo img {
+.header .profile .profile-avatar__photo img {
   display: block;
   width: 32px;
   height: 32px;
@@ -174,7 +183,8 @@ html, body {
      object-position: center;
 }
 
-.profile-user {
+.header .profile .profile-user {
+  font-family: "Graphik";
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -188,7 +198,7 @@ html, body {
   margin: 0 16px 0 0;
 }
 
-.profile-user span {
+.header .profile .profile-user span {
   display: block;
   background: #999999;
   width: 23px;
@@ -200,13 +210,14 @@ html, body {
   cursor: pointer;
 }
 
-.profile-user span:hover {
+.header .profile .profile-user span:hover {
   background: #5947B3;
 }
 
-.profile-btn {
+.header .profile .profile-btn {
   background: #5947B3;
   border-radius: 4px;
+  font-family: "Graphik";
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -224,7 +235,7 @@ html, body {
   transition: background .35s, border .35s, color .35s;
 }
 
-.profile-btn span {
+.header .profile .profile-btn span {
   display: block;
   background: #fff;
   width: 16px;
@@ -236,27 +247,14 @@ html, body {
   transition: background .35s;
 }
 
-.profile-btn:hover {
+.header .profile .profile-btn:hover {
   color: #333;
   background: rgba(172, 163, 217, 0.1);
   border: 1px solid #ACA3D9;
 }
 
-.profile-btn:hover span {
+.header .profile .profile-btn:hover span {
   background: #333;
-}
-
-.wrapiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  height: 100%;
 }
 
 .sidebar {
@@ -266,7 +264,7 @@ html, body {
   background: #FFFFFF;
 }
 
-.sidebar-list {
+.sidebar .sidebar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,19 +272,21 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
 }
 
-.sidebar-item {
+.sidebar .sidebar-item {
   position: relative;
 }
 
-.sidebar-link {
+.sidebar .sidebar-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Graphik";
   font-size: 15px;
   font-weight: 400;
   line-height: 48px;
@@ -295,15 +295,15 @@ html, body {
   transition: color .35s;
 }
 
-.sidebar-link:hover {
+.sidebar .sidebar-link:hover {
   color: #5947B3;
 }
 
-.sidebar-link:hover .sidebar-icon {
+.sidebar .sidebar-link:hover .sidebar-icon {
   background: #5947B3;
 }
 
-.sidebar-icon {
+.sidebar .sidebar-icon {
   display: block;
   width: 24px;
   height: 24px;
@@ -315,60 +315,60 @@ html, body {
   transition: background .35s;
 }
 
-.sidebar-icon__pro {
+.sidebar .sidebar-icon__pro {
   -webkit-mask-image: url("./../image/person-24.svg");
           mask-image: url("./../image/person-24.svg");
 }
 
-.sidebar-icon__com {
+.sidebar .sidebar-icon__com {
   -webkit-mask-image: url("./../image/briefcase-24.svg");
           mask-image: url("./../image/briefcase-24.svg");
 }
 
-.sidebar-icon__obj {
+.sidebar .sidebar-icon__obj {
   -webkit-mask-image: url("./../image/organization-24.svg");
           mask-image: url("./../image/organization-24.svg");
 }
 
-.sidebar-icon__fav {
+.sidebar .sidebar-icon__fav {
   -webkit-mask-image: url("./../image/star-24.svg");
           mask-image: url("./../image/star-24.svg");
 }
 
-.sidebar-icon__sub {
+.sidebar .sidebar-icon__sub {
   -webkit-mask-image: url("./../image/mail-24.svg");
           mask-image: url("./../image/mail-24.svg");
 }
 
-.sidebar-icon__que {
+.sidebar .sidebar-icon__que {
   -webkit-mask-image: url("./../image/clippy-24.svg");
           mask-image: url("./../image/clippy-24.svg");
 }
 
-.sidebar-icon__cabc {
+.sidebar .sidebar-icon__cabc {
   -webkit-mask-image: url("./../image/desktop-download-24.svg");
           mask-image: url("./../image/desktop-download-24.svg");
 }
 
-.sidebar-icon__cabb {
+.sidebar .sidebar-icon__cabb {
   -webkit-mask-image: url("./../image/desktop-device-24.svg");
           mask-image: url("./../image/desktop-device-24.svg");
 }
 
-.sidebar-icon__set {
+.sidebar .sidebar-icon__set {
   -webkit-mask-image: url("./../image/gear-24.svg");
           mask-image: url("./../image/gear-24.svg");
 }
 
-.sidebar-link__active {
+.sidebar .sidebar-link__active {
   color: #5947B3;
 }
 
-.sidebar-link__active .sidebar-icon {
+.sidebar .sidebar-link__active .sidebar-icon {
   background: #5947B3;
 }
 
-.sidebar-link__active::before {
+.sidebar .sidebar-link__active::before {
   content: '';
   display: block;
   position: absolute;
@@ -378,17 +378,6 @@ html, body {
   width: 2px;
   height: 100%;
   background: #5947B3;
-}
-
-.content {
-  width: 100%;
-  background: #EBEBEB;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .card-list {
@@ -409,7 +398,7 @@ html, body {
   margin: 80px -16px;
 }
 
-.card-item {
+.card-list .card-item {
   position: relative;
   width: 280px;
   padding: 14px 20px 38px;
@@ -417,10 +406,11 @@ html, body {
   -webkit-box-shadow: 0px 4px 4px rgba(37, 36, 41, 0.07);
           box-shadow: 0px 4px 4px rgba(37, 36, 41, 0.07);
   border-radius: 4px;
-  margin: 0 16px;
+  margin: 0 16px 16px;
 }
 
-.card-title {
+.card-list .card-title {
+  font-family: "Graphik";
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -436,20 +426,21 @@ html, body {
           justify-content: space-between;
 }
 
-.card-title__amount {
+.card-list .card-title__amount {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #CCCCCC;
 }
 
-.card-text {
+.card-list .card-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-family: "Graphik";
   font-size: 15px;
   line-height: 15px;
   height: 22px;
@@ -457,14 +448,14 @@ html, body {
   margin: 0 0 10px;
 }
 
-.card-text__devider {
+.card-list .card-text__devider {
   display: block;
   width: 100%;
   border-bottom: 1px dashed #DEDEE0;
   margin: 0 4px;
 }
 
-.card-text__amount {
+.card-list .card-text__amount {
   font-size: 14px;
   line-height: 14px;
   color: #5947B3;
@@ -473,11 +464,11 @@ html, body {
   transition: color .35s;
 }
 
-.card-text__amount:hover {
+.card-list .card-text__amount:hover {
   color: #808880;
 }
 
-.card-btn {
+.card-list .card-btn {
   position: absolute;
   right: 20px;
   left: 20px;
@@ -490,6 +481,7 @@ html, body {
           align-items: center;
   border: 0;
   background: 0;
+  font-family: "Graphik";
   font-size: 15px;
   line-height: 22px;
   color: #5947B3;
@@ -499,7 +491,7 @@ html, body {
   transition: color .35s;
 }
 
-.card-btn span {
+.card-list .card-btn span {
   display: block;
   background: #5947B3;
   width: 16px;
@@ -511,12 +503,36 @@ html, body {
   transition: background .35s;
 }
 
-.card-btn:hover {
+.card-list .card-btn:hover {
   color: #808880;
 }
 
-.card-btn:hover span {
+.card-list .card-btn:hover span {
   background: #808080;
+}
+
+.wrapiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  background: #EBEBEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .newObject .wrapiner {

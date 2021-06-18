@@ -18,3 +18,27 @@ $(document).on('click', function (e) {
         $('.newObjectForm-list').removeClass('newObjectForm-list__active');
     }
 });
+$('.header-burger').on('click', function () {
+    $('.header-burger').toggleClass('active')
+    if ($('.header .menu').hasClass('active')) {
+        $('.header .menu').addClass('close')
+        setTimeout(function () {
+            $('.header .menu').removeClass('active')
+        }, 300)
+    } else {
+        $('.header .menu').removeClass('close')
+        $('.header .menu').addClass('active')
+    }
+})
+$('.siderbar-toggle').on('click', function () {
+    $('.siderbar-toggle').toggleClass('active')
+    if ($('.sidebar').hasClass('active')) {
+        $('.sidebar').addClass('close')
+        setTimeout(function () {
+            $('.sidebar').removeClass('active')
+        }, 300)
+    } else {
+        $('.sidebar').removeClass('close')
+        $('.sidebar').addClass('active')
+    }
+})
