@@ -691,6 +691,19 @@ html, body
                 input
                     border-radius: 0px
                     margin-bottom: 0
+            .form-price
+                width: 100%
+                margin: 0
+                box-sizing: border-box
+                border-radius: 0 4px 4px 0
+                margin-left: -1px
+                .form-input
+                    input
+                        border-radius: 0px
+                        margin-bottom: 0
+                        height: 44px
+                .form-radio
+                    height: 44px
             .form-select
                 width: 100%
                 &:first-of-type
@@ -870,6 +883,82 @@ html, body
                     z-index: 1
                 &:hover::after
                     background: #5947B3
+            &__search
+                input
+                    padding-left: 40px
+                    padding-right: 170px
+                    &:focus
+                        padding: 20px 206px 6px 40px
+                    &::placeholder
+                        font-size: 0
+                    &:not(:placeholder-shown)
+                        padding: 20px 206px 6px 40px
+                label
+                    left: 40px
+                .form-input__reset
+                    right: 170px
+                &-icon
+                    display: block
+                    position: absolute
+                    left: 12px
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #B3B3B3;
+                    mask: url(./../image/search.svg) center / 16px no-repeat
+                    width: 16px
+                    height: 16px
+                .newObjectForm-select
+                    font-weight: 600
+                .newObjectForm-select__first
+                    right: 115px
+                .newObjectForm-select__second
+                    right: 54px
+                &-draw
+                    position: absolute
+                    right: 4px
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #F7F6FB;
+                    border-radius: 4px;
+                    span
+                        cursor: pointer
+                        display: block
+                        width: 38px;
+                        height: 38px;
+                        mask: url(./../image/contour.svg) center / 16px no-repeat
+                        background: #5947B3
+                &-result
+                    .result
+                        &-row
+                            flex-wrap: wrap
+                            display: flex
+                            align-items: stretch
+                            margin-bottom: 16px
+                        &-title
+                            width: 70px
+                            margin: 0 8px 0 0
+                            height: 100%
+                        &-tags
+                            display: flex
+                            align-items: center
+                            margin: 0 -4px -4px
+                        &-tag
+                            margin: 0 4px 4px
+                            background: #5947B3;
+                            border-radius: 4px;
+                            color: #fff
+                            font-size: 12px;
+                            line-height: 28px;
+                            padding: 0 3px 0 12px
+                            display: flex
+                            align-items: center
+                            &__remove
+                                display: block
+                                width: 22px
+                                height: 22px
+                                background: #fff
+                                mask: url('./../image/close.svg') center / 6px no-repeat
+                                cursor: pointer
         &-input__double
             .form-input:first-of-type
                 input

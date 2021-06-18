@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    <span class="objectTabs-icon"></span>
+                    Новый
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Опубликованные
+                    <span class="newObjectTabs-amount">613</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Скрытые
+                    <span class="newObjectTabs-amount">51</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Архив
+                    <span class="newObjectTabs-amount">347</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Черновики
+                    <span class="newObjectTabs-amount">10</span>
+                </a>
+            </div>
+            <div class="newObjectForm">
+                <form action="" class="form">
+                    <p class="form-title">
+                        Новая заявка
+                        <button class="form-reset" type="reset">Очистить</button>
+                    </p>
+                    <p class="form-subtitle">Основная информация</p>
+                    <div class="form-select">
+                        <select name="category">
+                            <option value="" disabled selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="category">
+                            Категория
+                        </label>
+                    </div>
+                    <div class="form-input form-input__search">
+                        <span class="form-input__search-icon"></span>
+                        <input type="text" name="category" placeholder="Категория">
+                        <label for="category">
+                            Введите район, локацию, адрес или ЖК
+                        </label>
+                        <span class="newObjectForm-select newObjectForm-select__first">Район</span>
+                        <ul class="newObjectForm-list">
+                            <p class="newObjectForm-title">Брокеры</p>
+                            <li class="newObjectForm-item">Первый</li>
+                            <li class="newObjectForm-item">Второй</li>
+                            <li class="newObjectForm-item">Третий</li>
+                        </ul>
+                        <span class="newObjectForm-select newObjectForm-select__second">Метро</span>
+                        <ul class="newObjectForm-list">
+                            <p class="newObjectForm-title">Брокеры</p>
+                            <li class="newObjectForm-item">Первый</li>
+                            <li class="newObjectForm-item">Второй</li>
+                            <li class="newObjectForm-item">Третий</li>
+                        </ul>
+                        <span class="form-input__reset"></span>
+                        <div class="form-input__search-draw">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-input__search-result">
+                        <div class="result-row">
+                            <p class="result-title">ЖК:</p>
+                            <div class="result-tags">
+                                <p class="result-tag">
+                                    ЖК Золотые ключи 2
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                                <p class="result-tag">
+                                    ЖК Ближняя Дача
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-row">
+                            <p class="result-title">Метро:</p>
+                            <div class="result-tags">
+                                <p class="result-tag">
+                                    Авиамоторная
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                                <p class="result-tag">
+                                    Автозаводская
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-row">
+                            <p class="result-title">Районы:</p>
+                            <div class="result-tags">
+                                <p class="result-tag">
+                                    Арбат
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                                <p class="result-tag">
+                                    Басманный
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="result-row form-mb32">
+                            <p class="result-title">Локации:</p>
+                            <div class="result-tags">
+                                <p class="result-tag">
+                                    Москва-сити
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                                <p class="result-tag">
+                                    Китай город
+                                    <span class="result-tag__remove"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="form-subtitle">Параметры</p>
+                    <div class="form-parther">
+                        <div class="form-input">
+                            <input type="text" name="category" placeholder="Категория">
+                            <label for="category">
+                                Общая площадь от, м2
+                            </label>
+                            <span class="form-input__reset"></span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="category" placeholder="Категория">
+                            <label for="category">
+                                до, м2
+                            </label>
+                            <span class="form-input__reset"></span>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Всего комнат
+                            <span class="form-req">*</span>
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Студия</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">1</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">2</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">3</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">4</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">5</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">больше</label>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Спален
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">1</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">2</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">3</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">4</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">5</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">больше</label>
+                        </div>
+                    </div>
+                    <div class="form-select">
+                        <select name="category">
+                            <option value="" disabled selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="category">
+                            Свободная планировка
+                        </label>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Этажи
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Не низкие</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Высокие</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Видовая
+                        </label>
+                        <span class="newObjectForm-answer"></span>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Тип объекта
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Пентхаусы</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Таунхаусы</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Особняки</label>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Юридический статус
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Квартиры</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Апартаменты</label>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Отделка
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">С отделкой</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Без отделки</label>
+                        </div>
+                    </div>
+                    <div class="form-parther form-suplabel">
+                        <p class="form-suplabel__text">
+                            Бюджет с отделкой
+                        </p>
+                        <div class="form-input">
+                            <input type="text" name="category" placeholder="Категория">
+                            <label for="category">
+                                от
+                            </label>
+                            <span class="form-input__reset"></span>
+                        </div>
+                        <div class="form-price">
+                            <div class="form-input">
+                                <input type="number" name="category" placeholder="Категория">
+                                <label for="category">
+                                    до
+                                </label>
+                                <span class="form-input__reset"></span>
+                            </div>
+                            <div class="form-radios">
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">₽</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">$</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">€</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-parther form-suplabel">
+                        <p class="form-suplabel__text">
+                            Бюджет без отделки
+                        </p>
+                        <div class="form-input">
+                            <input type="text" name="category" placeholder="Категория">
+                            <label for="category">
+                                от
+                            </label>
+                            <span class="form-input__reset"></span>
+                        </div>
+                        <div class="form-price">
+                            <div class="form-input">
+                                <input type="number" name="category" placeholder="Категория">
+                                <label for="category">
+                                    до
+                                </label>
+                                <span class="form-input__reset"></span>
+                            </div>
+                            <div class="form-radios">
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">₽</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">$</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="otdel">
+                                    <label for="otdel">€</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Тип отделки
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Под ключ с мебелью</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Новая (никто не жил)</label>
+                        </div>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Дизайн интерьера
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Классический</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Современный</label>
+                        </div>
+                    </div>
+                    <div class="form-select">
+                        <select name="category">
+                            <option value="" disabled selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="category">
+                            Терраса
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="category" placeholder="Категория">
+                        <label for="category">
+                            Только новые ЖК после 2000 года
+                        </label>
+                    </div>
+                    <div class="form-radios form-suplabel">
+                        <p class="form-suplabel__text">
+                            Парковка
+                        </p>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Неважно</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">С парковкой</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="amountRoom">
+                            <label for="amountRoom">Подземная парковка</label>
+                        </div>
+                    </div>
+                    <div class="form-textarea form-mb32">
+                        <textarea type="text" name="category" placeholder="Категория"></textarea>
+                        <label for="category">
+                            Комментарии
+                        </label>
+                        <span class="form-input__reset"></span>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="form-buttons__dark">Опубликовать</button>
+                        <button class="form-buttons__light">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

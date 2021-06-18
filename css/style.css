@@ -1204,6 +1204,25 @@ html, body {
   margin-bottom: 0;
 }
 
+.newObjectForm .form-parther .form-price {
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+}
+
+.newObjectForm .form-parther .form-price .form-input input {
+  border-radius: 0px;
+  margin-bottom: 0;
+  height: 44px;
+}
+
+.newObjectForm .form-parther .form-price .form-radio {
+  height: 44px;
+}
+
 .newObjectForm .form-parther .form-select {
   width: 100%;
 }
@@ -1483,6 +1502,143 @@ html, body {
 
 .newObjectForm .form-input__reset:hover::after {
   background: #5947B3;
+}
+
+.newObjectForm .form-input__search input {
+  padding-left: 40px;
+  padding-right: 170px;
+}
+
+.newObjectForm .form-input__search input:focus {
+  padding: 20px 206px 6px 40px;
+}
+
+.newObjectForm .form-input__search input::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.newObjectForm .form-input__search input:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.newObjectForm .form-input__search input::-ms-input-placeholder {
+  font-size: 0;
+}
+
+.newObjectForm .form-input__search input::placeholder {
+  font-size: 0;
+}
+
+.newObjectForm .form-input__search input:not(:placeholder-shown) {
+  padding: 20px 206px 6px 40px;
+}
+
+.newObjectForm .form-input__search label {
+  left: 40px;
+}
+
+.newObjectForm .form-input__search .form-input__reset {
+  right: 170px;
+}
+
+.newObjectForm .form-input__search-icon {
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #B3B3B3;
+  -webkit-mask: url(./../image/search.svg) center/16px no-repeat;
+          mask: url(./../image/search.svg) center/16px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.newObjectForm .form-input__search .newObjectForm-select {
+  font-weight: 600;
+}
+
+.newObjectForm .form-input__search .newObjectForm-select__first {
+  right: 115px;
+}
+
+.newObjectForm .form-input__search .newObjectForm-select__second {
+  right: 54px;
+}
+
+.newObjectForm .form-input__search-draw {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #F7F6FB;
+  border-radius: 4px;
+}
+
+.newObjectForm .form-input__search-draw span {
+  cursor: pointer;
+  display: block;
+  width: 38px;
+  height: 38px;
+  -webkit-mask: url(./../image/contour.svg) center/16px no-repeat;
+          mask: url(./../image/contour.svg) center/16px no-repeat;
+  background: #5947B3;
+}
+
+.newObjectForm .form-input__search-result .result-row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 16px;
+}
+
+.newObjectForm .form-input__search-result .result-title {
+  width: 70px;
+  margin: 0 8px 0 0;
+  height: 100%;
+}
+
+.newObjectForm .form-input__search-result .result-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -4px -4px;
+}
+
+.newObjectForm .form-input__search-result .result-tag {
+  margin: 0 4px 4px;
+  background: #5947B3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0 3px 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newObjectForm .form-input__search-result .result-tag__remove {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  -webkit-mask: url("./../image/close.svg") center/6px no-repeat;
+          mask: url("./../image/close.svg") center/6px no-repeat;
+  cursor: pointer;
 }
 
 .newObjectForm .form-input__double .form-input:first-of-type input {
