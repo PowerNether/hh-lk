@@ -2770,3 +2770,1476 @@ html, body {
   -webkit-transition: color .35s;
   transition: color .35s;
 }
+
+.objects .objects-title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.objects .objects-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 16px;
+}
+
+.objects .objects-tabs .tabs-terrain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -16px;
+}
+
+.objects .objects-tabs .tabs-terrain-item {
+  margin: 0;
+  padding-bottom: 16px;
+  position: relative;
+  margin: 0 16px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  cursor: pointer;
+}
+
+.objects .objects-tabs .tabs-terrain-item:hover {
+  color: #5947B3;
+}
+
+.objects .objects-tabs .tabs-terrain-item.active {
+  font-weight: 600;
+  color: #5947B3;
+}
+
+.objects .objects-tabs .tabs-terrain-item.active::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  background: #5947B3;
+}
+
+.objects .objects-tabs .tabs-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -16px;
+}
+
+.objects .objects-tabs .tabs-time-item {
+  margin: 0;
+  margin: 0 16px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  cursor: pointer;
+}
+
+.objects .objects-tabs .tabs-time-item p {
+  margin: 0;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.objects .objects-tabs .tabs-time-item:hover {
+  color: #5947B3;
+}
+
+.objects .objects-tabs .tabs-time-item.active p {
+  font-weight: 600;
+  color: #5947B3;
+}
+
+.objects .objects-tabs .tabs-time-item.active p::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  background: #5947B3;
+}
+
+.objects .objects-tabs .tabs-time-amount {
+  font-size: 10px;
+  line-height: 10px;
+  position: relative;
+  top: -5px;
+  right: -5px;
+}
+
+.objects .objects-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.objects .objects-search .search-input {
+  width: 100%;
+  margin-right: 16px;
+  border: 1px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+}
+
+.objects .objects-search .search-input-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask: url("./../image/searchgrey.svg") center/16px 18px no-repeat;
+          mask: url("./../image/searchgrey.svg") center/16px 18px no-repeat;
+  background: #CCCCCC;
+  margin-right: 12px;
+}
+
+.objects .objects-search .search-input input {
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+  line-height: 42px;
+  height: auto;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.objects .objects-search .search-input input:focus {
+  border: 0 !important;
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
+}
+
+.objects .objects-search .search-input input:placeholder {
+  color: #808080;
+}
+
+.objects .objects-search .search-button {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding: 0 16px;
+  border: 0px;
+  background: #5947B3;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-search .search-button-amount {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #5947B3;
+  padding: 0 6px 1px;
+  background: #fff;
+  border-radius: 9px;
+  margin-left: 8px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-search .search-button:hover {
+  color: #5947B3;
+  background: #FFFFFF;
+}
+
+.objects .objects-search .search-button:hover .search-button-amount {
+  color: #FFFFFF;
+  background: #5947B3;
+}
+
+.objects .objects-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.objects .objects-sorting .objects-sorting-info {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 16px 0 0;
+}
+
+.objects .objects-sorting .objects-sorting-group {
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #5947B3;
+  margin-right: 16px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-sorting .objects-sorting-group:hover {
+  color: #333;
+}
+
+.objects .objects-sorting .objects-sorting-toggle {
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #5947B3;
+  margin-right: 16px;
+}
+
+.objects .objects-sorting .objects-sorting-toggle:hover {
+  color: #333;
+}
+
+.objects .objects-sorting .objects-sorting-map {
+  font-size: 14px;
+  line-height: 16px;
+  color: #5947B3;
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objects .objects-sorting .objects-sorting-map .map-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask: url("./../image/map.svg") center/11px 14px no-repeat;
+          mask: url("./../image/map.svg") center/11px 14px no-repeat;
+  background: #5947B3;
+  margin-right: 6px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-sorting .objects-sorting-map:hover {
+  color: #333;
+}
+
+.objects .objects-sorting .objects-sorting-map:hover .map-icon {
+  background: #333;
+}
+
+.objects .objects-list thead tr {
+  border: 0;
+}
+
+.objects .objects-list thead tr th {
+  padding: 8px 16px 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #999999;
+}
+
+.objects .objects-list thead tr th:last-of-type {
+  padding-right: 0;
+}
+
+.objects .objects-list thead .sorting {
+  display: inline-block;
+  opacity: 0;
+  width: 8px;
+  height: 9px;
+  -webkit-mask: url("./../image/arrow-down-sort.svg") center/8px 9px no-repeat;
+          mask: url("./../image/arrow-down-sort.svg") center/8px 9px no-repeat;
+  background: #5947B3;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list thead .sorting.active {
+  opacity: 1;
+}
+
+.objects .objects-list thead .sorting.up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.objects .objects-list thead .rating {
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  -webkit-mask: url("./../image/rating.svg") center/8px 10px no-repeat;
+          mask: url("./../image/rating.svg") center/8px 10px no-repeat;
+  background: #5947B3;
+}
+
+.objects .objects-list tbody::after {
+  content: '';
+  display: table-row;
+  height: 16px;
+}
+
+.objects .objects-list tbody tr td {
+  vertical-align: top;
+  border: 1px solid #EBEBEB;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 0;
+  padding: 16px 16px 16px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #333333;
+}
+
+.objects .objects-list tbody tr td:first-child {
+  border-left: 1px solid #EBEBEB;
+  border-radius: 4px 0 0 4px;
+}
+
+.objects .objects-list tbody tr td:last-child {
+  border-right: 1px solid #EBEBEB;
+  border-radius: 0 4px 4px 0;
+  padding-right: 12px;
+}
+
+.objects .objects-list tbody .planing {
+  padding: 0;
+}
+
+.objects .objects-list tbody .planing .planing-wrapper {
+  width: 105px;
+  margin-right: 16px;
+  position: relative;
+}
+
+.objects .objects-list tbody .planing .planing-wrapper img {
+  display: block;
+  border-radius: 4px 0 0 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.objects .objects-list tbody .planing .planing-id {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 4px 0 4px 0;
+  background: #FF4242;
+  padding: 0 4px;
+}
+
+.objects .objects-list tbody .planing .planing-plan {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #5947B3;
+  padding: 6px;
+  border-radius: 4px 0 0 0;
+}
+
+.objects .objects-list tbody .planing .planing-plan .planing-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  -webkit-mask: url("./../image/planning.svg") center/14px no-repeat;
+          mask: url("./../image/planning.svg") center/14px no-repeat;
+  background: #fff;
+}
+
+.objects .objects-list tbody .link {
+  color: #5947B3;
+}
+
+.objects .objects-list tbody .price {
+  text-align: right;
+}
+
+.objects .objects-list tbody .price-main {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #01B957;
+}
+
+.objects .objects-list tbody .question {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-mask: url("./../image/question-24.svg") center/12px no-repeat;
+          mask: url("./../image/question-24.svg") center/12px no-repeat;
+  background: #B3B3B3;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .info {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  -webkit-mask: url("./../image/info.svg") center/12px no-repeat;
+          mask: url("./../image/info.svg") center/12px no-repeat;
+  background: #B3B3B3;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .k {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  -webkit-mask: url("./../image/k.svg") center/12px no-repeat;
+          mask: url("./../image/k.svg") center/12px no-repeat;
+  background: #5947B3;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .vam {
+  vertical-align: middle;
+}
+
+.objects .objects-list tbody .lot {
+  display: block;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url("./../image/chevron-right.svg") center/24px no-repeat;
+          mask: url("./../image/chevron-right.svg") center/24px no-repeat;
+  background: #5947B3;
+}
+
+.objects .objects-list tbody .date {
+  max-width: 90px;
+}
+
+.objects .objects-list tbody .adress {
+  max-width: 105px;
+}
+
+.objects .objects-list tbody .status {
+  max-width: 110px;
+}
+
+.objects .objects-list tbody .edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 5px 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask: url("./../image/edit.svg") center/16px no-repeat;
+          mask: url("./../image/edit.svg") center/16px no-repeat;
+  background: #B3B3B3;
+  margin-right: 3px;
+}
+
+.objects .objects-list tbody .edit .edit-charon {
+  display: block;
+  width: 11px;
+  height: 4px;
+  -webkit-mask: url("./../image/select.svg") center/11px 4px no-repeat;
+          mask: url("./../image/select.svg") center/11px 4px no-repeat;
+  background: #B3B3B3;
+}
+
+.objects .objects-list tbody .edit .edit-form {
+  cursor: auto;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+          box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+  border-radius: 4px;
+  padding: 16px;
+  width: 290px;
+  z-index: 1;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio input {
+  width: 100%;
+  height: 16px;
+  pointer-events: all;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio span {
+  height: auto;
+  font-size: 13px;
+  line-height: 16px;
+  color: #333;
+  padding-left: 24px;
+  pointer-events: none;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio span::before {
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0;
+  pointer-events: all;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio span::after {
+  top: 50%;
+  left: 4px;
+  background: #5947B3;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: scale(1) translateY(-50%);
+          transform: scale(1) translateY(-50%);
+  margin: 0;
+  opacity: 0;
+  border: 0;
+  pointer-events: none;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio input:checked ~ span:after {
+  opacity: 1;
+}
+
+.objects .objects-list tbody .edit .edit-form label.edit-form-radio input:checked ~ span:before {
+  border: 2px solid #5947B3;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input {
+  width: 100%;
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input label {
+  position: absolute;
+  left: 13px;
+  top: calc(50% - 1px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 13px;
+  line-height: 16px;
+  color: #808080;
+  pointer-events: none;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input {
+  display: block;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding: 13px 48px 13px 12px;
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:focus {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:focus ~ label {
+  top: 7px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080 !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input::-ms-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input::placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:not(:placeholder-shown) {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:not(:placeholder-shown) ~ label {
+  top: 7px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080 !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:not(:placeholder-shown) ~ .form-input__reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input {
+  margin-bottom: 0;
+  border: none;
+  background: #F7F6FB;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:focus {
+  background: #F7F6FB;
+  border: none !important;
+  padding: 20px 12px 6px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-input input:not(:placeholder-shown) {
+  background: #F7F6FB;
+  border: none !important;
+  padding: 20px 12px 6px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radios .newObjectForm-answer {
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio {
+  width: 100%;
+  min-width: 32px;
+  position: relative;
+  background: #F7F6FB;
+  padding: 4px;
+  margin-bottom: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio label {
+  display: block;
+  width: 100%;
+  min-width: 32px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #5947B3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio input {
+  pointer-events: all;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: calc(100% - 8px);
+  min-width: 32px;
+  height: calc(100% - 8px);
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-cadPrice .edit-form-radio input:checked ~ label {
+  background: #E9E6FA;
+  border-radius: 4px;
+  color: #333333;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell {
+  padding-left: 24px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-inputs .sell-input:first-of-type .select-wrapper input {
+  border-radius: 4px 0 0 4px;
+  border-right: 0px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-inputs .sell-input:last-of-type .select-wrapper input {
+  border-radius: 0 4px 4px 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input {
+  width: 100%;
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input label {
+  position: absolute;
+  left: 13px;
+  top: calc(50% - 1px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 13px;
+  line-height: 16px;
+  color: #808080;
+  pointer-events: none;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input {
+  display: block;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding: 13px 48px 13px 12px;
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:focus {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:focus ~ label {
+  top: 7px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080 !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input::-ms-input-placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input::placeholder {
+  font-size: 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:not(:placeholder-shown) {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:not(:placeholder-shown) ~ label {
+  top: 7px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080 !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:not(:placeholder-shown) ~ .form-input__reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input {
+  margin-bottom: 0;
+  border: none;
+  background: #F7F6FB;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:focus {
+  background: #F7F6FB;
+  border: none !important;
+  padding: 20px 12px 6px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-input input:not(:placeholder-shown) {
+  background: #F7F6FB;
+  border: none !important;
+  padding: 20px 12px 6px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radios .newObjectForm-answer {
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio {
+  width: 100%;
+  min-width: 32px;
+  position: relative;
+  background: #F7F6FB;
+  padding: 4px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio label {
+  display: block;
+  width: 100%;
+  min-width: 32px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #5947B3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio input {
+  pointer-events: all;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: calc(100% - 8px);
+  min-width: 32px;
+  height: calc(100% - 8px);
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-cadPrice .sell-radio input:checked ~ label {
+  background: #E9E6FA;
+  border-radius: 4px;
+  color: #333333;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input {
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input label {
+  z-index: 1;
+  position: absolute;
+  left: 13px;
+  top: 7px;
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080;
+  pointer-events: none;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper {
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #B3B3B3;
+  -webkit-mask: url("./../image/chevron-down.svg") center/16px no-repeat;
+          mask: url("./../image/chevron-down.svg") center/16px no-repeat;
+  z-index: 1;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper input {
+  display: block;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding: 20px 48px 6px 12px;
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper input:focus {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+          box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+  border-radius: 4px;
+  top: calc(100% + 6px) !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content li.disabled {
+  display: none;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content li.selected {
+  position: relative;
+  background: none;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content li.selected::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #5947B3;
+  -webkit-mask: url("./../image/check-select.svg") center/16px no-repeat;
+          mask: url("./../image/check-select.svg") center/16px no-repeat;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content li span {
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.objects .objects-list tbody .edit .edit-form .sell .sell-input .select-wrapper .dropdown-content li:hover {
+  background: #F7F6FB;
+  border-radius: 4px;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop {
+  padding-left: 24px;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-title {
+  font-size: 12px;
+  line-height: 14px;
+  color: #333;
+  margin: 0 0 6px;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input {
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input label {
+  z-index: 1;
+  position: absolute;
+  left: 13px;
+  top: 7px;
+  font-size: 11px;
+  line-height: 11px;
+  color: #808080;
+  pointer-events: none;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper {
+  position: relative;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #B3B3B3;
+  -webkit-mask: url("./../image/chevron-down.svg") center/16px no-repeat;
+          mask: url("./../image/chevron-down.svg") center/16px no-repeat;
+  z-index: 1;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper input {
+  display: block;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  padding: 20px 48px 6px 12px;
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper input:focus {
+  background: #F7F6FB;
+  border: 1px solid #ACA3D9 !important;
+  padding: 20px 48px 6px 12px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+          box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+  border-radius: 4px;
+  top: calc(100% + 6px) !important;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content li.disabled {
+  display: none;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content li.selected {
+  position: relative;
+  background: none;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content li.selected::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #5947B3;
+  -webkit-mask: url("./../image/check-select.svg") center/16px no-repeat;
+          mask: url("./../image/check-select.svg") center/16px no-repeat;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content li span {
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input .select-wrapper .dropdown-content li:hover {
+  background: #F7F6FB;
+  border-radius: 4px;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input:first-of-type .select-wrapper input {
+  border-radius: 4px 0 0 4px;
+  border-right: 0px;
+}
+
+.objects .objects-list tbody .edit .edit-form .stop .stop-inputs .stop-input:last-of-type .select-wrapper input {
+  border-radius: 0 4px 4px 0;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-devider {
+  background: #EBEBEB;
+  height: 1px;
+  border: 0;
+  margin: 12px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #333333;
+  margin: 0 0 12px;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-save {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #FFFFFF;
+  background: #5947B3;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-edit {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #5947B3;
+  background: #E9E6FA;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit .edit-form .edit-form-copy {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #5947B3;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #EBEBEB;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .edit:hover .edit-form {
+  display: block;
+}
+
+.objects .objects-list tbody .lots {
+  color: #5947B3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.objects .objects-list tbody .lots .lots-icon {
+  display: block;
+  width: 14px;
+  height: 8px;
+  -webkit-mask: url("./../image/chevron-up.svg") center/14px 8px no-repeat;
+          mask: url("./../image/chevron-up.svg") center/14px 8px no-repeat;
+  background: #5947B3;
+  margin-top: 4px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.objects .objects-list tbody .lots.active .lots-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.objects .objects-list tbody.open .planing .planing-id {
+  border-radius: 0px 0px 4px 0px;
+}
+
+.objects .objects-list tbody.open .planing img {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.objects .objects-list tbody.open tr:first-child .planing .planing-id {
+  border-radius: 4px 0px 4px 0px;
+}
+
+.objects .objects-list tbody.open tr:first-child .planing img {
+  border-radius: 4px 0px 0px 0px;
+}
+
+.objects .objects-list tbody.open tr:last-child .planing .planing-id {
+  border-radius: 0px 0px 4px 0px;
+}
+
+.objects .objects-list tbody.open tr:last-child .planing img {
+  border-radius: 0px 0px 0px 4px;
+}
+
+.objects .objects-list tbody.open .hidden {
+  display: table-row;
+  background: #F9F9F9;
+}
+
+.objects .objects-list tbody.open .hidden .planing .planing-id {
+  border: 1px solid #EBEBEB;
+  background: #fff;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objects .objects-list tbody.open .hidden .planing .planing-id .planing-id-icon {
+  display: block;
+  width: 10.5px;
+  height: 12px;
+  -webkit-mask: url("./../image/flagman.svg") center/10.5px 12px no-repeat;
+          mask: url("./../image/flagman.svg") center/10.5px 12px no-repeat;
+  background: #EF2A2A;
+  margin-right: 4px;
+}
+
+.objects .objects-more {
+  margin-top: 16px;
+  margin-bottom: 48px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #5947B3;
+  background: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+}
+
+.objects .objects-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.objects .objects-pages-item {
+  width: 42px;
+  height: 42px;
+  font-size: 15px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-right: 0px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  cursor: pointer;
+}
+
+.objects .objects-pages-item:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.objects .objects-pages-item:last-child {
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid #EBEBEB;
+}
+
+.objects .objects-pages-item:hover {
+  background: #5947B3;
+  color: #fff;
+}
+
+.objects .objects-pages-item.active {
+  background: #5947B3;
+  color: #fff;
+  cursor: auto;
+}

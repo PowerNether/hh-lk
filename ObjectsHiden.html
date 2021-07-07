@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab">
+                    <span class="objectTabs-icon"></span>
+                    Новый
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Опубликованные
+                    <span class="newObjectTabs-amount">613</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    Скрытые
+                    <span class="newObjectTabs-amount">51</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Архив
+                    <span class="newObjectTabs-amount">347</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Черновики
+                    <span class="newObjectTabs-amount">10</span>
+                </a>
+            </div>
+            <div class="objects">
+                <h2 class="objects-title">
+                    Скрытые
+                </h2>
+                <div class="objects-tabs">
+                    <ul class="tabs-terrain">
+                        <li class="tabs-terrain-item active">
+                            Город
+                        </li>
+                        <li class="tabs-terrain-item">
+                            Загород
+                        </li>
+                    </ul>
+                    <ul class="tabs-time">
+                        <li class="tabs-time-item active">
+                            <p>Все</p>
+                            <span class="tabs-time-amount">152</span>
+                        </li>
+                        <li class="tabs-time-item">
+                            <p>Сегодня</p>
+                            <span class="tabs-time-amount">3</span>
+                        </li>
+                        <li class="tabs-time-item">
+                            <p>Вчера</p>
+                            <span class="tabs-time-amount">5</span>
+                        </li>
+                        <li class="tabs-time-item">
+                            <p>За неделю</p>
+                            <span class="tabs-time-amount">24</span>
+                        </li>
+                        <li class="tabs-time-item">
+                            <p>За месяц</p>
+                            <span class="tabs-time-amount">54</span>
+                        </li>
+                        <li class="tabs-time-item">
+                            <p>За 3 месяца</p>
+                            <span class="tabs-time-amount">127</span>
+                        </li>
+                    </ul>
+                </div>
+                <form class="objects-search">
+                    <div class="search-input">
+                        <span class="search-input-icon"></span>
+                        <input type="text" placeholder="Введите параметр, ID, адрес или ЖК">
+                    </div>
+                    <button class="search-button">
+                        Показать
+                        <span class="search-button-amount">830</span>
+                    </button>
+                </form>
+                <div class="objects-sorting">
+                    <p class="objects-sorting-info">Всего 45 объектов в 12 ЖК</p>
+                    <a href="#" class="objects-sorting-group">Группировать по ЖК</a>
+                    <a href="#" class="objects-sorting-map">
+                        <span class="map-icon"></span>
+                        Показать на карте
+                    </a>
+                </div>
+                <table class="objects-list">
+                    <thead>
+                        <tr>
+                            <th>
+                                Планировка
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Дата
+                                <span class="sorting active up"></span>
+                            </th>
+                            <th>
+                                Название ЖК
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Отделка
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Комн
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Эт
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Пл
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Цена
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Комиссия
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                Статус
+                                <span class="sorting"></span>
+                            </th>
+                            <th>
+                                <span class="rating"></span>
+                                <span class="sorting active"></span>
+                            </th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="planing">
+                                <div class="planing-wrapper">
+                                    <span class="planing-id">ID L: 653415</span>
+                                    <img src="./image/img.png" alt="planing">
+                                    <div class="planing-plan">
+                                        <span class="planing-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">
+                                    30.09.2020
+                                </div>
+                            </td>
+                            <td>
+                                <div class="adress">
+                                    Кржижановского
+                                    д. 81, стр. 2
+                                    <span class="k" title="privet"></span>
+                                </div>
+                            </td>
+                            <td>Без</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1 220 м2</td>
+                            <td class="price">
+                                <span class="price-main">8 000 000 000 ₽</span>
+                                4 320 000 ₽/м2
+                            </td>
+                            <td>
+                                3,5% (Э)
+                                <span class="question" title="privet"></span>
+                            </td>
+                            <td>
+                                <div class="status">
+                                    Снят с продажи<span class="info" title="privet"></span>
+                                    Цена по запросу
+                                </div>
+                            </td>
+                            <td>43</td>
+                            <td class="vam">
+                                <div class="edit">
+                                    <span class="edit-icon"></span>
+                                    <span class="edit-charon"></span>
+                                    <div class="edit-form">
+                                        <form action="">
+                                            <div class="edit-form-cadPrice">
+                                                <div class="edit-form-input">
+                                                    <input type="number" name="category" placeholder="Категория">
+                                                    <label for="category">
+                                                        Цена лота
+                                                    </label>
+                                                </div>
+                                                <div class="edit-form-radios">
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">₽</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">$</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">€</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="edit-form-title">Статус лота</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Актуален</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="2">
+                                                <span>Продан</span>
+                                            </label>
+                                            <div class="sell">
+                                                <div class="sell-inputs">
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-cadPrice">
+                                                    <div class="sell-input">
+                                                        <input type="number" name="category" placeholder="Категория">
+                                                        <label for="category">
+                                                            Цена продажи
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-radios">
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">₽</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">$</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">€</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-input">
+                                                    <select name="category">
+                                                        <option value="" disabled selected></option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                    <label for="category">
+                                                        Кто продал
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="3">
+                                                <span>Снят с продажи</span>
+                                            </label>
+                                            <div class="stop">
+                                                <p class="stop-title">Продажа приостановлена до:</p>
+                                                <div class="stop-inputs">
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Не актуален</span>
+                                            </label>
+                                            <hr class="edit-form-devider">
+                                            <p class="edit-form-title">Статус публикации</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Опубликован</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Цена по запросу</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Закрытые продажи</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Доступно брокерам</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Скрыт</span>
+                                            </label>
+                                            <button class="edit-form-save">Сохранить изменения</button>
+                                            <button class="edit-form-edit">Редактировать лот</button>
+                                            <button class="edit-form-copy">Скопировать в черновики</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="vam">
+                                <a href="#" class="lot"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="planing">
+                                <div class="planing-wrapper">
+                                    <span class="planing-id">ID L: 653415</span>
+                                    <img src="./image/img.png" alt="planing">
+                                    <div class="planing-plan">
+                                        <span class="planing-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">
+                                    30.09.2020
+                                </div>
+                            </td>
+                            <td>
+                                <div class="adress">
+                                    Кржижановского
+                                    д. 81, стр. 2
+                                    <span class="k" title="privet"></span>
+                                </div>
+                            </td>
+                            <td>Без</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1 220 м2</td>
+                            <td class="price">
+                                <span class="price-main">8 000 000 000 ₽</span>
+                                4 320 000 ₽/м2
+                            </td>
+                            <td>
+                                3,5% (Э)
+                                <span class="question" title="privet"></span>
+                            </td>
+                            <td>
+                                <div class="status">
+                                    Снят с продажи<span class="info" title="privet"></span>
+                                    Цена по запросу
+                                </div>
+                            </td>
+                            <td>43</td>
+                            <td class="vam">
+                                <div class="edit">
+                                    <span class="edit-icon"></span>
+                                    <span class="edit-charon"></span>
+                                    <div class="edit-form">
+                                        <form action="">
+                                            <div class="edit-form-cadPrice">
+                                                <div class="edit-form-input">
+                                                    <input type="number" name="category" placeholder="Категория">
+                                                    <label for="category">
+                                                        Цена лота
+                                                    </label>
+                                                </div>
+                                                <div class="edit-form-radios">
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">₽</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">$</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">€</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="edit-form-title">Статус лота</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Актуален</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="2">
+                                                <span>Продан</span>
+                                            </label>
+                                            <div class="sell">
+                                                <div class="sell-inputs">
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-cadPrice">
+                                                    <div class="sell-input">
+                                                        <input type="number" name="category" placeholder="Категория">
+                                                        <label for="category">
+                                                            Цена продажи
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-radios">
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">₽</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">$</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">€</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-input">
+                                                    <select name="category">
+                                                        <option value="" disabled selected></option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                    <label for="category">
+                                                        Кто продал
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="3">
+                                                <span>Снят с продажи</span>
+                                            </label>
+                                            <div class="stop">
+                                                <p class="stop-title">Продажа приостановлена до:</p>
+                                                <div class="stop-inputs">
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Не актуален</span>
+                                            </label>
+                                            <hr class="edit-form-devider">
+                                            <p class="edit-form-title">Статус публикации</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Опубликован</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Цена по запросу</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Закрытые продажи</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Доступно брокерам</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Скрыт</span>
+                                            </label>
+                                            <button class="edit-form-save">Сохранить изменения</button>
+                                            <button class="edit-form-edit">Редактировать лот</button>
+                                            <button class="edit-form-copy">Скопировать в черновики</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="vam">
+                                <a href="#" class="lot"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="planing">
+                                <div class="planing-wrapper">
+                                    <span class="planing-id">ID L: 653415</span>
+                                    <img src="./image/img.png" alt="planing">
+                                    <div class="planing-plan">
+                                        <span class="planing-icon"></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">
+                                    30.09.2020
+                                </div>
+                            </td>
+                            <td>
+                                <div class="adress">
+                                    Кржижановского
+                                    д. 81, стр. 2
+                                    <span class="k" title="privet"></span>
+                                </div>
+                            </td>
+                            <td>Без</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>1 220 м2</td>
+                            <td class="price">
+                                <span class="price-main">8 000 000 000 ₽</span>
+                                4 320 000 ₽/м2
+                            </td>
+                            <td>
+                                3,5% (Э)
+                                <span class="question" title="privet"></span>
+                            </td>
+                            <td>
+                                <div class="status">
+                                    Снят с продажи<span class="info" title="privet"></span>
+                                    Цена по запросу
+                                </div>
+                            </td>
+                            <td>43</td>
+                            <td class="vam">
+                                <div class="edit">
+                                    <span class="edit-icon"></span>
+                                    <span class="edit-charon"></span>
+                                    <div class="edit-form">
+                                        <form action="">
+                                            <div class="edit-form-cadPrice">
+                                                <div class="edit-form-input">
+                                                    <input type="number" name="category" placeholder="Категория">
+                                                    <label for="category">
+                                                        Цена лота
+                                                    </label>
+                                                </div>
+                                                <div class="edit-form-radios">
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">₽</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">$</label>
+                                                    </div>
+                                                    <div class="edit-form-radio">
+                                                        <input type="radio" name="otdel">
+                                                        <label for="otdel">€</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="edit-form-title">Статус лота</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Актуален</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="2">
+                                                <span>Продан</span>
+                                            </label>
+                                            <div class="sell">
+                                                <div class="sell-inputs">
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-cadPrice">
+                                                    <div class="sell-input">
+                                                        <input type="number" name="category" placeholder="Категория">
+                                                        <label for="category">
+                                                            Цена продажи
+                                                        </label>
+                                                    </div>
+                                                    <div class="sell-radios">
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">₽</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">$</label>
+                                                        </div>
+                                                        <div class="sell-radio">
+                                                            <input type="radio" name="otdel">
+                                                            <label for="otdel">€</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sell-input">
+                                                    <select name="category">
+                                                        <option value="" disabled selected></option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                    <label for="category">
+                                                        Кто продал
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="" value="3">
+                                                <span>Снят с продажи</span>
+                                            </label>
+                                            <div class="stop">
+                                                <p class="stop-title">Продажа приостановлена до:</p>
+                                                <div class="stop-inputs">
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            День
+                                                        </label>
+                                                    </div>
+                                                    <div class="stop-input">
+                                                        <select name="category">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                        <label for="category">
+                                                            Месяц и год *
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Не актуален</span>
+                                            </label>
+                                            <hr class="edit-form-devider">
+                                            <p class="edit-form-title">Статус публикации</p>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Опубликован</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Цена по запросу</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Закрытые продажи</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Доступно брокерам</span>
+                                            </label>
+                                            <label for="" class="edit-form-radio">
+                                                <input type="radio" name="1" id="">
+                                                <span>Скрыт</span>
+                                            </label>
+                                            <button class="edit-form-save">Сохранить изменения</button>
+                                            <button class="edit-form-edit">Редактировать лот</button>
+                                            <button class="edit-form-copy">Скопировать в черновики</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="vam">
+                                <a href="#" class="lot"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="objects-more">Показать больше</button>
+                <ul class="objects-pages">
+                    <li class="objects-pages-item active">1</li>
+                    <li class="objects-pages-item">2</li>
+                    <li class="objects-pages-item">3</li>
+                    <li class="objects-pages-item">4</li>
+                    <li class="objects-pages-item">5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

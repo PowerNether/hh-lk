@@ -42,3 +42,7 @@ $('.siderbar-toggle').on('click', function () {
         $('.sidebar').addClass('active')
     }
 })
+$('.lots').on('click', function () {
+    $(this).toggleClass('active')
+    $(this).parents('tbody').toggleClass('open');
+})
