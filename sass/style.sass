@@ -1718,11 +1718,12 @@ html, body
         transition: color .35s
 .objects
     .objects-title
+        font-family: "Graphik";
         font-size: 36px;
         line-height: 42px;
         color: #333;
         font-weight: 600;
-        margin-bottom: 32px
+        margin: 32px 0 24px
     .objects-tabs
         display: flex
         align-items: center
@@ -1739,6 +1740,7 @@ html, body
                 padding-bottom: 16px
                 position: relative
                 margin: 0 16px
+                font-family: "Graphik";
                 font-size: 15px;
                 line-height: 15px;
                 color: #333333;
@@ -1765,6 +1767,7 @@ html, body
             &-item
                 margin: 0
                 margin: 0 16px
+                font-family: "Graphik";
                 font-size: 15px;
                 line-height: 15px;
                 color: #333333;
@@ -1790,6 +1793,7 @@ html, body
                 left: 0
                 background: #5947B3;
             &-amount
+                font-family: "Graphik";
                 font-size: 10px;
                 line-height: 10px;
                 position: relative
@@ -1817,6 +1821,7 @@ html, body
                 margin-right: 12px
             input
                 width: 100%
+                font-family: "Graphik";
                 font-size: 15px;
                 color: #333
                 line-height: 42px
@@ -1831,6 +1836,7 @@ html, body
                     color: #808080;
         .search-button
             cursor: pointer
+            font-family: "Graphik";
             font-size: 15px;
             font-weight: 600
             line-height: 42px
@@ -1861,14 +1867,16 @@ html, body
     .objects-sorting
         display: flex
         align-items: center
-        margin-bottom: 24px
+        margin-bottom: 32px
         .objects-sorting-info
+            font-family: "Graphik";
             font-size: 15px;
             font-weight: 600
             line-height: 24px;
             color: #333333;
             margin: 0 16px 0 0
         .objects-sorting-group
+            font-family: "Graphik";
             font-size: 14px;
             line-height: 16px;
             text-decoration-line: underline;
@@ -1879,6 +1887,7 @@ html, body
                 color: #333
         .objects-sorting-toggle
             font-size: 14px;
+            font-family: "Graphik";
             line-height: 16px;
             text-decoration-line: underline;
             color: #5947B3;
@@ -1886,6 +1895,7 @@ html, body
             &:hover
                 color: #333
         .objects-sorting-map
+            font-family: "Graphik";
             font-size: 14px;
             line-height: 16px;
             color: #5947B3;
@@ -1905,11 +1915,14 @@ html, body
                 .map-icon
                     background: #333
     .objects-list
+        box-sizing: border-box
         thead
             tr
                 border: 0
                 th
+                    box-sizing: border-box
                     padding: 8px 16px 8px 0
+                    font-family: "Graphik";
                     font-size: 12px;
                     font-weight: 400
                     line-height: 14px;
@@ -1940,14 +1953,15 @@ html, body
                 display: table-row
                 height: 16px
             tr
-                // border-bottom: 16px solid transparent;
                 td
+                    box-sizing: border-box
                     vertical-align: top
                     border: 1px solid #EBEBEB
                     border-right: 0px
                     border-left: 0px
                     border-radius: 0
                     padding: 16px 16px 16px 0
+                    font-family: "Graphik";
                     font-size: 12px;
                     font-weight: 400
                     line-height: 16px;
@@ -1976,6 +1990,7 @@ html, body
                     position: absolute
                     top: 0
                     left: 0
+                    font-family: "Graphik";
                     font-size: 11px;
                     line-height: 16px;
                     color: #fff
@@ -2000,37 +2015,43 @@ html, body
             .price
                 text-align: right;
                 &-main
-                    display: block
                     font-size: 16px;
+                    display: block
+                    font-family: "Graphik";
                     font-weight: 600
                     line-height: 16px;
                     color: #01B957;
+                    white-space: nowrap
             .question
                 display: inline-block
                 width: 12px
                 height: 12px
                 mask: url('./../image/question-24.svg') center / 12px no-repeat
                 background: #B3B3B3;
-                margin-left: 6px
+                margin-left: 4px
                 cursor: pointer
+                margin-bottom: -2px
             .info
                 display: inline-block
                 width: 12px
                 height: 12px
-                margin-left: 6px
+                margin-left: 4px
                 mask: url('./../image/info.svg') center / 12px no-repeat
                 background: #B3B3B3;
                 cursor: pointer
+                margin-bottom: -2px
             .k
                 display: inline-block
                 width: 12px
                 height: 12px
-                margin-left: 6px
+                margin-left: 4px
                 mask: url('./../image/k.svg') center / 12px no-repeat
                 background: #5947B3;
                 cursor: pointer
+                margin-bottom: -2px
             .vam
                 vertical-align: middle
+                padding-right: 12px
             .lot
                 display: block
                 width: 24px
@@ -2038,17 +2059,33 @@ html, body
                 mask: url('./../image/chevron-right.svg') center / 24px no-repeat
                 background: #5947B3;
             .date
-                max-width: 90px
+                min-width: 90px
+            .agency
+                min-width: 65px
+            .claster
+                min-width: 92px
             .adress
-                max-width: 105px
-            .status
-                max-width: 110px
+                min-width: 92px
+            .otdelka
+                min-width: 77px
+            .rooms
+                min-width: 58px
+            .floors
+                min-width: 43px
+            .squares
+                min-width: 70px
+            .commision
+                min-width: 85px
+            .rating
+                min-width: 36px
+            .status-price
+                display: block
             .edit
                 display: flex
                 align-items: center
                 border: 1px solid #CCCCCC;
                 border-radius: 4px;
-                padding: 5px 6px
+                padding: 4px 5px
                 position: relative
                 cursor: pointer
                 .edit-icon
@@ -2089,6 +2126,7 @@ html, body
                             cursor: pointer
                         span
                             height: auto
+                            font-family: "Graphik";
                             font-size: 13px;
                             line-height: 16px;
                             color: #333
@@ -2128,7 +2166,7 @@ html, body
                         border: 1px solid #ACA3D9;
                         width: 100%
                         border-radius: 4px
-                        margin-bottom: 16px
+                        margin-bottom: 10px
                         .edit-form-input
                             width: 100%
                             position: relative
@@ -2137,6 +2175,7 @@ html, body
                                 left: 13px
                                 top: calc(50% - 1px )
                                 transform: translateY(-50%)
+                                font-family: "Graphik";
                                 font-size: 13px;
                                 line-height: 16px;
                                 color: #808080
@@ -2152,6 +2191,7 @@ html, body
                                 height: 46px
                                 padding: 13px 48px 13px 12px
                                 margin: 0 0 16px
+                                font-family: "Graphik";
                                 font-size: 15px;
                                 line-height: 18px;
                                 color: #333333;
@@ -2219,6 +2259,7 @@ html, body
                                 display: block
                                 width: 100%
                                 min-width: 32px
+                                font-family: "Graphik";
                                 font-size: 15px;
                                 font-weight: 400
                                 line-height: 38px
@@ -2247,11 +2288,13 @@ html, body
                             align-items: center
                             .sell-input
                                 &:first-of-type
+                                    max-width: 80px
                                     .select-wrapper
                                         input
                                             border-radius: 4px 0 0 4px
                                             border-right: 0px
                                 &:last-of-type
+                                    max-width: 150px
                                     .select-wrapper
                                         input
                                             border-radius: 0 4px 4px 0
@@ -2262,7 +2305,7 @@ html, body
                             border: 1px solid #ACA3D9;
                             width: 100%
                             border-radius: 4px
-                            margin-bottom: 16px
+                            margin-bottom: 10px
                             .sell-input
                                 width: 100%
                                 position: relative
@@ -2271,6 +2314,7 @@ html, body
                                     left: 13px
                                     top: calc(50% - 1px )
                                     transform: translateY(-50%)
+                                    font-family: "Graphik";
                                     font-size: 13px;
                                     line-height: 16px;
                                     color: #808080
@@ -2285,7 +2329,8 @@ html, body
                                     width: 100%
                                     height: 46px
                                     padding: 13px 48px 13px 12px
-                                    margin: 0 0 16px
+                                    margin: 0 0 10px
+                                    font-family: "Graphik";
                                     font-size: 15px;
                                     line-height: 18px;
                                     color: #333333;
@@ -2352,6 +2397,7 @@ html, body
                                     display: block
                                     width: 100%
                                     min-width: 32px
+                                    font-family: "Graphik";
                                     font-size: 15px;
                                     font-weight: 400
                                     line-height: 38px
@@ -2380,6 +2426,7 @@ html, body
                                 position: absolute
                                 left: 13px
                                 top: 7px
+                                font-family: "Graphik";
                                 font-size: 11px;
                                 line-height: 11px;
                                 color: #808080
@@ -2408,7 +2455,8 @@ html, body
                                     width: 100%
                                     height: 46px
                                     padding: 20px 48px 6px 12px
-                                    margin: 0 0 16px
+                                    margin: 0 0 10px
+                                    font-family: "Graphik";
                                     font-size: 15px;
                                     line-height: 18px;
                                     color: #333333;
@@ -2441,6 +2489,7 @@ html, body
                                             mask: url('./../image/check-select.svg') center / 16px no-repeat
                                     li
                                         span
+                                            font-family: "Graphik";
                                             font-size: 15px;
                                             line-height: 18px;
                                             color: #333333;
@@ -2450,6 +2499,7 @@ html, body
                     .stop
                         padding-left: 24px
                         .stop-title
+                            font-family: "Graphik";
                             font-size: 12px;
                             line-height: 14px;
                             color: #333
@@ -2464,6 +2514,7 @@ html, body
                                     position: absolute
                                     left: 13px
                                     top: 7px
+                                    font-family: "Graphik";
                                     font-size: 11px;
                                     line-height: 11px;
                                     color: #808080
@@ -2492,7 +2543,8 @@ html, body
                                         width: 100%
                                         height: 46px
                                         padding: 20px 48px 6px 12px
-                                        margin: 0 0 16px
+                                        margin: 0 0 10px
+                                        font-family: "Graphik";
                                         font-size: 15px;
                                         line-height: 18px;
                                         color: #333333;
@@ -2525,6 +2577,7 @@ html, body
                                                 mask: url('./../image/check-select.svg') center / 16px no-repeat
                                         li
                                             span
+                                                font-family: "Graphik";
                                                 font-size: 15px;
                                                 line-height: 18px;
                                                 color: #333333;
@@ -2532,11 +2585,13 @@ html, body
                                                 background: #F7F6FB;
                                                 border-radius: 4px;
                                 &:first-of-type
+                                    max-width: 80px
                                     .select-wrapper
                                         input
                                             border-radius: 4px 0 0 4px
                                             border-right: 0px
                                 &:last-of-type
+                                    max-width: 150px
                                     .select-wrapper
                                         input
                                             border-radius: 0 4px 4px 0
@@ -2544,8 +2599,9 @@ html, body
                         background: #EBEBEB;
                         height: 1px
                         border: 0
-                        margin: 12px
+                        margin: 12px 0
                     .edit-form-title
+                        font-family: "Graphik";
                         font-size: 13px;
                         font-weight: 600
                         line-height: 15px;
@@ -2553,6 +2609,7 @@ html, body
                         margin: 0 0 12px
                     .edit-form-save
                         width: 100%
+                        font-family: "Graphik";
                         font-size: 13px;
                         font-weight: 600
                         line-height: 44px;
@@ -2564,6 +2621,7 @@ html, body
                         cursor: pointer
                     .edit-form-edit
                         width: 100%
+                        font-family: "Graphik";
                         font-size: 13px;
                         font-weight: 600
                         line-height: 44px;
@@ -2575,6 +2633,7 @@ html, body
                         cursor: pointer
                     .edit-form-copy
                         width: 100%
+                        font-family: "Graphik";
                         font-size: 13px;
                         font-weight: 600
                         line-height: 44px;
@@ -2639,14 +2698,14 @@ html, body
                             mask: url('./../image/flagman.svg') center / 10.5px 12px no-repeat
                             background: #EF2A2A
                             margin-right: 4px
-                
-
     .objects-more
+        box-sizing: border-box
+        padding: 0
         margin-top: 16px
         margin-bottom: 48px
         width: 100%
         text-align: center
-        line-height: 50px
+        line-height: 48px
         color: #5947B3;
         background: #fff
         border: 1px solid #EBEBEB;
@@ -2659,6 +2718,7 @@ html, body
         &-item
             width: 42px
             height: 42px
+            font-family: "Graphik";
             font-size: 15px;
             line-height: 24px;
             display: flex
