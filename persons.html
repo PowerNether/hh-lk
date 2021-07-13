@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab">
+                    Настройка
+                </a>
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    Сотрудники
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Профиль
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Дежурства
+                </a>
+            </div>
+            <div class="staff">
+                <h2 class="staff-title">Сотрудники</h2>
+                <div class="staff-tabs">
+                    <div class="staff-tabs__list">
+                        <div class="staff-tabs__item active">
+                            <p class="staff-tabs__item-text">Все</p>
+                            <p class="staff-tabs__item-amount">5</p>
+                        </div>
+                        <div class="staff-tabs__item">
+                            <p class="staff-tabs__item-text">Архив</p>
+                            <p class="staff-tabs__item-amount">3</p>
+                        </div>
+                    </div>
+                    <div class="staff-tabs__new">
+                        <span class="staff-tabs__new-icon"></span>
+                        <p class="staff-tabs__new-text">Новый сотрудник</p>
+                    </div>
+                </div>
+                <div class="staff-list">
+                    <h3 class="staff-list__title">Всего 5 сотрудников</h3>
+                    <div class="staff-list__table">
+                        <div class="staff-list__table-head">
+                            <div class="staff-list__table-head-item photo">Фото</div>
+                            <div class="staff-list__table-head-item info">Сотрудник</div>
+                            <div class="staff-list__table-head-item access">Права доступа</div>
+                            <div class="staff-list__table-head-item direction">Осн. направления</div>
+                            <div class="staff-list__table-head-item edit"></div>
+                        </div>
+                        <div class="staff-list__table-body">
+                            <div class="staff-list__table-body-item photo">
+                                <img src="./image/avatar.png" alt="avatar">
+                            </div>
+                            <div class="staff-list__table-body-item info">
+                                <p class="info-name">Христорождественский Константин Константинович</p>
+                                <p class="info-position">Генеральный директор</p>
+                                <a href="mailto:khristo@gmail.com" class="info-mail">khristo@gmail.com</a>
+                                <a href="tel:+79005504830" class="info-phone">+7 900 550-48-30</a>
+                            </div>
+                            <div class="staff-list__table-body-item access">
+                                <div class="access-row">
+                                    <p class="access-title">Владелец:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                            </div>
+                            <div class="staff-list__table-body-item edit">
+                                <div class="edit-inter">
+                                    <span class="edit-icon"></span>
+                                    <div class="edit-hover">
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-edit"></span>
+                                            Редактировать
+                                        </p>
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-archive"></span>
+                                            В архив
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff-list__table-body">
+                            <div class="staff-list__table-body-item photo">
+                                <img src="./image/avatar.png" alt="avatar">
+                            </div>
+                            <div class="staff-list__table-body-item info">
+                                <p class="info-name">Константинопольская Александра Александровна</p>
+                                <p class="info-position">Руководитель отдела продаж городской недвижимости</p>
+                                <a href="mailto:alexandrovna@yandex.ru" class="info-mail">alexandrovna@yandex.ru</a>
+                                <a href="tel:+79005504830" class="info-phone">+7 900 550-48-30</a>
+                            </div>
+                            <div class="staff-list__table-body-item access">
+                                <div class="access-row">
+                                    <p class="access-title">Руководитель:</p>
+                                    <p class="access-text">Город Аренда, Город Продажа, Загород Аренда, Загород Продажа
+                                    </p>
+                                </div>
+                                <div class="access-row">
+                                    <p class="access-title">Администратор:</p>
+                                    <p class="access-text">Город Аренда, Город Продажа</p>
+                                </div>
+                            </div>
+                            <div class="staff-list__table-body-item edit">
+                                <div class="edit-inter">
+                                    <span class="edit-icon"></span>
+                                    <div class="edit-hover">
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-edit"></span>
+                                            Редактировать
+                                        </p>
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-archive"></span>
+                                            В архив
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff-list__table-body">
+                            <div class="staff-list__table-body-item photo">
+                                <img src="./image/avatar.png" alt="avatar">
+                            </div>
+                            <div class="staff-list__table-body-item info">
+                                <p class="info-name">Егоров Александр Петрович</p>
+                                <p class="info-position">Офис-менеджер</p>
+                                <a href="mailto:khristo@gmail.com" class="info-mail">khristo@gmail.com</a>
+                                <a href="tel:+79005504830" class="info-phone">+7 900 550-48-30</a>
+                            </div>
+                            <div class="staff-list__table-body-item access">
+                                <div class="access-row">
+                                    <p class="access-title">Руководитель:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                                <div class="access-row">
+                                    <p class="access-title">Администратор:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                                <div class="access-row">
+                                    <p class="access-title">Брокер:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                                <div class="access-row">
+                                    <p class="access-title">Контент-менеджер:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                            </div>
+                            <div class="staff-list__table-body-item edit">
+                                <div class="edit-inter">
+                                    <span class="edit-icon"></span>
+                                    <div class="edit-hover">
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-edit"></span>
+                                            Редактировать
+                                        </p>
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-archive"></span>
+                                            В архив
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff-list__table-body">
+                            <div class="staff-list__table-body-item photo">
+                                <img src="./image/avatar.png" alt="avatar">
+                            </div>
+                            <div class="staff-list__table-body-item info">
+                                <p class="info-name">Христорождественский Константин Константинович</p>
+                                <p class="info-position">Генеральный директор</p>
+                                <a href="mailto:khristo@gmail.com" class="info-mail">khristo@gmail.com</a>
+                                <a href="tel:+79005504830" class="info-phone">+7 900 550-48-30</a>
+                            </div>
+                            <div class="staff-list__table-body-item access">
+                                <div class="access-row">
+                                    <p class="access-title">Владелец:</p>
+                                    <p class="access-text">Все направления</p>
+                                </div>
+                            </div>
+                            <div class="staff-list__table-body-item edit">
+                                <div class="edit-inter">
+                                    <span class="edit-icon"></span>
+                                    <div class="edit-hover">
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-edit"></span>
+                                            Редактировать
+                                        </p>
+                                        <p class="edit-hover__item">
+                                            <span class="edit-hover__item-archive"></span>
+                                            В архив
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

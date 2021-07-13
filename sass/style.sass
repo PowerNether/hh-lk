@@ -2741,7 +2741,265 @@ html, body
             background: #5947B3;
             color: #fff
             cursor: auto
-                
+.staff
+    .staff-title
+        font-family: "Graphik";
+        font-size: 36px;
+        font-weight: 600
+        line-height: 42px;
+        color: #333333;
+        margin: 32px 0 24px
+    .staff-tabs
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        border-bottom: 1px solid #ebebeb
+        margin-bottom: 24px
+        .staff-tabs__list
+            display: flex
+            align-items: center
+            margin: 0 -16px
+            .staff-tabs__item
+                display: flex
+                align-items: flex-start
+                margin: 0 16px
+                cursor: pointer
+                &-text
+                    font-family: "Graphik";
+                    font-size: 15px;
+                    line-height: 15px;
+                    margin: 5px 0 0
+                    color: #333333;
+                    padding-bottom: 16px
+                    transition: all .35s
+                &-amount
+                    font-family: "Graphik";
+                    font-size: 10px;
+                    line-height: 10px;
+                    margin: 0 0 0 2px
+                    color: #5947B3;
+                &:hover
+                    .staff-tabs__item-text
+                        color: #5947B3;
+            .staff-tabs__item.active
+                margin-bottom: -1px
+                .staff-tabs__item-text
+                    padding-bottom: 14px
+                    border-bottom: 2px solid #5947B3
+                    font-weight: 600
+                    color: #5947B3;
+        .staff-tabs__new
+            display: flex
+            align-items: center
+            padding: 0 0 16px
+            cursor: pointer
+            &-icon
+                display: block
+                width: 16px
+                height: 16px
+                mask: url('./../image/plus-16.svg') center / 16px no-repeat
+                background: #5947B3
+                margin-right: 6px
+                transition: all .35s
+            &-text
+                font-family: "Graphik";
+                font-size: 15px;
+                line-height: 18px;
+                color: #5947B3;
+                margin: 0
+                transition: all .35s
+            &:hover
+                .staff-tabs__new-icon
+                    background: #333
+                .staff-tabs__new-text
+                    color: #333
+    .staff-list
+        .staff-list__title
+            font-family: "Graphik";
+            font-size: 15px;
+            font-weight: 600
+            line-height: 24px;
+            margin: 0 0 24px
+        .staff-list__table
+            .staff-list__table-head
+                display: flex
+                align-items: center
+                padding-bottom: 12px
+                border-bottom: 1px solid #ebebeb
+                margin-bottom: 16px
+                &-item
+                    font-family: "Graphik";
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #999999;
+                &-item.photo
+                    max-width: 64px
+                    width: 100%
+                    margin-right: 16px
+                &-item.info
+                    max-width: 280px
+                    width: 100%
+                    margin-right: 16px
+                &-item.access
+                    max-width: 132px
+                    width: 100%
+                    margin-right: 8px
+                &-item.direction
+                    max-width: 642px
+                    width: 100%
+                    margin-right: 16px
+                &-item.edit
+                    max-width: 58px
+                    width: 100%
+            .staff-list__table-body
+                display: flex
+                align-items: flex-start
+                padding-bottom: 16px
+                border-bottom: 1px solid #ebebeb
+                margin-bottom: 16px
+                &-item
+                    font-family: "Graphik";
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #333333;
+                &-item.photo
+                    max-width: 64px
+                    width: 100%
+                    margin-right: 16px
+                    img
+                        max-width: 64px
+                        max-height: 64px
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        object-position: center
+                        border-radius: 32px;
+                &-item.info
+                    max-width: 280px
+                    width: 100%
+                    margin-right: 16px
+                    .info
+                        &-name
+                            display: block
+                            margin: 0 0 4px
+                            font-size: 16px;
+                            font-weight: 600
+                            line-height: 22px;
+                            color: #333333;
+                        &-position
+                            display: block
+                            margin: 0 0 4px
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #999999;
+                        &-mail
+                            display: block
+                            margin: 0 0 4px
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #5947B3;
+                            transition: all .35s
+                            &:hover
+                                color: #333;
+                        &-phone
+                            display: block
+                            margin: 0
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #333;
+                &-item.access
+                    max-width: 808px
+                    width: 100%
+                    margin-right: 16px
+                    .access
+                        &-row
+                            display: flex
+                            align-items: flex-start
+                        &-title
+                            max-width: 132px
+                            width: 100%
+                            margin: 0 8px 0 0
+                        &-text
+                            max-width: 668px
+                            width: 100%
+                            margin: 0
+                &-item.edit
+                    max-width: 58px
+                    width: 100%
+                    .edit-inter
+                        position: relative
+                        &:hover
+                            .edit-hover
+                                display: block
+                                opacity: 1
+                    .edit-icon
+                        display: block
+                        width: 32px
+                        height: 32px
+                        mask: url('./../image/kebab-horizontal.svg') top right / 16px no-repeat
+                        background: #B3B3B3
+                        cursor: pointer
+                        margin-left: auto
+                        transition: all .35s
+                        &:hover
+                            background: #5947B3;
+                    .edit-hover
+                        opacity: 0
+                        display: none
+                        position: absolute
+                        top: calc(50% - 8px)
+                        right: calc(100% - 16px)
+                        transform: translateY(-50%)
+                        background: #FFFFFF;
+                        border-radius: 4px;
+                        z-index: 1
+                        padding: 16px
+                        box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+                        transition: all .35s
+                        &::after
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            right: -8px
+                            transform: translateY(-50%)
+                            display: block
+                            width: 8px
+                            height: 20px
+                            background: url('./../image/RightCenterTip.svg') center / 8px 20px no-repeat
+                            z-index: -1
+                        &__item
+                            display: flex
+                            align-items: center
+                            margin: 0 0 24px
+                            cursor: pointer
+                            transition: all .35s
+                            &-edit
+                                display: block
+                                width: 16px
+                                height: 16px
+                                margin-right: 12px
+                                mask: url('./../image/edit-16px.svg') top right / 16px no-repeat
+                                background: #333333
+                                transition: all .35s
+                            &-archive
+                                display: block
+                                width: 16px
+                                height: 16px
+                                margin-right: 12px
+                                mask: url('./../image/archive.svg') top right / 16px no-repeat
+                                background: #333333
+                                transition: all .35s
+                            &:last-of-type
+                                margin-bottom: 0
+                            &:hover
+                                color: #5947B3;
+                                span
+                                    background: #5947B3;
+                &:last-of-type
+                    border-bottom: none
+            
+
             
 
 
