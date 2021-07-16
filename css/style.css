@@ -4742,3 +4742,221 @@ html, body {
 .staff .staff-list .staff-list__table .staff-list__table-body:last-of-type {
   border-bottom: none;
 }
+
+.shifts .shifts-title {
+  font-family: "Graphik";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #333333;
+  margin: 32px 0 32px;
+}
+
+.shifts .shifts-subtitle {
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.shifts .shifts-list {
+  max-width: 592px;
+  width: 100%;
+}
+
+.shifts .shifts-list .shifts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top: 1px solid #EBEBEB;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.shifts .shifts-list .shifts-item__info {
+  width: 100%;
+}
+
+.shifts .shifts-list .shifts-item__info-title {
+  font-family: "Graphik";
+  font-size: 15px;
+  line-height: 20px;
+  color: #5947B3;
+  margin: 0 0 2px;
+}
+
+.shifts .shifts-list .shifts-item__info-text {
+  font-family: "Graphik";
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.shifts .shifts-list .shifts-item__edit {
+  position: relative;
+  margin-right: -16px;
+}
+
+.shifts .shifts-list .shifts-item__edit:hover .shifts-item__edit-hover {
+  display: block;
+  opacity: 1;
+}
+
+.shifts .shifts-list .shifts-item__edit-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-mask: url("./../image/kebab-horizontal.svg") top left/16px no-repeat;
+          mask: url("./../image/kebab-horizontal.svg") top left/16px no-repeat;
+  background: #B3B3B3;
+  cursor: pointer;
+  margin-left: auto;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-icon:hover {
+  background: #5947B3;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(100% + 8px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #FFFFFF;
+  border-radius: 4px;
+  z-index: 1;
+  padding: 16px;
+  -webkit-box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+          box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  display: block;
+  width: 8px;
+  height: 20px;
+  background: url("./../image/RightCenterTip.svg") center/8px 20px no-repeat;
+  z-index: -1;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 24px;
+  cursor: pointer;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item-edit {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  -webkit-mask: url("./../image/edit-16px.svg") top right/16px no-repeat;
+          mask: url("./../image/edit-16px.svg") top right/16px no-repeat;
+  background: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item-double {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  -webkit-mask: url("./../image/copy.svg") top right/16px no-repeat;
+          mask: url("./../image/copy.svg") top right/16px no-repeat;
+  background: #333333;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item-delete {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  -webkit-mask: url("./../image/delete16.svg") top right/16px no-repeat;
+          mask: url("./../image/delete16.svg") top right/16px no-repeat;
+  background: #FF5050;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item.delete {
+  color: #FF5050;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item:last-of-type {
+  margin-bottom: 0;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item:hover {
+  color: #5947B3;
+}
+
+.shifts .shifts-list .shifts-item__edit-hover .item:hover span {
+  background: #5947B3;
+}
+
+.shifts .shifts-newShifts {
+  max-width: 592px;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Graphik";
+  font-size: 15px;
+  line-height: 18px;
+  color: #5947B3;
+  cursor: pointer;
+}
+
+.shifts .shifts-newShifts .shifts-newShifts__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  -webkit-mask: url("./../image/plus-16.svg") center/16px no-repeat;
+          mask: url("./../image/plus-16.svg") center/16px no-repeat;
+  background: #5947B3;
+  margin-right: 6px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.shifts .shifts-newShifts:hover {
+  color: #333;
+}
+
+.shifts .shifts-newShifts:hover .shifts-newShifts__icon {
+  background: #333;
+}
