@@ -5453,8 +5453,8 @@ html, body {
 
 .favorite .favorite-tab__list-item .item-slider__main {
   position: relative;
-  max-width: 490px;
-  max-height: 306px;
+  width: 490px;
+  height: 306px;
   margin-right: 2px;
 }
 
