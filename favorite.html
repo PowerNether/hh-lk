@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="favorite">
+                <h2 class="favorite-title">Избранное</h2>
+                <div class="favorite-tabs">
+                    <div class="favorite-tabs__list">
+                        <p class="favorite-tabs__item active">Город</p>
+                        <p class="favorite-tabs__item">Загород</p>
+                    </div>
+                </div>
+                <div class="favorite-category">
+                    <div class="favorite-category__item">
+                        <span class="favorite-category__plus"></span>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">Все</p>
+                        <p class="favorite-category__amount">613 объектов</p>
+                    </div>
+                    <div class="favorite-category__item active">
+                        <p class="favorite-category__title">Апартаменты с террасой</p>
+                        <p class="favorite-category__amount">15 объектов</p>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">Уютные таунхаусы</p>
+                        <p class="favorite-category__amount">2 объектов</p>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">Элитные квартиры</p>
+                        <p class="favorite-category__amount">347 объектов</p>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">Дома с видом на речку</p>
+                        <p class="favorite-category__amount">51 объектов</p>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">Стиль Арт-Деко</p>
+                        <p class="favorite-category__amount">10 объектов</p>
+                    </div>
+                    <div class="favorite-category__item">
+                        <p class="favorite-category__title">
+                            Ещё коллекции
+                            <span class="favorite-category__select"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="favorite-tab">
+                    <div class="favorite-tab__header">
+                        <p class="favorite-tab__title">Апартаменты с террасой</p>
+                        <div class="favorite-tab__action">
+                            <p class="favorite-tab__print">
+                                <span class="favorite-tab__print-icon"></span>
+                                Распечатать
+                            </p>
+                            <p class="favorite-tab__rename">Переименовать</p>
+                            <p class="favorite-tab__share">Переименовать</p>
+                            <p class="favorite-tab__delete">Удалить</p>
+                        </div>
+                    </div>
+                    <div class="favorite-tab__list">
+                        <div class="favorite-tab__list-sorting">
+                            <p class="sorting-title">Всего 45 объектов в 12 ЖК</p>
+                            <p class="sorting-group">Группировать по ЖК</p>
+                            <div class="sorting-criteria">
+                                <p class="sorting-criteria__item">
+                                    По рейтингу
+                                    <span class="sorting-criteria__select"></span>
+                                </p>
+                                <p class="sorting-criteria__item active">
+                                    По цене
+                                    <span class="sorting-criteria__select"></span>
+                                </p>
+                                <p class="sorting-criteria__item">
+                                    По площади
+                                    <span class="sorting-criteria__select"></span>
+                                </p>
+                                <p class="sorting-criteria__item">
+                                    По дате
+                                    <span class="sorting-criteria__select"></span>
+                                </p>
+                            </div>
+                            <div class="sorting-view">
+                                <div class="sorting-view__item active">
+                                    <div class="sorting-view__icon card"></div>
+                                </div>
+                                <div class="sorting-view__item">
+                                    <div class="sorting-view__icon blocks"></div>
+                                </div>
+                                <div class="sorting-view__item">
+                                    <div class="sorting-view__icon table"></div>
+                                </div>
+                                <div class="sorting-view__item">
+                                    <div class="sorting-view__icon gps"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-tab__list-item">
+                            <div class="item-slider">
+                                <div class="item-slider__main">
+                                    <img src="./../image/main.png" alt="0">
+                                    <div class="item-slider__overlay">
+                                        <div class="item-slider__overlay-header">
+                                            <div class="item-slider__overlay-tags">
+                                                <p class="item-slider__overlay-tag red">Эксклюзив</p>
+                                                <p class="item-slider__overlay-tag yellow">Снижена цена</p>
+                                            </div>
+                                            <div class="item-slider__overlay-maximize">
+                                                <span class="maximize-icon"></span>
+                                            </div>
+                                        </div>
+                                        <div class="item-slider__overlay-footer">
+                                            <div class="footer-item">
+                                                <p class="footer-item__3d">3D тур</p>
+                                            </div>
+                                            <div class="footer-item">
+                                                <span class="footer-item__yt"></span>
+                                            </div>
+                                            <div class="footer-item">
+                                                <p class="footer-item__photo">
+                                                    <span class="footer-item__photo-icon"></span>
+                                                    1/19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-slider__miniature">
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini1.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini2.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini3.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini4.png" alt="1">
+                                        <p class="item-slider__mini-overlay">
+                                            смотреть планировку
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">
+                                    Уютный пентхаус в стиле Ар-Деко с видом на набережную
+                                    <span class="item-content__id">id L: 653415</span>
+                                </p>
+                                <p class="item-content__jk">ЖК «Capital Towers»</p>
+                                <p class="item-content__adress">
+                                    Краснопресненская набережная 14
+                                    <span class="item-content__adress-extra">Корпус 1</span>
+                                    <span class="item-content__adress-extra">Секция B</span>
+                                </p>
+                                <div class="item-content__feature">
+                                    <p class="item-content__feature-item">
+                                        5 (2)
+                                        <span class="item-content__feature-aditional">
+                                            Комнат (спален)
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        1 220 м2
+                                        <span class="item-content__feature-aditional">
+                                            Общая площадь
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        4/18
+                                        <span class="item-content__feature-aditional">
+                                            Этаж/этажность
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        2
+                                        <span class="item-content__feature-aditional">
+                                            Санузла
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="item-content__footer">
+                                    <div class="item-content__buttons">
+                                        <button class="item-content__buttons-more">Подробнее</button>
+                                        <button class="item-content__buttons-other">
+                                            <span class="item-content__buttons-other__icon"></span>
+                                        </button>
+                                    </div>
+                                    <p class="item-content__price">
+                                        <span class="item-content__price-last">26 700 000 ₽</span>
+                                        1 125 200 000 ₽
+                                        <span class="item-content__price-sq">118 000 ₽/м2</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-tab__list-item">
+                            <div class="item-slider">
+                                <div class="item-slider__main">
+                                    <img src="./../image/main.png" alt="0">
+                                    <div class="item-slider__overlay">
+                                        <div class="item-slider__overlay-header">
+                                            <div class="item-slider__overlay-tags">
+                                                <p class="item-slider__overlay-tag red">Эксклюзив</p>
+                                                <p class="item-slider__overlay-tag yellow">Снижена цена</p>
+                                            </div>
+                                            <div class="item-slider__overlay-maximize">
+                                                <span class="maximize-icon"></span>
+                                            </div>
+                                        </div>
+                                        <div class="item-slider__overlay-footer">
+                                            <div class="footer-item">
+                                                <p class="footer-item__3d">3D тур</p>
+                                            </div>
+                                            <div class="footer-item">
+                                                <span class="footer-item__yt"></span>
+                                            </div>
+                                            <div class="footer-item">
+                                                <p class="footer-item__photo">
+                                                    <span class="footer-item__photo-icon"></span>
+                                                    1/19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-slider__miniature">
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini1.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini2.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini3.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini4.png" alt="1">
+                                        <p class="item-slider__mini-overlay">
+                                            смотреть планировку
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">
+                                    Уютный пентхаус в стиле Ар-Деко с видом на набережную
+                                    <span class="item-content__id">id L: 653415</span>
+                                </p>
+                                <p class="item-content__jk">ЖК «Capital Towers»</p>
+                                <p class="item-content__adress">
+                                    Краснопресненская набережная 14
+                                    <span class="item-content__adress-extra">Корпус 1</span>
+                                    <span class="item-content__adress-extra">Секция B</span>
+                                </p>
+                                <div class="item-content__feature">
+                                    <p class="item-content__feature-item">
+                                        5 (2)
+                                        <span class="item-content__feature-aditional">
+                                            Комнат (спален)
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        1 220 м2
+                                        <span class="item-content__feature-aditional">
+                                            Общая площадь
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        4/18
+                                        <span class="item-content__feature-aditional">
+                                            Этаж/этажность
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        2
+                                        <span class="item-content__feature-aditional">
+                                            Санузла
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="item-content__footer">
+                                    <div class="item-content__buttons">
+                                        <button class="item-content__buttons-more">Подробнее</button>
+                                        <button class="item-content__buttons-other">
+                                            <span class="item-content__buttons-other__icon"></span>
+                                        </button>
+                                    </div>
+                                    <p class="item-content__price">
+                                        <span class="item-content__price-last">26 700 000 ₽</span>
+                                        1 125 200 000 ₽
+                                        <span class="item-content__price-sq">118 000 ₽/м2</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorite-tab__list-item">
+                            <div class="item-slider">
+                                <div class="item-slider__main">
+                                    <img src="./../image/main.png" alt="0">
+                                    <div class="item-slider__overlay">
+                                        <div class="item-slider__overlay-header">
+                                            <div class="item-slider__overlay-tags">
+                                                <p class="item-slider__overlay-tag red">Эксклюзив</p>
+                                                <p class="item-slider__overlay-tag yellow">Снижена цена</p>
+                                            </div>
+                                            <div class="item-slider__overlay-maximize">
+                                                <span class="maximize-icon"></span>
+                                            </div>
+                                        </div>
+                                        <div class="item-slider__overlay-footer">
+                                            <div class="footer-item">
+                                                <p class="footer-item__3d">3D тур</p>
+                                            </div>
+                                            <div class="footer-item">
+                                                <span class="footer-item__yt"></span>
+                                            </div>
+                                            <div class="footer-item">
+                                                <p class="footer-item__photo">
+                                                    <span class="footer-item__photo-icon"></span>
+                                                    1/19
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-slider__miniature">
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini1.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini2.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini3.png" alt="1">
+                                    </div>
+                                    <div class="item-slider__mini">
+                                        <img src="./../image/mini4.png" alt="1">
+                                        <p class="item-slider__mini-overlay">
+                                            смотреть планировку
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">
+                                    Уютный пентхаус в стиле Ар-Деко с видом на набережную
+                                    <span class="item-content__id">id L: 653415</span>
+                                </p>
+                                <p class="item-content__jk">ЖК «Capital Towers»</p>
+                                <p class="item-content__adress">
+                                    Краснопресненская набережная 14
+                                    <span class="item-content__adress-extra">Корпус 1</span>
+                                    <span class="item-content__adress-extra">Секция B</span>
+                                </p>
+                                <div class="item-content__feature">
+                                    <p class="item-content__feature-item">
+                                        5 (2)
+                                        <span class="item-content__feature-aditional">
+                                            Комнат (спален)
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        1 220 м2
+                                        <span class="item-content__feature-aditional">
+                                            Общая площадь
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        4/18
+                                        <span class="item-content__feature-aditional">
+                                            Этаж/этажность
+                                        </span>
+                                    </p>
+                                    <p class="item-content__feature-item">
+                                        2
+                                        <span class="item-content__feature-aditional">
+                                            Санузла
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="item-content__footer">
+                                    <div class="item-content__buttons">
+                                        <button class="item-content__buttons-more">Подробнее</button>
+                                        <button class="item-content__buttons-other">
+                                            <span class="item-content__buttons-other__icon"></span>
+                                        </button>
+                                    </div>
+                                    <p class="item-content__price">
+                                        <span class="item-content__price-last">26 700 000 ₽</span>
+                                        1 125 200 000 ₽
+                                        <span class="item-content__price-sq">118 000 ₽/м2</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="favorite-tab__list-more">Показать больше</button>
+                        <div class="favorite-tab__list-pages">
+                            <p class="favorite-tab__list-page active">1</p>
+                            <p class="favorite-tab__list-page">2</p>
+                            <p class="favorite-tab__list-page">3</p>
+                            <p class="favorite-tab__list-page">4</p>
+                            <p class="favorite-tab__list-page">5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
