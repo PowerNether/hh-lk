@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab">
+                    <span class="objectTabs-icon"></span>
+                    Новый
+                </a>
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    Опубликованные
+                    <span class="newObjectTabs-amount">613</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Скрытые
+                    <span class="newObjectTabs-amount">51</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Архив
+                    <span class="newObjectTabs-amount">347</span>
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Черновики
+                    <span class="newObjectTabs-amount">10</span>
+                </a>
+            </div>
+            <div class="actual">
+                <h2 class="actual-title">Актуальные</h2>
+                <div class="actual-tabs">
+                    <ul class="actual-tabs__list">
+                        <li class="actual-tabs__item active">
+                            <p>Все</p>
+                            <span class="actual-tabs__amount">613</span>
+                        </li>
+                        <li class="actual-tabs__item">
+                            <p>Мои</p>
+                            <span class="actual-tabs__amount">613</span>
+                        </li>
+                        <li class="actual-tabs__item">
+                            <p>Компании</p>
+                            <span class="actual-tabs__amount">613</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actual-form">
+                    <div class="actual-form__row">
+                        <div class="actual-form__select category">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <label>Раздел</label>
+                        </div>
+                        <div class="actual-form__rooms">
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">1</label>
+                            </div>
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">2</label>
+                            </div>
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">3</label>
+                            </div>
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">4</label>
+                            </div>
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">5</label>
+                            </div>
+                            <div class="actual-form__rooms-checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">6+</label>
+                            </div>
+                            <div class="actual-form__rooms-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">комнат</label>
+                            </div>
+                            <div class="actual-form__rooms-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">спален</label>
+                            </div>
+                        </div>
+                        <div class="actual-form__select flattype">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <label>Тип объекта</label>
+                        </div>
+                        <div class="actual-form__select floors">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <label>Этажи</label>
+                        </div>
+                        <div class="actual-form__select finishing">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <label>Отделка</label>
+                        </div>
+                        <div class="actual-form__select finishingtype">
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <label>Отделка</label>
+                        </div>
+                    </div>
+                    <div class="actual-form__row">
+                        <div class="actual-form__search">
+                            <span class="actual-form__search-icon"></span>
+                            <label>
+                                <input type="text" placeholder="Локация, адрес или ЖК">
+                                <span>Локация, адрес или ЖК</span>
+                                <div class="actual-form__reset">
+                                    <div class="actual-form__reset-icon"></div>
+                                </div>
+                            </label>
+                            <button class="actual-form__search-text">Район</button>
+                            <button class="actual-form__search-text">Метро</button>
+                            <button class="actual-form__search-draw">
+                                <span></span>
+                                <div class="actual-form__search-draw-alert"></div>
+                            </button>
+                        </div>
+                        <div class="actual-form__budjet">
+                            <label>
+                                <input type="text" placeholder="Бюджет от">
+                                <span>Бюджет от</span>
+                                <div class="actual-form__reset">
+                                    <div class="actual-form__reset-icon"></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="до">
+                                <span>до</span>
+                                <div class="actual-form__reset">
+                                    <div class="actual-form__reset-icon"></div>
+                                </div>
+                            </label>
+                            <div class="actual-form__budjet-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">₽</label>
+                            </div>
+                            <div class="actual-form__budjet-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">$</label>
+                            </div>
+                            <div class="actual-form__budjet-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">€</label>
+                            </div>
+                        </div>
+                        <div class="actual-form__squares">
+                            <label>
+                                <input type="text" placeholder="Площадь от, м2">
+                                <span>Площадь от, м2</span>
+                                <div class="actual-form__reset">
+                                    <div class="actual-form__reset-icon"></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="до, м2">
+                                <span>до, м2</span>
+                                <div class="actual-form__reset">
+                                    <div class="actual-form__reset-icon"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="actual-form__btn">
+                            Показать
+                            <span class="actual-form__btn-amount">130</span>
+                        </button>
+                    </div>
+                    <div class="actual-form__row">
+                        <div class="actual-form__tags">
+                            <div class="actual-form__tag">
+                                2, 3, 4-комнатные
+                                <span class="actual-form__tag-icon"></span>
+                            </div>
+                        </div>
+                        <div class="actual-form__btns">
+                            <button class="actual-form__subscribe">
+                                <span class="actual-form__subscribe-icon"></span>
+                                Подписаться на фильтр
+                            </button>
+                            <button class="actual-form__resetform" type="reset">Сбросить фильтры</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="actual-table">
+                    <div class="actual-table__header">
+                        <h3 class="actual-table__amount">Всего 613 заявок</h3>
+                        <div class="actual-table__sorting">
+                            <p class="actual-table__sorting-text active">
+                                По бюджету
+                                <span class="actual-table__sorting-icon"></span>
+                            </p>
+                            <p class="actual-table__sorting-text">
+                                По дате
+                                <span class="actual-table__sorting-icon"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="actual-table__head">
+                        <div class="actual-table__head-item date">Дата</div>
+                        <div class="actual-table__head-item public">Опубликовал</div>
+                        <div class="actual-table__head-item settings">Параметры</div>
+                        <div class="actual-table__head-item info">Комментарий</div>
+                        <div class="actual-table__head-item edit"></div>
+                    </div>
+                    <div class="actual-table__body">
+                        <div class="actual-table__body-item date">
+                            <p class="date-text">07 мая 2021</p>
+                            <div class="date-tags">
+                                <div class="date-tag green">Новая</div>
+                                <div class="date-tag purple">Новая</div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item public">
+                            <div class="public-avatar">
+                                <img src="./image/avatar.png" alt="">
+                            </div>
+                            <div class="public-content">
+                                <p class="public-name">Христорождественский Константин</p>
+                                <p class="public-agency">Риэлти Гайд</p>
+                                <a href="tel:+79005504830" class="public-number">+7 900 550-48-30</a>
+                                <div class="public-social">
+                                    <a href="#" class="whatsapp"></a>
+                                    <a href="#" class="telegram"></a>
+                                    <a href="mailto:123@123.ru" class="mail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item settings">
+                            <div class="settings-row">
+                                <p class="settings-name">Бюджет</p>
+                                <p class="settings-info bold">120 000 0000 ... 130 000 000 ₽</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Площадь</p>
+                                <p class="settings-info bold">120 ... 150 м2</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Комнат</p>
+                                <p class="settings-info">2—4 комнаты</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Спален</p>
+                                <p class="settings-info">2, 3 спальни</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Отделка</p>
+                                <p class="settings-info">Без отделки, новая</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">ЖК</p>
+                                <p class="settings-info">ЖК «Золотые ключи 2», ЖК «Ближняя Дача»</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Метро</p>
+                                <p class="settings-info">Авиамоторная, Автозаводская</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Районы</p>
+                                <p class="settings-info">Арбат, Басманный</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Локации</p>
+                                <p class="settings-info">Москва-сити, Китай-город</p>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item info">Ищу квартиру для клиента: Нужен Леонтьевский пер. и рядом переулки, Новый дом, 3 спальни, метров 150,120 высылала, мало, желательно с Отделкой, но и без рассмотрит, бюджет до 150 млн (комфортный бюджет 120-130 млн.) и еще нравятся Хамовники внутри Садового вокруг Остоженки и за Садовым тоже. Что есть, пришлите на WA: 89266185944, смотрим с 3 янв. Спасибо.</div>
+                        <div class="actual-table__body-item edit">
+                            <div class="edit-inter">
+                                <span class="edit-icon"></span>
+                                <div class="edit-hover">
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-edit"></span>
+                                        Редактировать
+                                    </p>
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-archive"></span>
+                                        В архив
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="edit-share"></a>
+                            <a class="edit-favorite"></a>
+                        </div>
+                    </div>
+                    <div class="actual-table__body">
+                        <div class="actual-table__body-item date">
+                            <p class="date-text">07 мая 2021</p>
+                            <div class="date-tags">
+                                <div class="date-tag green">Новая</div>
+                                <div class="date-tag purple">Новая</div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item public">
+                            <div class="public-avatar">
+                                <img src="./image/avatar.png" alt="">
+                            </div>
+                            <div class="public-content">
+                                <p class="public-name">Христорождественский Константин</p>
+                                <p class="public-agency">Риэлти Гайд</p>
+                                <a href="tel:+79005504830" class="public-number">+7 900 550-48-30</a>
+                                <div class="public-social">
+                                    <a href="#" class="whatsapp"></a>
+                                    <a href="#" class="telegram"></a>
+                                    <a href="mailto:123@123.ru" class="mail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item settings">
+                            <div class="settings-row">
+                                <p class="settings-name">Бюджет</p>
+                                <p class="settings-info bold">120 000 0000 ... 130 000 000 ₽</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Площадь</p>
+                                <p class="settings-info bold">120 ... 150 м2</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Комнат</p>
+                                <p class="settings-info">2—4 комнаты</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Спален</p>
+                                <p class="settings-info">2, 3 спальни</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Отделка</p>
+                                <p class="settings-info">Без отделки, новая</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">ЖК</p>
+                                <p class="settings-info">ЖК «Золотые ключи 2», ЖК «Ближняя Дача»</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Метро</p>
+                                <p class="settings-info">Авиамоторная, Автозаводская</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Районы</p>
+                                <p class="settings-info">Арбат, Басманный</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Локации</p>
+                                <p class="settings-info">Москва-сити, Китай-город</p>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item info">Ищу квартиру для клиента: Нужен Леонтьевский пер. и рядом переулки, Новый дом, 3 спальни, метров 150,120 высылала, мало, желательно с Отделкой, но и без рассмотрит, бюджет до 150 млн (комфортный бюджет 120-130 млн.) и еще нравятся Хамовники внутри Садового вокруг Остоженки и за Садовым тоже. Что есть, пришлите на WA: 89266185944, смотрим с 3 янв. Спасибо.</div>
+                        <div class="actual-table__body-item edit">
+                            <div class="edit-inter">
+                                <span class="edit-icon"></span>
+                                <div class="edit-hover">
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-edit"></span>
+                                        Редактировать
+                                    </p>
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-archive"></span>
+                                        В архив
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="edit-share"></a>
+                            <a class="edit-favorite"></a>
+                        </div>
+                    </div>
+                    <div class="actual-table__body">
+                        <div class="actual-table__body-item date">
+                            <p class="date-text">07 мая 2021</p>
+                            <div class="date-tags">
+                                <div class="date-tag green">Новая</div>
+                                <div class="date-tag purple">Новая</div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item public">
+                            <div class="public-avatar">
+                                <img src="./image/avatar.png" alt="">
+                            </div>
+                            <div class="public-content">
+                                <p class="public-name">Христорождественский Константин</p>
+                                <p class="public-agency">Риэлти Гайд</p>
+                                <a href="tel:+79005504830" class="public-number">+7 900 550-48-30</a>
+                                <div class="public-social">
+                                    <a href="#" class="whatsapp"></a>
+                                    <a href="#" class="telegram"></a>
+                                    <a href="mailto:123@123.ru" class="mail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item settings">
+                            <div class="settings-row">
+                                <p class="settings-name">Бюджет</p>
+                                <p class="settings-info bold">120 000 0000 ... 130 000 000 ₽</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Площадь</p>
+                                <p class="settings-info bold">120 ... 150 м2</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Комнат</p>
+                                <p class="settings-info">2—4 комнаты</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Спален</p>
+                                <p class="settings-info">2, 3 спальни</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Отделка</p>
+                                <p class="settings-info">Без отделки, новая</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">ЖК</p>
+                                <p class="settings-info">ЖК «Золотые ключи 2», ЖК «Ближняя Дача»</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Метро</p>
+                                <p class="settings-info">Авиамоторная, Автозаводская</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Районы</p>
+                                <p class="settings-info">Арбат, Басманный</p>
+                            </div>
+                            <div class="settings-row">
+                                <p class="settings-name">Локации</p>
+                                <p class="settings-info">Москва-сити, Китай-город</p>
+                            </div>
+                        </div>
+                        <div class="actual-table__body-item info">Ищу квартиру для клиента: Нужен Леонтьевский пер. и рядом переулки, Новый дом, 3 спальни, метров 150,120 высылала, мало, желательно с Отделкой, но и без рассмотрит, бюджет до 150 млн (комфортный бюджет 120-130 млн.) и еще нравятся Хамовники внутри Садового вокруг Остоженки и за Садовым тоже. Что есть, пришлите на WA: 89266185944, смотрим с 3 янв. Спасибо.</div>
+                        <div class="actual-table__body-item edit">
+                            <div class="edit-inter">
+                                <span class="edit-icon"></span>
+                                <div class="edit-hover">
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-edit"></span>
+                                        Редактировать
+                                    </p>
+                                    <p class="edit-hover__item">
+                                        <span class="edit-hover__item-archive"></span>
+                                        В архив
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="edit-share"></a>
+                            <a class="edit-favorite"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
