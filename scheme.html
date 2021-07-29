@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый объект</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="newObject">
+    <header class="header">
+        <div class="header-container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="/" class="menu-link">
+                            <img src="./image/logo.svg" alt="hh" class="menu-logo">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">О проекте</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Агентства недвижимости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Блог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Новости</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <span class="profile-alert"></span>
+                <span class="profile-search"></span>
+                <!-- Если будет фото, то добавить класс: 'profile-avatar__photo' -->
+                <div class="profile-avatar">
+                    <span>ЯК</span>
+                    <img src="./image/avatar.png" alt="ЯК">
+                </div>
+                <p class="profile-user">
+                    Ярослав К.
+                    <span></span>
+                </p>
+                <button class="profile-btn">
+                    <span></span>
+                    Добавить объект
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapiner">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__pro"></span>
+                        Профиль
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link sidebar-link__active">
+                        <span class="sidebar-icon sidebar-icon__com"></span>
+                        Компания
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__obj"></span>
+                        Объект
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__fav"></span>
+                        Избранное
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__sub"></span>
+                        Подписки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__que"></span>
+                        Заявки
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabc"></span>
+                        Кабинет собственника
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__cabb"></span>
+                        Кабинет покупателя
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <span class="sidebar-icon sidebar-icon__set"></span>
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="newObjectTabs">
+                <a href="#" class="newObjectTabs-tab">
+                    Настройка
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Сотрудники
+                </a>
+                <a href="#" class="newObjectTabs-tab">
+                    Профиль
+                </a>
+                <a href="#" class="newObjectTabs-tab newObjectTabs-tab__active">
+                    Дежурства
+                </a>
+            </div>
+            <div class="scheme">
+                <form class="scheme-form">
+                    <div class="scheme-form__control">
+                        <a href="#">
+                            <span class="icon"></span>
+                            Назад
+                        </a>
+                        <button type="reset">Очистить</button>
+                    </div>
+                    <h2 class="scheme-form__title">
+                        Новая схема дежурства
+                    </h2>
+                    <p class="scheme-form__subtitle">Схема дежурства</p>
+                    <div class="scheme-form__input">
+                        <input type="text" placeholder="Название схемы дежурства">
+                        <label>
+                            Название схемы дежурства
+                            <span class="req">*</span>
+                        </label>
+                    </div>
+                    <div class="scheme-form__type">
+                        <p class="scheme-form__type-title">Тип схемы</p>
+                        <div class="scheme-form__type-radios">
+                            <div class="scheme-form__type-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">Единый номер</label>
+                            </div>
+                            <div class="scheme-form__type-radio">
+                                <input type="radio" name="1" id="">
+                                <label for="">Прямые номера брокеров</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheme-form__select">
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        <label for="">Номер телефона</label>
+                    </div>
+                    <p class="scheme-form__subtitle">Направления</p>
+                    <div class="scheme-form__checks">
+                        <div class="scheme-form__check">
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Город Аренда</span>
+                            </label>
+                        </div>
+                        <div class="scheme-form__check">
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Загород Аренда</span>
+                            </label>
+                        </div>
+                        <div class="scheme-form__check">
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Новостройки</span>
+                            </label>
+                        </div>
+                        <div class="scheme-form__check">
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Город Продажа</span>
+                            </label>
+                        </div>
+                        <div class="scheme-form__check">
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Загород Продажа</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="scheme-graphic">
+                    <h2 class="scheme-graphic__title">График дежурства</h2>
+                    <p class="scheme-graphic__desc">
+                        Чтобы создать цикл из нескольких дней (от-до): нажмите на ячейку (от), она выделится, затем нажмите на конечную ячейку (до). Далее нажмите на кнопку «Новый цикл».
+                        В появившейся форме укажите даты первого и последнего дня цикла и нажмите «Применить цикл». Дублирование и очистка нескольких дней делается похожим образом.
+                    </p>
+                    <div class="scheme-graphic__month">
+                        <div class="scheme-graphic__day">
+                            <p class="day-month">Февраль 2021</p>
+                            <div class="day-date">
+                                <p class="day-date__info">01, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="day-more">еще 4</p>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">02, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">03, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">04, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">05, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">06, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">07, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">08, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">09, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">10, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">11, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">12, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">13, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">14, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">15, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">16, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">17, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">18, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">19, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">20, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">21, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">22, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">23, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">24, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">25, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">26, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">27, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">28, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="scheme-graphic__month">
+                        <div class="scheme-graphic__day">
+                            <p class="day-month">Март 2021</p>
+                            <div class="day-date">
+                                <p class="day-date__info">01, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="day-more">еще 4</p>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">02, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">03, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">04, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">05, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">06, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">07, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">08, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">09, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">10, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">11, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">12, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">13, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">14, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">15, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">16, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">17, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">18, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">19, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">20, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">21, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">22, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">23, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">24, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">25, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">26, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">27, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">28, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">29, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">30, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">31, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="scheme-graphic__month">
+                        <div class="scheme-graphic__day"></div>
+                        <div class="scheme-graphic__day"></div>
+                        <div class="scheme-graphic__day"></div>
+                        <div class="scheme-graphic__day selected">
+                            <p class="day-month">Апрель 2021</p>
+                            <div class="day-date">
+                                <p class="day-date__info">01, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="day-more">еще 4</p>
+                        </div>
+                        <div class="scheme-graphic__day selected">
+                            <div class="day-date">
+                                <p class="day-date__info">02, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day selected">
+                            <div class="day-date">
+                                <p class="day-date__info">03, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day selected">
+                            <div class="day-date">
+                                <p class="day-date__info">04, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day selected">
+                            <div class="day-date">
+                                <p class="day-date__info">05, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">06, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">07, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">08, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">09, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">10, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">11, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">12, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">13, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">14, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">15, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">16, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">17, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">18, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">19, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">20, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">21, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">22, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">23, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Петровский</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">24, сб</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">25, вс</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">26, пн</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">27, вт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">28, ср</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">29, чт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scheme-graphic__day">
+                            <div class="day-date">
+                                <p class="day-date__info">30, пт</p>
+                                <a class="day-date__add modal-trigger" href="#modal3"></a>
+                            </div>
+                            <ul class="day-list">
+                                <li class="day-item">
+                                    <img src="./image/avatar.png" alt="" class="day-item__image">
+                                    <div class="day-item__content">
+                                        <p class="day-item__name">Константинополь</p>
+                                        <p class="day-item__time">08:00 – 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="scheme-controls">
+                    <div class="scheme-controls__container">
+                        <div class="scheme-controls__edit">
+                            <button class="scheme-controls__edit-reset">
+                                <span></span>
+                                Отмена
+                            </button>
+                            <button class="scheme-controls__edit-delete disabled">
+                                <span></span>
+                                Очистить
+                            </button>
+                            <button class="scheme-controls__edit-copy modal-trigger" data-target="modal2">
+                                <span></span>
+                                Дублировать
+                            </button>
+                            <button class="scheme-controls__edit-new modal-trigger" data-target="modal1">
+                                <span></span>
+                                Новый цикл
+                            </button>
+                        </div>
+                        <div class="scheme-controls__btns">
+                            <button class="scheme-controls__btns-btn">Сохранить изменения</button>
+                            <button class="scheme-controls__btns-delete">Удалить схему</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal1" class="modal scheme-modal__new">
+                    <a href="#!" class="modal-close"></a>
+                    <div class="modal-content">
+                        <h2 class="modal-title">Новый цикл</h2>
+                        <p class="scheme-modal__new-text">
+                            из дней 
+                            <span class="bold">01 марта – 5 марта 2021</span>
+                        </p>
+                        <form action="" class="scheme-modal__new-form">
+                            <div class="form-inputs">
+                                <div class="form-date">
+                                    <input type="text" placeholder="--:--:--">
+                                    <label for="">Первый день цикла</label>
+                                    <span class="form-date__icon"></span>
+                                </div>
+                                <div class="form-date">
+                                    <input type="text" placeholder="--:--:--">
+                                    <label for="">Последний день цикла</label>
+                                    <span class="form-date__icon"></span>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span>Очистить график после последнего дня цикла</span>
+                                </label>
+                            </div>
+                            <button class="form-btn">Применить</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal2" class="modal scheme-modal__copy">
+                    <a href="#!" class="modal-close"></a>
+                    <div class="modal-content">
+                        <h2 class="modal-title">Дублирование</h2>
+                        <p class="scheme-modal__new-text">
+                            из дней 
+                            <span class="bold">01 марта – 5 марта 2021</span>
+                        </p>
+                        <form action="" class="scheme-modal__copy-form">
+                            <div class="form-inputs">
+                                <div class="form-date">
+                                    <input type="text" placeholder="--:--:--">
+                                    <label for="">Первый день цикла</label>
+                                    <span class="form-date__icon"></span>
+                                </div>
+                                <div class="form-date">
+                                    <input type="text" placeholder="--:--:--">
+                                    <label for="">Последний день цикла</label>
+                                    <span class="form-date__icon"></span>
+                                </div>
+                            </div>
+                            <a class="form-add">
+                                <span class="form-add__icon"></span>
+                                Добавить интервал
+                            </a>
+                            <button class="form-btn">Дублировать</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal3" class="modal scheme-modal__edit">
+                    <a href="#!" class="modal-close"></a>
+                    <div class="modal-content">
+                        <h2 class="modal-title">13 марта 2021, сб</h2>
+                        <form action="" class="scheme-modal__edit-form">
+                            <div class="form-broker">
+                                <div class="form-select">
+                                    <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <label for="">Дежурный брокер</label>
+                                    <div class="form-select__controls">
+                                        <span class="form-select__controls-add"></span>
+                                        <span class="form-select__controls-delete"></span>
+                                    </div>
+                                </div>
+                                <div class="form-selects">
+                                    <span class="form-selects__icon"></span>
+                                    <div class="form-select">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <label for="">Дежурный брокер</label>
+                                    </div>
+                                    <div class="form-select">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <label for="">Дежурный брокер</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-broker">
+                                <div class="form-select">
+                                    <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                    <label for="">Дежурный брокер</label>
+                                    <div class="form-select__controls">
+                                        <div class="form-select__controls-inter">
+                                            <span class="form-select__controls-more"></span>
+                                            <div class="form-select__controls-hover">
+                                                <p class="form-select__controls-hover__item">
+                                                    <span class="form-select__controls-hover__item-plus"></span>
+                                                    Добавить интервал
+                                                </p>
+                                                <p class="form-select__controls-hover__item delete">
+                                                    <span class="form-select__controls-hover__item-delete"></span>
+                                                    Удалить брокера
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-selects">
+                                    <span class="form-selects__icon"></span>
+                                    <div class="form-select">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <label for="">Дежурный брокер</label>
+                                    </div>
+                                    <div class="form-select">
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                        <label for="">Дежурный брокер</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="form-add">
+                                <span class="form-add__icon"></span>
+                                Добавить брокера
+                            </a>
+                            <button class="form-btn">Сохранить изменения</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

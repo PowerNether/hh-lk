@@ -46,3 +46,27 @@ $('.lots').on('click', function () {
     $(this).toggleClass('active')
     $(this).parents('tbody').toggleClass('open');
 })
+$('.day-more').click(function() {
+    let amount = $(this).parent().find('.day-list').children().length - 2
+    if ($(this).text() == `еще ${amount}`) {
+        $(this).text('свернуть')
+        $(this).parent().find('.day-list').css({
+            'max-height': '100%',
+            'padding': '0 0 20px'
+        })
+        $(this).parent().find('.day-item.hidden').css({
+            display: 'flex',
+        })
+    } else {
+        $(this).text(`еще ${amount}`)
+        $(this).parent().find('.day-list').css({
+            'max-height': '72px',
+            'padding': '0 0 0'
+        })
+        $(this).parent().find('.day-item.hidden').css('display', 'none')
+    }
+})
+$('.modal').modal();
+
+$(document).ready(function(){
+});

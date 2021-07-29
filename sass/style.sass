@@ -4624,5 +4624,1219 @@ html, body
                             cursor: pointer
                             &:hover
                                 background: #5947B3;
-
-
+.scheme
+    .scheme-form
+        width: 100%
+        max-width: 592px
+        margin-bottom: 32px
+        &__control
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 32px 0
+            a
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                transition: all .35s
+                display: flex
+                align-items: center
+                .icon
+                    display: block
+                    width: 24px
+                    height: 24px
+                    mask: url('./../image/arrow-left-24.svg') center / 24px no-repeat
+                    background: #5947B3
+                    margin-right: 12px
+                &:hover
+                    color: #5947B3;
+            button
+                font-size: 14px;
+                line-height: 32px
+                color: #333333;
+                background: #fff
+                padding: 0 10px
+                border: 1px solid #CCCCCC;
+                box-sizing: border-box;
+                border-radius: 4px;
+                cursor: pointer
+                transition: all .35s
+                &:hover
+                    color: #FF5050
+                    border: 1px solid #FF5050;
+                &:focus
+                    outline: none
+        &__title
+            font-size: 36px;
+            font-weight: 600
+            line-height: 42px;
+            color: #333333;
+            margin: 0 0 32px
+        &__subtitle
+            font-size: 15px;
+            font-weight: 600
+            line-height: 18px;
+            color: #333333;
+            margin: 0 0 16px
+        &__input
+            box-sizing: border-box;
+            position: relative
+            height: 46px
+            margin-bottom: 16px
+            label
+                font-size: 15px;
+                line-height: 18px;
+                color: #808080;
+                position: absolute
+                top: 50%
+                left: 12px
+                transform: translateY(-50%)
+                pointer-events: none
+                transition: all .35s
+                .req
+                    color: #FF5050
+            input
+                width: 100%
+                margin: 0
+                box-sizing: border-box;
+                padding: 0 12px
+                box-shadow: none !important
+                border: 1px solid #CCCCCC;
+                border-radius: 4px;
+                transition: all .35s
+                &::placeholder
+                    font-size: 0
+                &:not(:placeholder-shown)
+                    padding-top: 12px
+                    border: 1px solid #ACA3D9 !important;
+                    background: #F7F6FB;
+                &:focus
+                    padding-top: 12px
+                    box-shadow: none !important
+                    border: 1px solid #ACA3D9 !important;
+                    background: #F7F6FB;
+                &:not(:placeholder-shown) ~ label
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #808080 !important;
+                    top: 6px
+                    transform: translateY(0%)
+                &:focus ~ label
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #808080 !important;
+                    top: 6px
+                    transform: translateY(0%)
+        &__type
+            margin-bottom: 16px
+            &-title
+                font-size: 12px;
+                line-height: 14px;
+                color: #333333;
+                margin: 0 0 6px
+            &-radios
+                background: #F7F6FB;
+                border-radius: 4px;
+                display: flex
+                align-content: center
+                padding: 4px
+            &-radio
+                width: 50%
+                position: relative
+                label
+                    font-size: 15px;
+                    line-height: 38px;
+                    color: #5947B3;
+                    display: block
+                    width: 100%
+                    text-align: center
+                    pointer-events: none
+                    transition: all .35s
+                input
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    cursor: pointer
+                    pointer-events: all
+                    &:checked ~ label
+                        background: #E9E6FA;
+                        border-radius: 4px;
+        &__select
+            box-sizing: border-box;
+            position: relative
+            height: 46px
+            margin-bottom: 32px
+            position: relative
+            label
+                z-index: 1
+                position: absolute
+                left: 13px
+                top: 7px
+                font-size: 11px;
+                line-height: 11px;
+                color: #808080
+                pointer-events: none
+                transition: all .35s
+            .select-wrapper
+                position: relative
+                height: 44px
+                &::after
+                    content: 'Выбрать'
+                    display: block
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #5947B3;
+                    position: absolute
+                    right: 14px
+                    top: 50%
+                    z-index: 1
+                    transform: translateY(-50%)
+                    pointer-events: none
+                input
+                    border: 1px solid #CCCCCC;
+                    border-radius: 4px;
+                    display: block
+                    background: #fff;
+                    box-sizing: border-box
+                    width: 100%
+                    height: 44px
+                    padding: 20px 48px 6px 12px
+                    margin: 0 0 0
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #333333;
+                    transition: all .35s
+                    &:focus
+                        background: #F7F6FB;
+                        border: 1px solid #ACA3D9 !important;
+                        padding: 20px 48px 6px 12px
+                        box-shadow: none !important
+                    &:not(:placeholder-shown)
+                        border: 1px solid #ACA3D9 !important;
+                        background: #F7F6FB;
+                .dropdown-content
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+                    border-radius: 4px;
+                    top: calc(100% + 6px) !important
+                    li.disabled
+                        display: none
+                    li.selected
+                        position: relative
+                        background: none
+                        &::after
+                            content: ''
+                            display: block
+                            position: absolute
+                            right: 14px
+                            top: 50%
+                            transform: translateY(-50%)
+                            width: 16px
+                            height: 16px
+                            background: #5947B3;
+                            mask: url('./../image/check-select.svg') center / 16px no-repeat
+                    li
+                        span
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #333333;
+                        &:hover
+                            background: #F7F6FB;
+                            border-radius: 4px;
+        &__checks
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            margin: 0 -8px -12px
+        &__check
+            width: calc( 100% / 3 - 16px )
+            margin: 0 8px 12px
+            label
+                span
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #333333;
+                    padding-left: 30px
+                    &::before
+                        content: ''
+                        display: block
+                        width: 20px
+                        height: 20px
+                        position: absolute
+                        top: 0
+                        left: 0
+                        border: 1px solid #CCCCCC;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        margin: 0
+                        transition: all .35s
+                    &::after
+                        opacity: 0
+                        content: ''
+                        display: block
+                        width: 20px
+                        height: 20px
+                        background: url('./../image/check.svg') center / 16px no-repeat
+                        border-radius: 4px;
+                        position: absolute
+                        top: 0
+                        left: 0
+                        transition: all .35s
+                        pointer-events: none
+                        z-index: 1
+                input
+                    &:checked ~ span::before
+                        width: 20px
+                        height: 20px
+                        background: #5947B3;
+                        transform: none
+                        border: 1px solid #5947B3;
+                        top: 0
+                        left: 0
+                    &:checked ~ span::after
+                        width: 20px
+                        height: 20px
+                        opacity: 1
+                        top: 0
+                        left: 0
+                        transform: none
+                        margin: 0
+    .scheme-graphic
+        &__title
+            font-size: 24px;
+            font-weight: 600
+            line-height: 30px;
+            color: #333333;
+            width: 100%
+            padding: 0 0 6px
+            margin: 0 0 6px
+            border-bottom: 1px solid #EBEBEB    
+        &__desc
+            font-size: 14px;
+            line-height: 22px;
+            color: #333333;
+            padding: 0
+            margin: 0 0 32px
+        &__month
+            display: flex
+            align-items: stretch
+            flex-wrap: wrap
+            border-top: 1px solid #EBEBEB;
+            border-left: 1px solid #EBEBEB;
+            border-radius: 4px
+            margin-top: 64px
+            &:last-of-type
+                margin-bottom: 64px
+        &__day
+            width: calc(100% / 7)
+            min-height: 147px
+            border-right: 1px solid #EBEBEB;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box
+            padding: 14px 12px
+            position: relative
+            .day
+                &-month
+                    font-size: 18px;
+                    font-weight: 600
+                    line-height: 24px;
+                    color: #333333;
+                    position: absolute
+                    top: -54px
+                    left: 0
+                &-date
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    margin-bottom: 12px
+                    &__info
+                        font-size: 12px;
+                        font-weight: 600
+                        line-height: 14px;
+                        margin: 0
+                    &__add
+                        display: block
+                        width: 16px
+                        height: 16px
+                        mask: url("./../image/addCircle16.svg") center / 16px no-repeat;
+                        background: #B3B3B3;
+                        cursor: pointer;
+                        transition: background .35s;
+                        &:hover
+                            background: #5947B3
+                &-list
+                    margin: 0 0 -8px
+                    padding: 0 0 0px
+                    transition: all .35s
+                    max-height: 72px
+                    overflow: hidden
+                &-item
+                    display: flex
+                    align-items: center
+                    margin-bottom: 8px
+                    &__image
+                        display: block
+                        width: 32px
+                        height: 32px
+                        object-fit: cover
+                        object-position: center
+                        border-radius: 50%
+                        margin-right: 8px
+                    &__content
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                    &__name
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #333333;
+                        margin: 0 0 2px
+                        position: relative
+                        &::after
+                            content: ''
+                            display: block
+                            height: 16px
+                            width: 32px
+                            position: absolute
+                            top: 50%
+                            right: -12px
+                            transform: translateY(-50%)
+                            background: linear-gradient(270deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%)
+                            z-index: 1
+                    &__time
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #999999;
+                        margin: 0
+                &-more
+                    margin: 0
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #5947B3;
+                    background: #E9E6FA;
+                    border-radius: 4px 4px 0px 0px;
+                    padding: 4px 6px
+                    position: absolute
+                    bottom: 0px
+                    left: 12px
+                    cursor: pointer
+                    transition: all .35s
+                    content: 'свернуть'
+                    &:hover
+                        color: #E9E6FA;
+                        background: #5947B3;
+            &:nth-of-type(7n+6)
+                .day-date__info
+                    color: #FF5050;
+            &:nth-of-type(7n+7)
+                .day-date__info
+                    color: #FF5050;
+            &:nth-of-type(7)
+                border-radius: 4px 0 0 0
+            &:last-of-type
+                border-radius: 0 0 4px 0
+            &:empty
+                position: relative
+                &::before
+                    content: ''
+                    width: 1px
+                    height: 100%
+                    background: #fff
+                    position: absolute
+                    top: 0
+                    left: -1px
+                &::after
+                    content: ''
+                    width: 100%
+                    height: 1px
+                    background: #fff
+                    position: absolute
+                    top: -1px
+                    left: 0
+            &.selected
+                background: #E9E6FA;
+                border-color: #ACA3D9
+                &::before
+                    content: ''
+                    width: 1px
+                    height: 100%
+                    background: #ACA3D9
+                    position: absolute
+                    top: 0
+                    left: -1px
+                &::after
+                    content: ''
+                    width: 100%
+                    height: 1px
+                    background: #ACA3D9
+                    position: absolute
+                    top: -1px
+                    left: 0
+                .day-more
+                    color: #E9E6FA;
+                    background: #5947B3;
+                    &:hover
+                        color: #fff;
+                .day-item__name::after
+                    background: linear-gradient(270deg, rgba(233, 230, 250, 1) 60%, rgba(233, 230, 250, 0) 100%)
+    .scheme-controls
+        position: fixed
+        left: 0
+        bottom: 0
+        width: 100%
+        background: #FFFFFF;
+        box-shadow: inset 0px 1px 0px #EBEBEB;
+        z-index: 1
+        &__container
+            padding: 16px 0
+            max-width: 1216px
+            width: 100%
+            margin: 0 auto
+            position: relative
+        &__edit
+            display: flex
+            align-items: center
+            position: absolute
+            bottom: calc(100% + 16px)
+            left: 0
+            &-reset
+                font-size: 18px;
+                line-height: 34px;
+                color: #5947B3
+                background: #E9E6FA;
+                border: none
+                border-radius: 4px;
+                padding: 0 12px
+                cursor: pointer
+                transition: all .35s
+                display: flex
+                align-items: center
+                margin-right: 8px
+                span
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/cancel.svg') center / 16px no-repeat
+                    background: #5947B3
+                    margin-right: 6px
+                    transition: all .35s
+                &:hover
+                    color: #fff
+                    background: #5947B3;
+                    span
+                        background: #fff
+            &-delete
+                font-size: 18px;
+                line-height: 34px;
+                color: #5947B3
+                background: #E9E6FA;
+                border: none
+                border-radius: 4px;
+                padding: 0 12px
+                cursor: pointer
+                transition: all .35s
+                display: flex
+                align-items: center
+                margin-right: 8px
+                span
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/delete.svg') center / 16px no-repeat
+                    background: #5947B3
+                    margin-right: 6px
+                    transition: all .35s
+                &:hover
+                    color: #fff
+                    background: #5947B3;
+                    span
+                        background: #fff
+            &-copy
+                font-size: 18px;
+                line-height: 34px;
+                color: #fff
+                background: #5947B3;
+                border: none
+                border-radius: 4px;
+                padding: 0 12px
+                cursor: pointer
+                transition: all .35s
+                display: flex
+                align-items: center
+                margin-right: 8px
+                span
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/copy.svg') center / 16px no-repeat
+                    background: #fff
+                    margin-right: 6px
+                    transition: all .35s
+                &:hover
+                    color: #5947B3
+                    background: #E9E6FA;
+                    span
+                        background: #5947B3
+            &-new
+                font-size: 18px;
+                line-height: 34px;
+                color: #fff
+                background: #5947B3;
+                border: none
+                border-radius: 4px;
+                padding: 0 12px
+                cursor: pointer
+                transition: all .35s
+                display: flex
+                align-items: center
+                span
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/history.svg') center / 16px no-repeat
+                    background: #fff
+                    margin-right: 6px
+                    transition: all .35s
+                &:hover
+                    color: #5947B3
+                    background: #E9E6FA;
+                    span
+                        background: #5947B3
+            button.disabled
+                cursor: not-allowed
+                color: #B3B3B3;
+                background: #F5F5F7;
+                span
+                    background: #B3B3B3;
+        &__btns
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &-btn
+                font-size: 15px;
+                font-weight: 600
+                line-height: 46px
+                color: #FFFFFF;
+                background: #5947B3;
+                border-radius: 4px;
+                border: none
+                padding: 0 24px
+                cursor: pointer
+                transition: all .35s
+                &:hover
+                    color: #5947B3;
+                    background: #E9E6FA;
+            &-delete
+                font-size: 15px;
+                line-height: 18px;
+                color: #5947B3;
+                background: none
+                border: 0
+                cursor: pointer
+                transition: all .35s
+                &:hover
+                    color: #FF5050;
+    .scheme-modal__new
+        max-width: 480px !important
+        border-radius: 4px
+        .modal-close
+            position: absolute
+            top: 11px
+            right: 11px
+            display: block
+            width: 28px
+            height: 28px
+            mask: url('./../image/close.svg') center / 14px no-repeat
+            background: #B7B7B7
+            cursor: pointer
+            transition: all .35s
+            &:hover
+                background: #5947B3
+        .modal-content
+            padding: 48px
+        .modal-title
+            font-size: 22px;
+            font-weight: 600
+            line-height: 28px;
+            color: #333333;
+            margin: 0 0 16px
+        &-text
+            font-size: 15px;
+            line-height: 18px;
+            color: #333333;
+            padding-bottom: 16px
+            border-bottom: 1px solid #EBEBEB;
+            margin: 0 0 16px
+            .bold
+                font-weight: 600
+        &-form
+            .form
+                &-inputs
+                    margin-bottom: 16px
+                &-date
+                    box-sizing: border-box;
+                    position: relative
+                    height: 46px
+                    label
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #808080;
+                        position: absolute
+                        top: 50%
+                        left: 12px
+                        transform: translateY(-50%)
+                        pointer-events: none
+                        transition: all .35s
+                        .req
+                            color: #FF5050
+                    input
+                        width: 100%
+                        margin: 0
+                        box-sizing: border-box;
+                        padding: 0 12px
+                        box-shadow: none !important
+                        border: 1px solid #CCCCCC;
+                        border-radius: 4px;
+                        transition: all .35s
+                        &::placeholder
+                            font-size: 0
+                        &:not(:placeholder-shown)
+                            padding-top: 12px
+                            border: 1px solid #ACA3D9 !important;
+                            background: #F7F6FB;
+                        &:focus
+                            padding-top: 12px
+                            box-shadow: none !important
+                            border: 1px solid #ACA3D9 !important;
+                            background: #F7F6FB;
+                        &:not(:placeholder-shown) ~ label
+                            font-size: 11px;
+                            line-height: 11px;
+                            color: #808080 !important;
+                            top: 6px
+                            transform: translateY(0%)
+                        &:focus ~ label
+                            font-size: 11px;
+                            line-height: 11px;
+                            color: #808080 !important;
+                            top: 6px
+                            transform: translateY(0%)
+                    &:first-of-type
+                        input
+                            border-radius: 4px 4px 0 0;
+                    &:last-of-type
+                        input
+                            margin-top: -2px
+                            border-radius: 0 0 4px 4px;
+                    &__icon
+                        position: absolute
+                        top: 50%
+                        right: 12px
+                        transform: translateY(-50%)
+                        display: block
+                        width: 16px
+                        height: 16px
+                        mask: url('./../image/calendar.svg') center / 16px no-repeat
+                        background: #B7B7B7
+                        cursor: pointer
+                        transition: all .35s
+                        pointer-events: none
+                &-check
+                    margin-bottom: 16px
+                    label
+                        span
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #333333;
+                            padding-left: 30px
+                            &::before
+                                content: ''
+                                display: block
+                                width: 20px
+                                height: 20px
+                                position: absolute
+                                top: 0
+                                left: 0
+                                border: 1px solid #CCCCCC;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                margin: 0
+                                transition: all .35s
+                            &::after
+                                opacity: 0
+                                content: ''
+                                display: block
+                                width: 20px
+                                height: 20px
+                                background: url('./../image/check.svg') center / 16px no-repeat
+                                border-radius: 4px;
+                                position: absolute
+                                top: 0
+                                left: 0
+                                transition: all .35s
+                                pointer-events: none
+                                z-index: 1
+                        input
+                            &:checked ~ span::before
+                                width: 20px
+                                height: 20px
+                                background: #5947B3;
+                                transform: none
+                                border: 1px solid #5947B3;
+                                top: 0
+                                left: 0
+                            &:checked ~ span::after
+                                width: 20px
+                                height: 20px
+                                opacity: 1
+                                top: 0
+                                left: 0
+                                transform: none
+                                margin: 0
+                &-btn
+                    font-size: 15px;
+                    font-weight: 600
+                    line-height: 46px
+                    color: #FFFFFF;
+                    background: #5947B3;
+                    border: none
+                    border-radius: 4px
+                    padding: 0 24px
+                    cursor: pointer
+                    transition: all .35s
+                    &:hover
+                        color: #5947B3;
+                        background: #E9E6FA;
+    .scheme-modal__copy
+        max-width: 480px !important
+        border-radius: 4px
+        .modal-close
+            position: absolute
+            top: 11px
+            right: 11px
+            display: block
+            width: 28px
+            height: 28px
+            mask: url('./../image/close.svg') center / 14px no-repeat
+            background: #B7B7B7
+            cursor: pointer
+            transition: all .35s
+            &:hover
+                background: #5947B3
+        .modal-content
+            padding: 48px
+        .modal-title
+            font-size: 22px;
+            font-weight: 600
+            line-height: 28px;
+            color: #333333;
+            margin: 0 0 16px
+        &-text
+            font-size: 15px;
+            line-height: 18px;
+            color: #333333;
+            padding-bottom: 16px
+            border-bottom: 1px solid #EBEBEB;
+            margin: 0 0 16px
+            .bold
+                font-weight: 600
+        &-form
+            .form
+                &-inputs
+                    margin-bottom: 16px
+                &-date
+                    box-sizing: border-box;
+                    position: relative
+                    height: 46px
+                    label
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #808080;
+                        position: absolute
+                        top: 50%
+                        left: 12px
+                        transform: translateY(-50%)
+                        pointer-events: none
+                        transition: all .35s
+                        .req
+                            color: #FF5050
+                    input
+                        width: 100%
+                        margin: 0
+                        box-sizing: border-box;
+                        padding: 0 12px
+                        box-shadow: none !important
+                        border: 1px solid #CCCCCC;
+                        border-radius: 4px;
+                        transition: all .35s
+                        &::placeholder
+                            font-size: 0
+                        &:not(:placeholder-shown)
+                            padding-top: 12px
+                            border: 1px solid #ACA3D9 !important;
+                            background: #F7F6FB;
+                        &:focus
+                            padding-top: 12px
+                            box-shadow: none !important
+                            border: 1px solid #ACA3D9 !important;
+                            background: #F7F6FB;
+                        &:not(:placeholder-shown) ~ label
+                            font-size: 11px;
+                            line-height: 11px;
+                            color: #808080 !important;
+                            top: 6px
+                            transform: translateY(0%)
+                        &:focus ~ label
+                            font-size: 11px;
+                            line-height: 11px;
+                            color: #808080 !important;
+                            top: 6px
+                            transform: translateY(0%)
+                    &:first-of-type
+                        input
+                            border-radius: 4px 4px 0 0;
+                    &:last-of-type
+                        input
+                            margin-top: -2px
+                            border-radius: 0 0 4px 4px;
+                    &__icon
+                        position: absolute
+                        top: 50%
+                        right: 12px
+                        transform: translateY(-50%)
+                        display: block
+                        width: 16px
+                        height: 16px
+                        mask: url('./../image/calendar.svg') center / 16px no-repeat
+                        background: #B7B7B7
+                        cursor: pointer
+                        transition: all .35s
+                        pointer-events: none
+                &-add
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    color: #5947B3
+                    margin-bottom: 16px
+                    padding-top: 16px
+                    border-top: 1px solid #EBEBEB
+                    transition: all .35s
+                    cursor: pointer
+                    &__icon
+                        margin-right: 6px
+                        display: block
+                        width: 16px
+                        height: 16px
+                        mask: url('./../image/plus-16.svg') center / 16px no-repeat
+                        background: #5947B3;
+                        transition: all .35s
+                    &:hover
+                        color: #333
+                        .form-add__icon
+                            background: #333
+                &-btn
+                    font-size: 15px;
+                    font-weight: 600
+                    line-height: 46px
+                    color: #FFFFFF;
+                    background: #5947B3;
+                    border: none
+                    border-radius: 4px
+                    padding: 0 24px
+                    transition: all .35s
+                    cursor: pointer
+                    &:hover
+                        color: #5947B3;
+                        background: #E9E6FA;        
+    .scheme-modal__edit
+        max-width: 480px !important
+        border-radius: 4px
+        .modal-close
+            position: absolute
+            top: 11px
+            right: 11px
+            display: block
+            width: 28px
+            height: 28px
+            mask: url('./../image/close.svg') center / 14px no-repeat
+            background: #B7B7B7
+            cursor: pointer
+            transition: all .35s
+            &:hover
+                background: #5947B3
+        .modal-content
+            padding: 48px
+        .modal-title
+            font-size: 22px;
+            font-weight: 600
+            line-height: 28px;
+            color: #333333;
+            margin: 0 0 16px
+        &-text
+            font-size: 15px;
+            line-height: 18px;
+            color: #333333;
+            padding-bottom: 16px
+            border-bottom: 1px solid #EBEBEB;
+            margin: 0 0 16px
+            .bold
+                font-weight: 600
+        &-form
+            .form
+                &-broker
+                    padding-right: 28px
+                    padding-bottom: 16px
+                    border-bottom: 1px solid #EBEBEB
+                    margin-bottom: 16px
+                    &:last-of-type
+                        padding-bottom: 0
+                        border: 0
+                &-select
+                    box-sizing: border-box;
+                    position: relative
+                    height: 46px
+                    position: relative
+                    label
+                        z-index: 1
+                        position: absolute
+                        left: 13px
+                        top: 7px
+                        font-size: 11px;
+                        line-height: 11px;
+                        color: #808080
+                        pointer-events: none
+                        transition: all .35s
+                    .select-wrapper
+                        position: relative
+                        height: 46px
+                        &::after
+                            content: ''
+                            display: block
+                            position: absolute
+                            right: 14px
+                            top: 50%
+                            transform: translateY(-50%)
+                            width: 16px
+                            height: 16px
+                            background: #B3B3B3;
+                            mask: url('./../image/chevron-down.svg') center / 16px no-repeat
+                            z-index: 1
+                        input
+                            border: 1px solid #CCCCCC;
+                            border-radius: 4px;
+                            display: block
+                            background: #fff;
+                            box-sizing: border-box
+                            width: 100%
+                            height: 46px
+                            padding: 20px 48px 6px 12px
+                            margin: 0 0 0
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #333333;
+                            transition: all .35s
+                            &:focus
+                                background: #F7F6FB;
+                                border: 1px solid #ACA3D9 !important;
+                                padding: 20px 48px 6px 12px
+                                box-shadow: none !important
+                            &:not(:placeholder-shown)
+                                border: 1px solid #ACA3D9 !important;
+                                background: #F7F6FB;
+                        .dropdown-content
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 10px rgba(37, 36, 41, 0.15);
+                            border-radius: 4px;
+                            top: calc(100% + 6px) !important
+                            li.disabled
+                                display: none
+                            li.selected
+                                position: relative
+                                background: none
+                                &::after
+                                    content: ''
+                                    display: block
+                                    position: absolute
+                                    right: 14px
+                                    top: 50%
+                                    transform: translateY(-50%)
+                                    width: 16px
+                                    height: 16px
+                                    background: #5947B3;
+                                    mask: url('./../image/check-select.svg') center / 16px no-repeat
+                            li
+                                span
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    color: #333333;
+                                &:hover
+                                    background: #F7F6FB;
+                                    border-radius: 4px;
+                    &__controls
+                        position: absolute
+                        top: 50%
+                        left: calc(100% + 12px) 
+                        transform: translateY(-50%)
+                        z-index: 2
+                        &-add
+                            display: block
+                            width: 16px
+                            height: 16px
+                            margin-right: 12px
+                            mask: url('./../image/add.svg') center / 16px no-repeat
+                            background: #B3B3B3
+                            margin-bottom: 12px
+                            cursor: pointer
+                            transition: all .35s
+                            &:hover
+                                background: #5947B3
+                        &-delete
+                            display: block
+                            width: 16px
+                            height: 16px
+                            margin-right: 12px
+                            mask: url('./../image/delete.svg') center / 16px no-repeat
+                            background: #FF5050
+                            cursor: pointer
+                            transition: all .35s
+                            &:hover
+                                background: #5947B3
+                        .form-select__controls-inter
+                            position: relative
+                            z-index: 2
+                            &:hover
+                                .form-select__controls-hover
+                                    display: block
+                                    opacity: 1
+                            .form-select__controls-more
+                                display: block
+                                width: 16px
+                                height: 16px
+                                mask: url('./../image/kebab-horizontal.svg') center / 16px no-repeat
+                                transform: rotate(90deg)
+                                background: #B3B3B3
+                                cursor: pointer
+                                transition: all .35s
+                                &:hover
+                                    background: #5947B3
+                            .form-select__controls-hover
+                                opacity: 0
+                                display: none
+                                position: absolute
+                                top: 50%
+                                right: 100%
+                                transform: translateY(-50%)
+                                background: #FFFFFF;
+                                border-radius: 4px;
+                                z-index: 2
+                                padding: 16px
+                                box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+                                transition: all .35s
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    top: 50%
+                                    right: -8px
+                                    transform: translateY(-50%)
+                                    display: block
+                                    width: 8px
+                                    height: 20px
+                                    background: url('./../image/RightCenterTip.svg') center / 8px 20px no-repeat
+                                    z-index: -1
+                                &__item
+                                    display: flex
+                                    align-items: center
+                                    margin: 0 0 24px
+                                    cursor: pointer
+                                    transition: all .35s
+                                    white-space: nowrap
+                                    &.delete
+                                        color: #FF5050;
+                                        span
+                                            background: #FF5050;
+                                    &-plus
+                                        display: block
+                                        width: 16px
+                                        height: 16px
+                                        margin-right: 12px
+                                        mask: url('./../image/add.svg') top right / 16px no-repeat
+                                        background: #333333
+                                        transition: all .35s
+                                    &-delete
+                                        display: block
+                                        width: 16px
+                                        height: 16px
+                                        margin-right: 12px
+                                        mask: url('./../image/delete.svg') top right / 16px no-repeat
+                                        background: #333333
+                                        transition: all .35s
+                                    &:last-of-type
+                                        margin-bottom: 0
+                                    &:hover
+                                        color: #5947B3;
+                                        span
+                                            background: #5947B3;
+                &-selects
+                    margin-top: 16px
+                    display: flex
+                    align-items: center
+                    .form-select
+                        &:first-of-type
+                            input
+                                border-radius: 4px 0 0 4px
+                        &:last-of-type
+                            margin-left: -1px
+                            input
+                                border-radius: 0 4px 4px 0 
+                    &__icon
+                        display: block
+                        width: 16px
+                        height: 16px
+                        margin-right: 12px
+                        mask: url('./../image/minus-circle.svg') center / 16px no-repeat
+                        background: #B3B3B3
+                        flex-shrink: 0
+                        cursor: pointer
+                        transition: all .35s
+                        &:hover
+                            background: #5947B3
+                &-add
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    color: #5947B3
+                    margin-bottom: 16px
+                    padding-top: 16px
+                    border-top: 1px solid #EBEBEB
+                    transition: all .35s
+                    cursor: pointer
+                    &__icon
+                        margin-right: 6px
+                        display: block
+                        width: 16px
+                        height: 16px
+                        mask: url('./../image/plus-16.svg') center / 16px no-repeat
+                        background: #5947B3;
+                        transition: all .35s
+                    &:hover
+                        color: #333
+                        .form-add__icon
+                            background: #333
+                &-btn
+                    font-size: 15px;
+                    font-weight: 600
+                    line-height: 46px
+                    color: #FFFFFF;
+                    background: #5947B3;
+                    border: none
+                    border-radius: 4px
+                    padding: 0 24px
+                    transition: all .35s
+                    cursor: pointer
+                    &:hover
+                        color: #5947B3;
+                        background: #E9E6FA;
+                                
+            
