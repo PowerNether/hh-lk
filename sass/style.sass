@@ -3200,24 +3200,37 @@ html, body
     .favorite-category
         display: flex
         align-items: stretch
-        justify-content: space-between
-        margin: 0 -4px 24px
+        flex-wrap: wrap
+        margin: 0 -4px 16px
         &__item
             background: #F2F2F5;
             border-radius: 4px;
             padding: 8px 16px
-            margin: 0 4px
+            margin: 0 4px 8px
             display: flex
             justify-content: center
             flex-direction: column
             transition: background .35s
             cursor: pointer
+            box-sizing: border-box
             &:hover
                 border: 1px solid #5947B3;
                 background: #E9E6FA;
                 padding: 7px 15px
                 .favorite-category__title
                     color: #5947B3;
+        &__toggle
+            border: none
+            outline: none
+            flex-direction: row
+            align-items: center
+        &__add
+            border: none
+            outline: none
+        &__item.hidden
+            display: none
+        &__item.hidden.visible
+            display: block
         &__plus
             display: block
             width: 16px
@@ -3240,6 +3253,10 @@ html, body
             mask: url('./../image/select.svg') center / 7px 4px no-repeat
             background: #333333
             margin-left: 8px
+            transform: rotate(0deg)
+            transition: transform .35s
+            &.rotate
+                transform: rotate(180deg)
         &__amount
             font-family: "Graphik";
             font-size: 12px
@@ -3311,8 +3328,12 @@ html, body
             margin: 0 12px
             cursor: pointer
             transition: all .35s
+            position: relative
             &:hover
                 color: #333333;
+                .actions-list
+                    opacity: 1
+                    pointer-events: all
         &__delete
             font-family: "Graphik";
             font-size: 14px;
@@ -3668,6 +3689,7 @@ html, body
                                     color:#5947B3
                                     background: #F2F2F5;
                             &-other
+                                position: relative
                                 padding: 0 14px
                                 background: #F2F2F5;
                                 border-radius: 4px;
@@ -3683,6 +3705,9 @@ html, body
                                     transition: all .35s
                                 &:hover
                                     background: #5947B3;
+                                    .actions-list
+                                        opacity: 1
+                                        pointer-events: all
                                     .item-content__buttons-other__icon
                                         background: #F2F2F5
                         &__price
@@ -3750,6 +3775,408 @@ html, body
             &-page.active
                 background: #5947B3;
                 color: #FFFFFF;
+    .favorite-modal
+        max-width: 480px
+        border-radius: 4px;
+        background: #fff;
+        .modal-content
+            padding: 48px
+        .modal-close-icon
+            position: absolute
+            top: 11px
+            right: 11px
+            display: block
+            width: 28px
+            height: 28px
+            mask: url('./../image/close.svg') center / 14px no-repeat
+            background: #B7B7B7
+            cursor: pointer
+            transition: all .35s
+            &:hover
+                background: #5947B3
+        .modal-title
+            font-size: 22px;
+            font-weight: 600
+            line-height: 28px;
+            color: #333333;
+            margin: 0 0 16px
+        .modal-subtitle
+            font-size: 18px;
+            font-weight: 600
+            line-height: 24px;
+            color: #333333;
+            margin: 0 0 8px
+        .modal-devider
+            border: none
+            height: 1px
+            width: calc(100% - 22px)
+            background: #EBEBEB;
+            margin: 0 0 16px
+        &__button
+            font-size: 15px;
+            font-weight: 600
+            line-height: 42px;
+            color: #FFFFFF;
+            background: #5947B3;
+            border: none
+            border-radius: 4px;
+            outline: 0
+            padding: 0 24px
+            cursor: pointer
+            transition: all .35s
+            &:hover
+                color: #5947B3;
+                background: #F2F2F5;
+            &:disabled
+                background: #aca3d9;
+                &:disabled:hover
+                    color: #fff
+            &.light
+                color: #5947B3;
+                background: #F2F2F5;
+                &:hover
+                    color: #FFFFFF;
+                    background: #5947B3;
+        &__text
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            margin: 0 0 16px
+            &-name
+                font-weight: 600
+        &__input
+            margin-bottom: 16px
+            input
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                padding: 13px 16px
+                height: auto
+                box-shadow: none
+                border: 1px solid #CCCCCC;
+                box-sizing: border-box;
+                border-radius: 4px;
+                transition: all .35s
+                &:focus
+                    border: 1px solid #ACA3D9 !important;
+                    box-shadow: none !important
+                &::placeholder
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #999999;
+        &__addInCategory
+            &-item
+                display: flex
+                align-items: center
+                margin-bottom: 16px
+                &__image
+                    width: 57px
+                    height: 36px
+                    border-radius: 4px;
+                    margin-right: 16px
+                &__text
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #333333;
+                    margin: 0
+        &__addInCategory-form
+            padding-right: 22px
+            max-height: 324px
+            overflow-y: auto
+            &::-webkit-scrollbar
+                width: 10px
+            &::-webkit-scrollbar-track
+                background: rgba(51, 51, 51, 0.05);
+                border-radius: 5px;
+            &::-webkit-scrollbar-thumb
+                background: rgba(51, 51, 51, 0.15);
+                border-radius: 5px;
+            &__button
+                position: relative
+                display: block
+                font-size: 14px;
+                line-height: 42px
+                color: #5947B3;
+                text-align: left
+                width: 100%
+                background: #F2F2F5;
+                border: 1px solid #F2F2F5;
+                border-radius: 4px;
+                margin-bottom: 8px
+                padding: 0 16px 0 40px
+                transition: background .35s, border .35s
+                user-select: none
+                cursor: pointer
+                &:hover
+                    background: #E9E6FA;
+                    border: 1px solid #5947B3;
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 16px
+                    transform: translateY(-50%)
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/plus.svg') center / 16px no-repeat
+                    background: #5947B3;
+        &__checkbox
+            display: block
+            position: relative
+            cursor: pointer
+            margin-bottom: 8px
+            &:last-of-type
+                margin-bottom: 0
+            input
+                position: absolute
+                top: 50%
+                left: 16px
+                transform: translateY(-50%)
+                z-index: 1
+                pointer-events: all
+                &:hover ~ p
+                    background: #E9E6FA;
+                    border: 1px solid #5947B3;
+                &:checked ~ p
+                    background: #E9E6FA;
+                    border: 1px solid #5947B3;
+                    &::before
+                        background: #5947B3
+            p
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: space-between
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                padding: 13px 16px 13px 40px
+                margin: 0
+                background: #F2F2F5;
+                border: 1px solid #F2F2F5;
+                border-radius: 4px;
+                transition: background .35s, border .35s
+                user-select: none
+                pointer-events: none
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 16px
+                    transform: translateY(-50%)
+                    display: block
+                    width: 16px
+                    height: 16px
+                    background: #FFFFFF;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 3px;
+                    transition: background .35s
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 16px
+                    transform: translateY(-50%)
+                    display: block
+                    width: 16px
+                    height: 16px
+                    mask: url('./../image/check.svg') center / 12px no-repeat
+                    background: #FFFFFF;
+                span
+                    font-size: 13px;
+                    line-height: 17px;
+                    color: #999999;
+        &__new
+            .modal-title
+                max-width: 230px
+            &-area
+                position: relative
+                cursor: pointer
+                &:hover
+                    .favorite-modal__new-select
+                        opacity: 1
+                        pointer-events: all
+            &-text
+                color: #5947B3
+            &-icon
+                display: inline-block
+                width: 7px
+                height: 16px
+                mask: url('./../image/select.svg') center center / 7px 4px no-repeat
+                background: #5947B3
+                margin-left: 0px
+                transform: rotate(0deg)
+                transition: transform .35s
+                &.rotate
+                    transform: rotate(180deg)
+            &-select
+                opacity: 0
+                pointer-events: none
+                position: absolute
+                top: 100%
+                left: 50%
+                transform: translateX(-50%)
+                background: #FFFFFF;
+                box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+                border-radius: 4px;
+                padding: 4px 0
+                &::before
+                    content: ''
+                    width: 8px
+                    height: 20px
+                    mask: url('./../image/RightCenterTip.svg') center / 8px 20px no-repeat
+                    background: #fff
+                    display: block
+                    position: absolute
+                    top: calc( -4px + -8px )
+                    left: 50%
+                    transform: translateX(-50%) rotate(-90deg)
+                &-item
+                    margin: 0
+                    font-size: 14px;
+                    font-weight: 400
+                    line-height: 42px;
+                    padding: 0 16px
+                    background: #fff
+                    &:hover
+                        background: #E9E6FA;
+                    &.active
+                        background: #E9E6FA;
+.actions
+    &-list
+        pointer-events: none
+        z-index: 1
+        opacity: 0
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        background: #FFFFFF;
+        padding: 4px 0
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px rgba(37, 36, 41, 0.04), 0px 2px 8px rgba(37, 36, 41, 0.12);
+        transition: all .35s
+        &::before
+            content: ''
+            width: 8px
+            height: 20px
+            mask: url('./../image/RightCenterTip.svg') center / 8px 20px no-repeat
+            background: #fff
+            display: block
+            position: absolute
+            left: 50%
+        &.bottom
+            bottom: calc(100% + 2px)
+            &::before
+                bottom: calc( -4px + -8px )
+                transform: translateX(-50%) rotate(-270deg)
+        &.top
+            top: calc(100% + 2px)
+            &::before
+                top: calc( -4px + -8px )
+                transform: translateX(-50%) rotate(-90deg)
+    &-item
+        display: flex
+        align-items: center
+        font-size: 14px;
+        line-height: 42px;
+        padding: 0 16px
+        color: #333333;
+        white-space: nowrap
+        transition: color .35s
+        &.new
+            .actions-item__icon
+                mask: url('./../image/circle-plus-24.svg') center / 16px 16px no-repeat
+        &.addOther
+            .actions-item__icon
+                mask: url('./../image/add-collection.svg') center / 16px 16px no-repeat
+        &.edit
+            .actions-item__icon
+                mask: url('./../image/edit.svg') center / 16px 16px no-repeat
+        &.remove
+            .actions-item__icon
+                mask: url('./../image/minus-circle.svg') center / 16px 16px no-repeat
+        &.delete
+            color: #FF5050
+            .actions-item__icon
+                background: #FF5050
+                mask: url('./../image/delete.svg') center / 16px 16px no-repeat
+        &.copy
+            .actions-item__icon
+                mask: url('./../image/copy.svg') center / 16px 16px no-repeat
+        &.mail
+            .actions-item__icon
+                mask: url('./../image/mail.svg') center / 16px 16px no-repeat
+        &.whatsapp
+            .actions-item__icon
+                mask: url('./../image/whatsappFlat.svg') center / 16px 16px no-repeat
+        &.telegram
+            .actions-item__icon
+                mask: url('./../image/telegramFlat.svg') center / 16px 16px no-repeat
+        &.vkontakte
+            .actions-item__icon
+                mask: url('./../image/vkFlat.svg') center / 16px 16px no-repeat
+        &.facebook
+            .actions-item__icon
+                mask: url('./../image/facebookFlat.svg') center / 16px 16px no-repeat
+        &.twitter
+            .actions-item__icon
+                mask: url('./../image/twitterFlat.svg') center / 16px 16px no-repeat
+        &.ok
+            .actions-item__icon
+                mask: url('./../image/okFlat.svg') center / 16px 16px no-repeat
+        &__icon
+            display: block
+            width: 16px
+            height: 16px
+            margin-right: 12px
+            background: #333333;
+            transition: background .35s
+        &:hover
+            color: #5947B3
+            .actions-item__icon
+                background: #5947B3
+.notification
+    position: fixed
+    bottom: 16px
+    left: 16px
+    &-item
+        display: flex
+        align-items: flex-start
+        padding: 10px
+        max-width: 256px
+        background: #252429;
+        border-radius: 4px;
+        position: relative
+        left: 0%
+        margin-bottom: 8px
+        &:last-of-type
+            margin-bottom: 0
+    &-icon
+        display: block
+        width: 22px
+        height: 22px
+        mask: url('./../image/outline-success.svg') center / 22px no-repeat
+        background: #01B957
+        margin-right: 10px
+        flex-shrink: 0
+    &-close
+        display: block
+        width: 26px
+        height: 26px
+        mask: url('./../image/closeCircle.svg') top right / 16px no-repeat
+        background: #999999
+        cursor: pointer
+        flex-shrink: 0
+        transition: background .35s
+        &:hover
+            background: #5947B3
+    &-text
+        font-size: 13px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin: 0
+
 .actual
     .actual-title
         font-family: "Graphik";

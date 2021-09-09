@@ -125,9 +125,9 @@
                     </div>
                 </div>
                 <div class="favorite-category">
-                    <div class="favorite-category__item">
+                    <button class="favorite-category__item favorite-category__add modal-trigger" data-target="modal_newCategory">
                         <span class="favorite-category__plus"></span>
-                    </div>
+                    </button>
                     <div class="favorite-category__item">
                         <p class="favorite-category__title">Все</p>
                         <p class="favorite-category__amount">613 объектов</p>
@@ -152,12 +152,18 @@
                         <p class="favorite-category__title">Стиль Арт-Деко</p>
                         <p class="favorite-category__amount">10 объектов</p>
                     </div>
-                    <div class="favorite-category__item">
-                        <p class="favorite-category__title">
-                            Ещё коллекции
-                            <span class="favorite-category__select"></span>
-                        </p>
+                    <div class="favorite-category__item hidden">
+                        <p class="favorite-category__title">Стиль Арт-Деко</p>
+                        <p class="favorite-category__amount">10 объектов</p>
                     </div>
+                    <div class="favorite-category__item hidden">
+                        <p class="favorite-category__title">Стиль Арт-Деко</p>
+                        <p class="favorite-category__amount">10 объектов</p>
+                    </div>
+                    <button class="favorite-category__item favorite-category__toggle">
+                        <p class="favorite-category__title">Ещё коллекции</p>
+                        <span class="favorite-category__select"></span>
+                    </button>
                 </div>
                 <div class="favorite-tab">
                     <div class="favorite-tab__header">
@@ -167,9 +173,45 @@
                                 <span class="favorite-tab__print-icon"></span>
                                 Распечатать
                             </p>
-                            <p class="favorite-tab__rename">Переименовать</p>
-                            <p class="favorite-tab__share">Переименовать</p>
-                            <p class="favorite-tab__delete">Удалить</p>
+                            <p class="favorite-tab__rename modal-trigger" data-target="modal_renameCategory">Переименовать</p>
+                            <div class="favorite-tab__share">
+                                Поделиться
+                                <div class="actions-list top">
+                                    <a href="#" class="actions-item copy">
+                                        <span class="actions-item__icon"></span>
+                                        Скопировать ссылку
+                                    </a>
+                                    <a href="#" class="actions-item mail">
+                                        <span class="actions-item__icon"></span>
+                                        Почта
+                                    </a>
+                                    <a href="#" class="actions-item whatsapp">
+                                        <span class="actions-item__icon"></span>
+                                        WhatsApp
+                                    </a>
+                                    <a href="#" class="actions-item telegram">
+                                        <span class="actions-item__icon"></span>
+                                        Telegram
+                                    </a>
+                                    <a href="#" class="actions-item vkontakte">
+                                        <span class="actions-item__icon"></span>
+                                        Вконтакте
+                                    </a>
+                                    <a href="#" class="actions-item facebook">
+                                        <span class="actions-item__icon"></span>
+                                        Facebook
+                                    </a>
+                                    <a href="#" class="actions-item twitter">
+                                        <span class="actions-item__icon"></span>
+                                        Twitter
+                                    </a>
+                                    <a href="#" class="actions-item ok">
+                                        <span class="actions-item__icon"></span>
+                                        Одноклассники
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="favorite-tab__delete modal-trigger" data-target="modal_deleteCategory">Удалить</p>
                         </div>
                     </div>
                     <div class="favorite-tab__list">
@@ -299,6 +341,28 @@
                                         <button class="item-content__buttons-more">Подробнее</button>
                                         <button class="item-content__buttons-other">
                                             <span class="item-content__buttons-other__icon"></span>
+                                            <div class="actions-list bottom">
+                                                <a href="#" class="actions-item new modal-trigger" data-target="modal_addInCategory">
+                                                    <span class="actions-item__icon"></span>
+                                                    Добавить в коллекцию
+                                                </a>
+                                                <a href="#" class="actions-item addOther">
+                                                    <span class="actions-item__icon"></span>
+                                                    Добавить в другую коллекцию
+                                                </a>
+                                                <a href="#" class="actions-item edit">
+                                                    <span class="actions-item__icon"></span>
+                                                    Переименовать коллекцию
+                                                </a>
+                                                <a href="#" class="actions-item remove">
+                                                    <span class="actions-item__icon"></span>
+                                                    Удалить из коллекции
+                                                </a>
+                                                <a href="#" class="actions-item delete">
+                                                    <span class="actions-item__icon"></span>
+                                                    Удалить из избранного
+                                                </a>
+                                            </div>
                                         </button>
                                     </div>
                                     <p class="item-content__price">
@@ -517,6 +581,134 @@
                             <p class="favorite-tab__list-page">4</p>
                             <p class="favorite-tab__list-page">5</p>
                         </div>
+                    </div>
+                </div>
+                <div id="modal_newCategory" class="modal favorite-modal favorite-modal__new">
+                    <a href="#!" class="modal-close modal-close-icon"></a>
+                    <div class="modal-content">
+                        <form class="favorite-modal__new-form">
+                            <h2 class="modal-title">Назовите коллекцию в разделе
+                                <span class="favorite-modal__new-area">
+                                    <span class="favorite-modal__new-text">
+                                        Город
+                                    </span>
+                                    <span class="favorite-modal__new-icon"></span>
+                                    <div class="favorite-modal__new-select">
+                                        <p class="favorite-modal__new-select-item">Город</p>
+                                        <p class="favorite-modal__new-select-item active">Загород</p>
+                                    </div>
+                                </span>
+                            </h2>
+                            <input id="newFavoriteArea" type="text" hidden value="Город">
+                            <div class="favorite-modal__input">
+                                <input type="text" placeholder="Название коллекции">
+                            </div>
+                            <button class="favorite-modal__button">Создать коллекцию</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal_deleteCategory" class="modal favorite-modal favorite-modal__delete">
+                    <a href="#!" class="modal-close modal-close-icon"></a>
+                    <div class="modal-content">
+                        <h2 class="modal-title">Удаление коллекции</h2>
+                        <p class="favorite-modal__text">
+                            Вы уверены, что хотите удалить коллекцию <span class="favorite-modal__text-name">Загородные дома</span>? Вернуть коллекцию будет невозможно.
+                        </p>
+                        <button class="favorite-modal__button">Удалить</button>
+                        <button class="favorite-modal__button light modal-close">Отмена</button>
+                    </div>
+                </div>
+                <div id="modal_renameCategory" class="modal favorite-modal favorite-modal__rename">
+                    <a href="#!" class="modal-close modal-close-icon"></a>
+                    <div class="modal-content">
+                        <form class="favorite-modal__rename-form">
+                            <h2 class="modal-title">Переименовать коллекцию</h2>
+                            <div class="favorite-modal__input">
+                                <input type="text" placeholder="Название коллекции">
+                            </div>
+                            <button class="favorite-modal__button">Переименовать</button>
+                            <button class="favorite-modal__button light modal-close">Отмена</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal_addInCategory" class="modal favorite-modal favorite-modal__addInCategory">
+                    <a href="#!" class="modal-close modal-close-icon"></a>
+                    <div class="modal-content">
+                        <h2 class="modal-title">Добавить в коллекцию</h2>
+                        <div class="favorite-modal__addInCategory-item">
+                            <img class="favorite-modal__addInCategory-item__image" src="./image/main.png" alt="123">
+                            <p class="favorite-modal__addInCategory-item__text">Уютный пентхаус в стиле Ар-Деко с видом на набережную</p>
+                        </div>
+                        <hr class="modal-devider">
+                        <form action="" class="favorite-modal__addInCategory-form">
+                            <h3 class="modal-subtitle">Город</h3>
+                            <a class="favorite-modal__addInCategory-form__button modal-trigger" href="#modal_newCategory">
+                                Создать новую коллекцию
+                            </a>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Апартаменты с террасой <span>30</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Уютные таунхаусы <span>13</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Пентхаусы <span>108</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Элитные квартиры <span>347</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Дорогие коттеджи <span>51</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Апартаменты с террасой <span>30</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Уютные таунхаусы <span>13</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Пентхаусы <span>108</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Элитные квартиры <span>347</span></p>
+                            </label>
+                            <label class="favorite-modal__checkbox">
+                                <input type="checkbox">
+                                <p>Дорогие коттеджи <span>51</span></p>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-item">
+                        <span class="notification-icon"></span>
+                        <p class="notification-text">
+                            Коллекция «Загородные дома» удалена
+                        </p>
+                        <span class="notification-close"></span>
+                    </div>
+                    <div class="notification-item">
+                        <span class="notification-icon"></span>
+                        <p class="notification-text">
+                            Коллекция «Загородные дома» удалена
+                        </p>
+                        <span class="notification-close"></span>
+                    </div>
+                    <div class="notification-item">
+                        <span class="notification-icon"></span>
+                        <p class="notification-text">
+                            Коллекция «Загородные дома» удалена
+                        </p>
+                        <span class="notification-close"></span>
                     </div>
                 </div>
             </div>

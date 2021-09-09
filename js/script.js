@@ -68,5 +68,25 @@ $('.day-more').click(function() {
 })
 $('.modal').modal();
 
-$(document).ready(function(){
+$('.favorite-category__toggle').on('click', function() {
+    let text = $(this).children('.favorite-category__title').text();
+    $(this).children('.favorite-category__title').text(text == "Ещё коллекции" ? "Свернуть коллекции" : "Ещё коллекции");
+    $(this).children('.favorite-category__select').toggleClass('rotate')
+    $(this).parent().children('.hidden').toggleClass('visible');
+});
+
+$('.favorite-modal__new-select-item').on('click', function() {
+    $('.favorite-modal__new-select-item').removeClass('active');
+    $(this).addClass('active');
+    $('.favorite-modal__new-text').text($(this).text());
+    $('#newFavoriteArea').attr('value', $(this).text());
+});
+$('.notification-close').on('click', function() {
+    let target = $(this).parents('.notification-item');
+    target.animate({
+        left: '-200%',
+        opacity: 0,
+    }, function() {
+        target.remove();
+    });
 });
