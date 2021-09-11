@@ -90,3 +90,7 @@ $('.notification-close').on('click', function() {
         target.remove();
     });
 });
+
+$('.favoriteControl').on('click', function() {
+    $(this).toggleClass('open');
+})
