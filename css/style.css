@@ -6790,6 +6790,18 @@ html, body {
   margin: 0;
 }
 
+.notification-btn {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 0 12px;
+  color: #FFFFFF;
+  border: none;
+  background: #5947B3;
+  border-radius: 4px;
+}
+
 .favoriteControl {
   border: 1px solid #CCCCCC;
   border-radius: 4px;
