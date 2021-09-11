@@ -6800,6 +6800,14 @@ html, body {
   border: none;
   background: #5947B3;
   border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color .35s, background .35s;
+  transition: color .35s, background .35s;
+}
+
+.notification-btn:hover {
+  color: #5947B3;
+  background: #F2F2F5;
 }
 
 .favoriteControl {
