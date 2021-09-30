@@ -3106,6 +3106,594 @@ html, body
                         mask: url('./../image/flagman.svg') center / 10.5px 12px no-repeat
                         background: #EF2A2A
                         margin-right: 4px
+.objects-items.objects-items-card .main-items-list
+    .favorite-tab
+        &__list
+            &-item
+                display: flex
+                align-items: center
+                justify-content: space-between
+                border: 1px solid #EBEBEB;
+                border-radius: 4px;
+                margin-bottom: 16px
+                .item
+                    &-slider
+                        display: flex
+                        align-items: stretch
+                        &__main
+                            position: relative
+                            width: 490px
+                            height: 306px
+                            margin-right: 2px
+                            img
+                                display: block
+                                width: 100%
+                                height: 100%
+                                object-fit: cover
+                                object-position: center
+                                border-radius: 4px 0 0 4px
+                        &__overlay
+                            padding: 20px
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            border-radius: 4px 0 0 4px
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+                            &-header
+                                display: flex
+                                align-items: center
+                                justify-content: space-between
+                            &-tags
+                                display: flex
+                                align-items: center
+                                margin: 0 -4px
+                            &-tag
+                                font-family: "Graphik";
+                                font-weight: 600
+                                font-size: 11px;
+                                line-height: 28px
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                margin: 0 4px
+                                border-radius: 14px;
+                                padding: 0 14px
+                            &-tag.red
+                                background: #EF2A2A !important;
+                            &-tag.yellow
+                                background: #EFA02A !important;
+                            &-maximize
+                                padding: 10px
+                                background: rgba(0, 0, 0, 0.4);
+                                border-radius: 50%;
+                                cursor: pointer
+                                .maximize-icon
+                                    display: block
+                                    width: 12px
+                                    height: 12px
+                                    mask: url('./../image/full-screen.svg') center / 12px no-repeat
+                                    background: #fff
+                                    transition: all .35s
+                                &:hover
+                                    .maximize-icon
+                                        background: #ebebeb;
+                            &-footer
+                                display: flex
+                                align-items: stretch
+                                justify-content: flex-end
+                                margin: 0 -4px
+                                .footer
+                                    &-item
+                                        background: rgba(0, 0, 0, 0.4);
+                                        border-radius: 14px;
+                                        padding: 0 14px
+                                        cursor: pointer
+                                        margin: 0 4px
+                                        &:hover
+                                            p
+                                                color: #ebebeb
+                                            span
+                                                background: #ebebeb;
+                                        &__3d
+                                            font-family: "Graphik";
+                                            font-size: 11px;
+                                            font-weight: 600
+                                            line-height: 28px;
+                                            letter-spacing: 1.1px;
+                                            text-transform: uppercase;
+                                            color: #FFFFFF;
+                                            margin: 0
+                                            transition: all .35s
+                                        &__yt
+                                            margin: 9px 0
+                                            display: block
+                                            width: 15px
+                                            height: 10px
+                                            mask: url('./../image/video.svg') center / 15px 10px no-repeat
+                                            background: #fff
+                                            transition: all .35s
+                                        &__photo
+                                            display: flex
+                                            align-items: center
+                                            font-family: "Graphik";
+                                            font-size: 11px;
+                                            font-weight: 600
+                                            line-height: 28px;
+                                            letter-spacing: 1.1px;
+                                            text-transform: uppercase;
+                                            color: #fff
+                                            margin: 0
+                                            transition: all .35s
+                                            &-icon
+                                                display: block
+                                                width: 15px
+                                                height: 11px
+                                                mask: url('./../image/photo.svg') center / 15px 11px no-repeat
+                                                background: #fff
+                                                margin-right: 8px
+                                                transition: all .35s
+                        &__miniature
+                            display: flex
+                            flex-direction: column
+                        &__mini
+                            width: 120px
+                            height: 75px
+                            margin-bottom: 2px
+                            position: relative
+                            img
+                                display: block
+                                width: 100%
+                                height: 100%
+                                object-fit: cover
+                                object-position: center
+                            &-overlay
+                                background: rgba(13, 10, 26, 0.65);
+                                position: absolute
+                                top: 0
+                                left: 0
+                                width: 100%
+                                height: 100%
+                                margin: 0
+                                font-family: "Graphik";
+                                font-size: 11px;
+                                font-weight: 600
+                                line-height: 14px;
+                                text-align: center;
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                                color: #fff
+                                padding: 22px 0
+                            &:last-of-type
+                                margin-bottom: 0
+                    &-content
+                        max-width: 605px
+                        padding: 24px 32px
+                        &__title
+                            font-family: "Graphik";
+                            font-size: 22px;
+                            font-weight: 600
+                            line-height: 28px;
+                            color: #333333;
+                            margin: 0 0 6px
+                            display: flex
+                            align-items: flex-start
+                        &__id
+                            font-family: "Graphik";
+                            font-size: 12px;
+                            font-weight: normal
+                            line-height: 12px;
+                            text-transform: uppercase;
+                            white-space: nowrap
+                            color: #333333;
+                            padding: 3px 6px
+                            margin-top: 6px
+                            border: 1px solid #EBEBEB;
+                            border-radius: 4px;
+                        &__jk
+                            margin: 0
+                            font-family: "Graphik";
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #999999;
+                        &__adress
+                            display: flex
+                            align-items: center
+                            font-family: "Graphik";
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #333333;
+                            margin: 0 0 14px
+                            &-extra
+                                margin-left: 16px
+                        &__feature
+                            display: flex
+                            align-items: flex-start
+                            margin: 0 -16px
+                            &-item
+                                margin: 0 16px
+                                font-family: "Graphik";
+                                font-size: 24px;
+                                line-height: 24px;
+                                letter-spacing: -1px;
+                                color: #333333;
+                                margin-bottom: 14px
+                            &-aditional
+                                font-family: "Graphik";
+                                font-size: 12px;
+                                line-height: 16px;
+                                letter-spacing: 0px;
+                                color: #999999;
+                                max-width: 60px
+                                display: block
+                                margin-top: 4px
+                        &__footer
+                            display: flex
+                            align-items: flex-end
+                            justify-content: space-between
+                        &__buttons
+                            display: flex
+                            align-items: center
+                            &-more
+                                font-family: "Graphik";
+                                font-size: 11px;
+                                font-weight: 600
+                                text-transform: uppercase;
+                                line-height: 28px
+                                letter-spacing: 1.1px;
+                                color: #fff
+                                background: #5947B3;
+                                border-radius: 14px;
+                                padding: 0 14px
+                                border: 0
+                                margin-right: 16px
+                                cursor: pointer
+                                transition: all .35s
+                                &:hover
+                                    color:#5947B3
+                                    background: #F2F2F5;
+                            &-other
+                                position: relative
+                                padding: 0 14px
+                                background: #F2F2F5;
+                                border-radius: 4px;
+                                border: 0
+                                cursor: pointer
+                                transition: all .35s
+                                &__icon
+                                    display: block
+                                    width: 18px
+                                    height: 28px
+                                    mask: url('./../image/context-menu.svg') center / 18px 4px no-repeat
+                                    background: #5947B3
+                                    transition: all .35s
+                                &:hover
+                                    background: #5947B3;
+                                    .actions-list
+                                        opacity: 1
+                                        pointer-events: all
+                                    .item-content__buttons-other__icon
+                                        background: #F2F2F5
+                        &__price
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-end
+                            font-family: "Graphik";
+                            font-size: 22px;
+                            font-weight: 600
+                            line-height: 22px;
+                            color: #5947B3;
+                            margin: 0
+                            &-last
+                                margin: 0 0 7px
+                                font-size: 14px;
+                                font-weight: normal
+                                line-height: 14px;
+                                text-decoration-line: line-through;
+                                color: #999999;
+                            &-sq
+                                margin: 7px 0 0
+                                font-size: 14px;
+                                font-weight: normal
+                                line-height: 14px;
+                                color: #999999;
+.objects-items.objects-items-block
+    .objects-list
+        display: flex
+        align-items: stretch
+        flex-wrap: wrap
+        margin: 0 -16px
+    .block
+        display: flex
+        flex-direction: column
+        max-width: 384px
+        width: 100%
+        border: 1px solid #EBEBEB;
+        border-radius: 4px
+        box-sizing: border-box
+        margin: 0 16px 32px
+        &-slider
+            overflow: hidden
+            border-radius: 4px 4px 0 0
+            &__main
+                position: relative
+                img
+                    display: block
+                    width: 100%
+                    height: 240px
+                    object-fit: cover
+                    margin-bottom: 2px
+            &__overlay
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                padding: 20px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                &-header
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                &-tags
+                    display: flex
+                    align-items: center
+                    margin: 0 -4px
+                &-tag
+                    font-family: "Graphik";
+                    font-weight: 600
+                    font-size: 11px;
+                    line-height: 28px
+                    letter-spacing: 1.1px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin: 0 4px
+                    border-radius: 14px;
+                    padding: 0 14px
+                &-tag.red
+                    background: #EF2A2A !important;
+                &-tag.yellow
+                    background: #EFA02A !important;
+                &-maximize
+                    padding: 10px
+                    background: rgba(0, 0, 0, 0.4);
+                    border-radius: 50%;
+                    cursor: pointer
+                    .maximize-icon
+                        display: block
+                        width: 12px
+                        height: 12px
+                        mask: url('./../image/full-screen.svg') center / 12px no-repeat
+                        background: #fff
+                        transition: all .35s
+                    &:hover
+                        .maximize-icon
+                            background: #ebebeb;
+                &-footer
+                    display: flex
+                    align-items: stretch
+                    justify-content: flex-end
+                    margin: 0 -4px
+                    .footer
+                        &-item
+                            background: rgba(0, 0, 0, 0.4);
+                            border-radius: 14px;
+                            padding: 0 14px
+                            cursor: pointer
+                            margin: 0 4px
+                            &:hover
+                                p
+                                    color: #ebebeb
+                                span
+                                    background: #ebebeb;
+                            &__3d
+                                font-family: "Graphik";
+                                font-size: 11px;
+                                font-weight: 600
+                                line-height: 28px;
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                margin: 0
+                                transition: all .35s
+                            &__yt
+                                margin: 9px 0
+                                display: block
+                                width: 15px
+                                height: 10px
+                                mask: url('./../image/video.svg') center / 15px 10px no-repeat
+                                background: #fff
+                                transition: all .35s
+                            &__photo
+                                display: flex
+                                align-items: center
+                                font-family: "Graphik";
+                                font-size: 11px;
+                                font-weight: 600
+                                line-height: 28px;
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                                color: #fff
+                                margin: 0
+                                transition: all .35s
+                                &-icon
+                                    display: block
+                                    width: 15px
+                                    height: 11px
+                                    mask: url('./../image/photo.svg') center / 15px 11px no-repeat
+                                    background: #fff
+                                    margin-right: 8px
+                                    transition: all .35s
+            &__miniature
+                display: flex
+                align-items: stretch
+                margin: 0 -1px
+            &__mini
+                width: calc(100% / 4 - 2px)
+                height: 60px
+                margin: 0 1px
+                position: relative
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    object-position: center
+                &-overlay
+                    background: rgba(13, 10, 26, 0.65);
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    margin: 0
+                    font-family: "Graphik";
+                    font-size: 10px;
+                    font-weight: 600
+                    line-height: 14px;
+                    text-align: center;
+                    letter-spacing: 1.1px;
+                    text-transform: uppercase;
+                    color: #fff
+                    padding: 16px 0
+        &-content
+            border-radius: 0 0 4px 4px
+            padding: 24px
+            &__title
+                font-size: 20px;
+                font-weight: 600
+                line-height: 26px;
+                color: #333333;
+                margin: 0 0 6px
+                padding: 0
+            &__jk
+                font-size: 14px;
+                line-height: 22px;
+                color: #999999;
+                margin: 0 0 6px
+            &__id
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #333333;
+                float: right
+                display: block
+                border: 1px solid #EBEBEB;
+                border-radius: 4px;
+                padding: 0 6px
+            &__adress
+                font-size: 14px;
+                line-height: 22px;
+                color: #333333;
+                margin: 0
+                &-extras
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    margin: 0 -8px 14px
+                &-extra
+                    margin: 0 8px
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #333333;
+            &__feature
+                display: flex
+                align-items: stretch
+                margin: 0 -12px 14px
+                &-item
+                    width: fit-content
+                    margin: 0 12px
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: -1px;
+                    color: #333333;
+                    white-space: nowrap
+                &-aditional
+                    display: block
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #999999;
+                    letter-spacing: normal;
+                    margin-top: 4px
+                    white-space: normal
+            &__footer
+                display: flex
+                flex-direction: row-reverse
+                justify-content: space-between
+            &__buttons
+                display: flex
+                flex-direction: column-reverse
+                align-items: flex-end
+                &-more
+                    font-size: 11px;
+                    font-weight: 600
+                    line-height: 28px;
+                    letter-spacing: 1.1px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: #5947B3;
+                    border-radius: 14px;
+                    padding: 0 14px
+                    border: none
+                    cursor: pointer
+                    transition: background .35s, color .35s
+                    margin-top: 8px
+                    &:hover
+                        color:#5947B3
+                        background: #F2F2F5;
+                &-other
+                    width: fit-content
+                    position: relative
+                    padding: 0 14px
+                    background: #F2F2F5;
+                    border-radius: 4px;
+                    border: 0
+                    cursor: pointer
+                    transition: all .35s
+                    &__icon
+                        display: block
+                        width: 18px
+                        height: 28px
+                        mask: url('./../image/context-menu.svg') center / 18px 4px no-repeat
+                        background: #5947B3
+                        transition: all .35s
+                    &:hover
+                        background: #5947B3;
+                        .actions-list
+                            opacity: 1
+                            pointer-events: all
+                        .block-content__buttons-other__icon
+                            background: #F2F2F5
+            &__price
+                display: flex
+                flex-direction: column
+                font-size: 22px;
+                font-weight: 600
+                line-height: 22px;
+                color: #5947B3;
+                margin: 0
+                &-last
+                    display: block
+                    margin-bottom: 7px
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400
+                    text-decoration-line: line-through;
+                    color: #999999;
+                &-sq
+                    display: block
+                    margin-top: 7px
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400
+                    color: #999999;
+
+
 .staff
     .staff-title
         font-family: "Graphik";
