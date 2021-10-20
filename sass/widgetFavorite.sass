@@ -35,11 +35,17 @@
                     span
                         background: #FFFFFF
                 &-content
+                    pointer-events: all
                     opacity: 1
-                    transform: translateX(0%)
+                    z-index: 1
                 &-counter
                     opacity: 1
                     pointer-events: all
+        &.open.currency
+            .widgetFavorite
+                &-icon
+                    span
+                        color: #FFFFFF
         &.open.search
             .widgetFavorite
                 &-icon
@@ -50,19 +56,11 @@
                 &-icon
                     span
                         mask: url("./../image/favorite2Fill.svg") center / 22px no-repeat
-                &-content
-                    transform: translateX(0%)
         &.open.views
             .widgetFavorite
                 &-icon
                     span
                         mask: url("./../image/views2Fill.svg") center / 22px no-repeat
-                &-content
-                    transform: translateX(0%)
-        &.open
-            .widgetFavorite
-                &-content
-                    pointer-events: all
         &:hover.favorite
             .widgetFavorite
                 &-icon
@@ -73,6 +71,11 @@
                 &-icon
                     span
                         mask: url("./../image/views2Fill.svg") center / 22px no-repeat
+        &:hover.currency
+            .widgetFavorite
+                &-icon
+                    span
+                        color: #FFFFFF
         &.search
             .widgetFavorite
                 &-icon
@@ -86,22 +89,10 @@
                 &-counter
                     background: #EA0C00
                 &-content
-                    position: fixed
+                    border-radius: 6px
+                    height: auto
                     top: auto
                     bottom: 0
-                    left: 0
-                    right: 0
-                    padding-left: 24px
-                    padding-right: 96px
-                    width: 100%
-                    height: auto
-                    border-radius: 0
-                    transform: translateX(100%)
-                    box-shadow: 0px 2px 8px rgba(37, 36, 41, 0.3);
-                    .favorite
-                        &-list
-                            padding-left: 0
-                            padding-right: 0
         &.views
             .widgetFavorite
                 &-icon
@@ -110,34 +101,19 @@
                 &-counter
                     background: #01B957;
                 &-content
-                    position: fixed
+                    border-radius: 6px
+                    height: auto
                     top: auto
                     bottom: 0
-                    left: 0
-                    right: 0
-                    padding-left: 24px
-                    padding-right: 96px
-                    width: 100%
-                    height: auto
-                    border-radius: 0
-                    transform: translateX(100%)
-                    box-shadow: 0px 2px 8px rgba(37, 36, 41, 0.3);
-                    .views
-                        &-list
-                            padding-left: 0
-                            padding-right: 0
         &.currency
             .widgetFavorite
                 &-icon
-                    &.dol
-                        span
-                            mask: url("./../image/$2.svg") center / 16px 22px no-repeat
-                    &.euro
-                        span
-                            mask: url("./../image/€2.svg") center / 16px 22px no-repeat
-                    &.rub
-                        span
-                            mask: url("./../image/₽2.svg") center / 16px 22px no-repeat
+                    span
+                        font-size: 25px;
+                        line-height: 23px;
+                        color: #5947B3;
+                        text-align: center
+                        background: none
     &-select
         position: relative
         z-index: 2
@@ -179,7 +155,7 @@
     &-label
         font-size: 0
     &-content
-        z-index: 1
+        z-index: -1
         position: absolute
         top: 0
         right: calc(100% + 8px)
@@ -188,7 +164,6 @@
         box-shadow: 0px 2px 8px rgba(37, 36, 41, 0.3);
         border-radius: 24px;
         opacity: 0
-        transform: translateX(100%)
         transition: transform .35s, opacity .35s
         will-change: transform, opacity
         pointer-events: none
@@ -243,10 +218,12 @@
             &-title
                 font-size: 0
             &-label
+                z-index: 1
                 display: block
                 height: 100%
                 margin: 0 2px
                 position: relative
+                cursor: pointer
                 input
                     position: absolute
                     top: 0
@@ -255,10 +232,11 @@
                     bottom: 0
                     width: 100%
                     height: 100%
-                    pointer-events: all
+                    pointer-events: none
                     cursor: pointer
                     &:checked ~ div
                         background: #5947B3
+                        color: #FFF
                     &:checked ~ div span
                         background: #fff
                 div
@@ -267,12 +245,15 @@
                     border-radius: 24px;
                     height: 100%
                     padding: 0 24px
+                    font-size: 25px;
+                    line-height: 40px;
+                    color: #5947B3
                     pointer-events: none
                     transition: background .35s
                     will-change: background
                 span
                     display: block
-                    width: 16px
+                    width: 0
                     height: 100%
                     font-size: 0
                     background: #5947B3
@@ -286,35 +267,36 @@
                         mask: url("./../image/₽2.svg") center / 16px 22px no-repeat
         .favorite
             &-title
-                font-size: 16px;
-                font-weight: 400
-                line-height: 18px;
-                text-align: center;
-                color: #333333;
-                margin: 0 0 12px
-                border-bottom: 1px solid #EBEBEB;
-                padding: 12px
+                font-size: 0
+                width: 0
+                height: 0
+                margin: 0
             &-list
-                padding: 0 16px
+                display: flex
+                flex-direction: column
+                padding: 16px 16px 0
             &-item
                 display: flex
                 align-items: center
                 justify-content: space-between
                 padding-bottom: 3px
-                margin: 0 0 12px
+                margin: 0
                 border-bottom: 1px solid rgba(89, 71, 179, 0.15);
                 cursor: pointer
+                padding: 0 0 3px
+                margin: 0 0 12px
             &-text
+                white-space: nowrap
                 font-size: 14px;
                 line-height: 16px;
                 color: #333333;
-                margin: 0
+                margin: 0 48px 0 0
             &-count
                 font-size: 13px;
                 line-height: 16px;
                 color: #5947B3;
                 margin: 0
-                padding-right: 16px
+                padding-right: 12px
                 position: relative
                 &::after
                     content: ''
@@ -328,34 +310,36 @@
                     background: #5947B3
         .views
             &-title
-                font-size: 16px;
-                line-height: 18px;
-                text-align: center;
-                color: #333333;
-                margin: 0 0 12px
-                border-bottom: 1px solid #EBEBEB;
-                padding: 12px
+                font-size: 0
+                width: 0
+                height: 0
+                margin: 0
             &-list
-                padding: 0 16px
+                display: flex
+                flex-direction: column
+                padding: 16px 16px 0
             &-item
                 display: flex
                 align-items: center
                 justify-content: space-between
                 padding-bottom: 3px
-                margin: 0 0 12px
+                margin: 0
                 border-bottom: 1px solid rgba(89, 71, 179, 0.15);
                 cursor: pointer
+                padding: 0 0 3px
+                margin: 0 0 12px
             &-text
+                white-space: nowrap
                 font-size: 14px;
                 line-height: 16px;
                 color: #333333;
-                margin: 0
+                margin: 0 48px 0 0
             &-count
                 font-size: 13px;
                 line-height: 16px;
                 color: #5947B3;
                 margin: 0
-                padding-right: 16px
+                padding-right: 12px
                 position: relative
                 &::after
                     content: ''
@@ -399,8 +383,6 @@
                     &-icon
                         span
                             mask: url("./../image/favorite2Fill.svg") center / contain no-repeat
-                    &-content
-                        transform: translateX(0%)
             &:hover.views
                 .widgetFavorite
                     &-icon
@@ -415,8 +397,6 @@
                             mask: url("./../image/views2Mobile.svg") center / contain no-repeat
                     &-counter
                         background: #01B957;
-                    &-content
-                        transform: translateX(0%)
             &.open
                 .widgetFavorite
                     &-select
@@ -426,14 +406,18 @@
                             background: #5947B3
                     &-label
                         color: #5947B3
+                    &-content
+                        pointer-events: all
             &.open.search
                 .widgetFavorite
                     &-icon
                         span
                             mask: url("./../image/search2Mobile.svg") center / contain no-repeat
-                    &-content
-                        transform: translateY(0%)
             &.open.currency
+                .widgetFavorite
+                    &-icon
+                        background: #5947B3
+            &:hover.currency
                 .widgetFavorite
                     &-icon
                         background: #5947B3
@@ -452,7 +436,7 @@
                     &-content
                         bottom: 48px
                         padding: 0
-                        transform: translateX(100%)
+                        border-radius: 0
                         .favorite-list
                             padding: 0 16px
             &.views
@@ -465,7 +449,7 @@
                     &-content
                         bottom: 48px
                         padding: 0
-                        transform: translateX(100%)
+                        border-radius: 0
                         .views-list
                             padding: 0 16px
             &.currency
@@ -477,18 +461,11 @@
                         border-radius: 4px
                         padding: 4px
                         span
-                            background: #FFFFFF
+                            font-size: 11px;
+                            line-height: 11px;
+                            color: #FFFFFF
                             width: 100%
                             height: 100%
-                        &.dol
-                            span
-                                mask: url("./../image/$2.svg") center / contain no-repeat
-                        &.euro
-                            span
-                                mask: url("./../image/€2.svg") center / contain no-repeat
-                        &.rub
-                            span
-                                mask: url("./../image/₽2.svg") center / contain no-repeat
         &-select
             z-index: 2
             width: 100%
@@ -520,8 +497,8 @@
             width: 100%
             height: auto
             border-radius: 0
-            transform: translateX(100%)
             box-shadow: none
+            pointer-events: none
             .search
                 &-content
                     flex-direction: column
@@ -574,6 +551,7 @@
                         background: none
                         padding: 0 0 0 40px
                         position: relative
+                        font-size: 0
                         &::before
                             content: ''
                             width: 16px
@@ -604,3 +582,40 @@
                         height: auto
                         background: none
                         mask: none !important
+                        display: inline
+            .favorite
+                &-title
+                    width: auto
+                    height: auto
+                    font-size: 16px;
+                    font-weight: 400
+                    line-height: 18px;
+                    text-align: center;
+                    color: #333333;
+                    margin: 0 0 12px
+                    border-bottom: 1px solid #EBEBEB;
+                    padding: 12px
+                &-list
+                    flex-direction: column
+                    padding: 0 16px
+                &-item
+                    border-bottom: 1px solid rgba(89, 71, 179, 0.15);
+            .views
+                &-title
+                    width: auto
+                    height: auto
+                    font-size: 16px;
+                    font-weight: 400
+                    line-height: 18px;
+                    text-align: center;
+                    color: #333333;
+                    margin: 0 0 12px
+                    border-bottom: 1px solid #EBEBEB;
+                    padding: 12px
+                &-list
+                    flex-direction: column
+                    padding: 0 16px
+                &-item
+                    border-bottom: 1px solid rgba(89, 71, 179, 0.15);
+
+
