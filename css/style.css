@@ -1196,17 +1196,21 @@ html, body {
 
 .newObjectForm .form-parther {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 16px;
 }
 
+.newObjectForm .form-parther .form-input__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .newObjectForm .form-parther .form-input {
-  width: 100%;
+  width: 50%;
+  margin-bottom: 0;
 }
 
 .newObjectForm .form-parther .form-input:first-of-type input {
@@ -1221,11 +1225,10 @@ html, body {
 
 .newObjectForm .form-parther .form-input input {
   border-radius: 0px;
-  margin-bottom: 0;
 }
 
 .newObjectForm .form-parther .form-price {
-  width: 100%;
+  width: 50%;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1244,7 +1247,7 @@ html, body {
 }
 
 .newObjectForm .form-parther .form-select {
-  width: 100%;
+  width: 50%;
 }
 
 .newObjectForm .form-parther .form-select:first-of-type input {
@@ -1263,6 +1266,18 @@ html, body {
 }
 
 .newObjectForm .form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 16px;
+  position: relative;
+}
+
+.newObjectForm .form-input .form-input__field {
   position: relative;
 }
 
@@ -1290,7 +1305,7 @@ html, body {
   width: 100%;
   height: 46px;
   padding: 13px 48px 13px 12px;
-  margin: 0 0 16px;
+  margin: 0;
   font-size: 15px;
   line-height: 18px;
   color: #333333;
@@ -2392,32 +2407,20 @@ html, body {
   color: #01B957;
 }
 
-.newObjectForm .form-suplabel {
-  margin-top: 36px;
-}
-
 .newObjectForm .form-suplabel__text {
-  position: absolute;
-  top: -20px;
-  left: 0;
   font-size: 12px;
   line-height: 14px;
   color: #333333;
   margin: 0;
-}
-
-.newObjectForm .form-sublabel {
-  margin-bottom: 36px;
+  margin-bottom: 6px;
 }
 
 .newObjectForm .form-sublabel__text {
-  margin: 0;
   font-size: 13px;
   line-height: 15px;
   color: #999999;
-  position: absolute;
-  left: 0px;
-  bottom: -20px;
+  margin: 0;
+  margin-top: 6px;
 }
 
 .newObjectForm .form-socialAccount {

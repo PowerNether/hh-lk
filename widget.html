@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/widgetFavorite.css">
+</head>
+
+<body>
+    <div class="widgetFavorite">
+        <div class="widgetFavorite-overlay"></div>
+        <div class="widgetFavorite-item search">
+            <div class="widgetFavorite-select">
+                <div class="widgetFavorite-icon">
+                    <span></span>
+                </div>
+                <label class="widgetFavorite-label">Поиск</label>
+            </div>
+            <div class="widgetFavorite-content">
+                <div class="search-content">
+                    <p class="search-title">Поиск</p>
+                    <form class="search-form">
+                        <span class="search-icon"></span>
+                        <input type="text" class="search-input" placeholder="Введите ваш запрос или параметр">
+                        <button class="search-btn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="widgetFavorite-item favorite">
+            <div class="widgetFavorite-select">
+                <div class="widgetFavorite-icon">
+                    <div class="widgetFavorite-counter">43</div>
+                    <span></span>
+                </div>
+                <label class="widgetFavorite-label">Избранное</label>
+            </div>
+            <div class="widgetFavorite-content">
+                <div class="favorite-content">
+                    <p class="favorite-title">Избранное</p>
+                    <div class="favorite-list">
+                        <a class="favorite-item">
+                            <p class="favorite-text">Все</p>
+                            <p class="favorite-count">849</p>
+                        </a>
+                        <a class="favorite-item">
+                            <p class="favorite-text">Сегодня</p>
+                            <p class="favorite-count">14</p>
+                        </a>
+                        <a class="favorite-item">
+                            <p class="favorite-text">Вчера</p>
+                            <p class="favorite-count">32</p>
+                        </a>
+                        <a class="favorite-item">
+                            <p class="favorite-text">За неделю</p>
+                            <p class="favorite-count">58</p>
+                        </a>
+                        <a class="favorite-item">
+                            <p class="favorite-text">За 3 месяца</p>
+                            <p class="favorite-count">127</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widgetFavorite-item views">
+            <div class="widgetFavorite-select">
+                <div class="widgetFavorite-icon">
+                    <div class="widgetFavorite-counter">892</div>
+                    <span></span>
+                </div>
+                <label class="widgetFavorite-label">Просмотрено</label>
+            </div>
+            <div class="widgetFavorite-content">
+                <div class="views-content">
+                    <div class="views-content">
+                        <p class="views-title">Просмотрено</p>
+                        <div class="views-list">
+                            <a class="views-item">
+                                <p class="views-text">Все</p>
+                                <p class="views-count">849</p>
+                            </a>
+                            <a class="views-item">
+                                <p class="views-text">Сегодня</p>
+                                <p class="views-count">14</p>
+                            </a>
+                            <a class="views-item">
+                                <p class="views-text">Вчера</p>
+                                <p class="views-count">32</p>
+                            </a>
+                            <a class="views-item">
+                                <p class="views-text">За неделю</p>
+                                <p class="views-count">58</p>
+                            </a>
+                            <a class="views-item">
+                                <p class="views-text">За 3 месяца</p>
+                                <p class="views-count">127</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widgetFavorite-item currency">
+            <div class="widgetFavorite-select">
+                <div class="widgetFavorite-icon dol">
+                    <span></span>
+                </div>
+                <label class="widgetFavorite-label">Валюта</label>
+            </div>
+            <div class="widgetFavorite-content">
+                <div class="currency-content">
+                    <p class="currency-title">Валюта</p>
+                    <label class="currency-label">
+                        <input type="radio" name="1">
+                        <div>
+                            <span class="dol">Доллары</span>
+                        </div>
+                    </label>
+                    <label class="currency-label">
+                        <input type="radio" name="1">
+                        <div>
+                            <span class="euro">Евро</span>
+                        </div>
+                    </label>
+                    <label class="currency-label">
+                        <input type="radio" name="1">
+                        <div>
+                            <span class="rub">Рубли</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jq.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

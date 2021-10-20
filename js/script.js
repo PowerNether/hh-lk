@@ -94,3 +94,8 @@ $('.notification-close').on('click', function() {
 $('.favoriteControl').on('click', function() {
     $(this).toggleClass('open');
 })
+
+$('.widgetFavorite-item').on('click', function() {
+    $('.widgetFavorite-item').removeClass('open')
+    $(this).addClass('open');
+})
