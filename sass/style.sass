@@ -11,10 +11,13 @@ html, body
 .header
     background: #FFFFFF;
     border-bottom: 1px solid #EBEBEB;
+    position: relative
+    z-index: 2
     .header-container
         display: flex
         align-items: center
         padding: 8px 24px
+        position: relative
     .header-logo
         width: 72px
         height: 32px
@@ -24,6 +27,13 @@ html, body
             height: 100%
             object-fit: contain
             object-position: center
+    .header-mobile
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .header-burger
+        display: none
     .menu
         background: none
         box-shadow: none
@@ -148,6 +158,130 @@ html, body
                 border: 1px solid #ACA3D9;
             &:hover span
                 background: #333
+
+.sidebar-overlay, .header-overlay
+    pointer-events: none
+    user-select: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, 0)
+    opacity: 0
+    transition: background .35s, opacity .35s
+    z-index: 1
+
+@media screen and (max-width: 768px)
+    .header
+        padding: 0 20px
+        .header-mobile
+            position: absolute
+            z-index: 3
+            top: 100%
+            left: -20px
+            right: -20px
+            display: flex
+            flex-direction: column
+            width: calc(100% + 40px)
+            background: #fff
+            padding: 20px
+            opacity: 0
+            pointer-events: none
+            transition: opacity .35s
+            .menu
+                width: 100%
+                margin-right: 0
+                .menu-list
+                    flex-direction: column
+                    align-items: flex-start
+                .menu-item
+                    width: 100%
+                    margin-right: 0
+                .menu-link
+                    line-height: 40px
+        .header-mobile.active
+            opacity: 1
+            pointer-events: all
+        .header-burger
+            display: block
+            width: 32px
+            height: 32px
+            padding: 4px
+            cursor: pointer
+            position: relative
+            margin-left: auto
+            &:hover
+                span
+                    background: #5947B3
+                    &::after
+                        background: #5947B3
+                    &::before
+                        background: #5947B3
+            span
+                pointer-events: none
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                background: #999999
+                width: 24px
+                height: 2px
+                transition: background .35s
+                &::after
+                    content: ""
+                    display: block
+                    width: 100%
+                    height: 2px
+                    background: #999999
+                    position: absolute
+                    left: 0
+                    right: 0
+                    bottom: -7px
+                    transition: background .35s
+                    transform: rotate(0)
+                    transition: background .35s, transform .35s, bottom .35s
+                &::before
+                    content: ""
+                    display: block
+                    width: 100%
+                    height: 2px
+                    background: #999999
+                    position: absolute
+                    top: -7px
+                    left: 0
+                    right: 0
+                    transform: rotate(0)
+                    transition: background .35s, transform .35s, top .35s
+        .header-burger.active
+            span
+                background: transparent
+                &::before
+                    transform: rotate(-45deg)
+                    top: 0%
+                &::after
+                    transform: rotate(45deg)
+                    bottom: 0%
+    .header-overlay.active
+        background: rgba(0, 0, 0, .5)
+        opacity: 1
+@media screen and (max-width: 568px)
+    .header
+        .header-mobile
+            .profile
+                margin-top: 8px
+                width: 100%
+                flex-wrap: wrap
+                .profile-user
+                    justify-content: space-between
+                    width: calc(100% - 40px)
+                    margin-right: 0
+                .profile-btn
+                    margin-top: 16px
+                    justify-content: center
+                    width: 100%
+
 .sidebar
     flex-shrink: 0
     padding: 20px 24px
@@ -211,6 +345,79 @@ html, body
             width: 2px
             height: 100%
             background: #5947B3;
+
+@media screen and (max-width: 768px)
+    .newObject
+        .wrapiner
+            .sidebar
+                position: fixed
+                top: 0
+                left: 0
+                bottom: 0
+                z-index: 2
+                margin-top: 49px
+                padding: 20px 24px
+                box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.08);
+                transform: translateX(-100%)
+                transition: transform .35s
+                &-list
+                    flex-direction: column
+                    width: auto
+                    margin: 0
+                &-item
+                    margin-right: 0
+                    height: 46px
+                &-icon
+                    display: block
+                &-link__active
+                    color: #5947B3
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 0
+                        bottom: 0
+                        left: -24px
+                        right: auto
+                        width: 2px
+                        height: 100%
+                        background: #5947B3;
+            .sidebar.active
+                transform: translateX(0%)
+    .siderbar-toggle
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+
+        border-radius: 50%
+        background: #fff
+
+        position: fixed
+        left: calc(0% + 20px)
+        bottom: 20px
+        z-index: 1
+        
+        cursor: pointer
+        transition: left .35s
+        span
+            display: block
+            width: 20px
+            height: 20px
+            position: relative
+            pointer-events: none
+            background: #999
+            mask: url('./../image/arrow-down.svg') center / 16px no-repeat 
+            transform: rotate(-90deg)
+            transition: transform .35s
+    .siderbar-toggle.active
+        left: calc(100% - 60px)
+        span
+            transform: rotate(90deg)
+    .sidebar-overlay.active
+        background: rgba(0, 0, 0, .5)
+        opacity: 1
 
 .card-list
     display: flex

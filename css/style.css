@@ -27,6 +27,8 @@ html, body {
 .header {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBEB;
+  position: relative;
+  z-index: 2;
 }
 
 .header .header-container {
@@ -37,6 +39,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 24px;
+  position: relative;
 }
 
 .header .header-logo {
@@ -52,6 +55,23 @@ html, body {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.header .header-mobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-burger {
+  display: none;
 }
 
 .header .menu {
@@ -261,6 +281,183 @@ html, body {
   background: #333;
 }
 
+.sidebar-overlay, .header-overlay {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  -webkit-transition: background .35s, opacity .35s;
+  transition: background .35s, opacity .35s;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header .header-mobile {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: -20px;
+    right: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% + 40px);
+    background: #fff;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s;
+  }
+  .header .header-mobile .menu {
+    width: 100%;
+    margin-right: 0;
+  }
+  .header .header-mobile .menu .menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header .header-mobile .menu .menu-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .header .header-mobile .menu .menu-link {
+    line-height: 40px;
+  }
+  .header .header-mobile.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .header .header-burger {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+  }
+  .header .header-burger:hover span {
+    background: #5947B3;
+  }
+  .header .header-burger:hover span::after {
+    background: #5947B3;
+  }
+  .header .header-burger:hover span::before {
+    background: #5947B3;
+  }
+  .header .header-burger span {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #999999;
+    width: 24px;
+    height: 2px;
+    -webkit-transition: background .35s;
+    transition: background .35s;
+  }
+  .header .header-burger span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #999999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    -webkit-transition: background .35s;
+    transition: background .35s;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: background .35s, bottom .35s, -webkit-transform .35s;
+    transition: background .35s, bottom .35s, -webkit-transform .35s;
+    transition: background .35s, transform .35s, bottom .35s;
+    transition: background .35s, transform .35s, bottom .35s, -webkit-transform .35s;
+  }
+  .header .header-burger span::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #999999;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    right: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: background .35s, top .35s, -webkit-transform .35s;
+    transition: background .35s, top .35s, -webkit-transform .35s;
+    transition: background .35s, transform .35s, top .35s;
+    transition: background .35s, transform .35s, top .35s, -webkit-transform .35s;
+  }
+  .header .header-burger.active span {
+    background: transparent;
+  }
+  .header .header-burger.active span::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0%;
+  }
+  .header .header-burger.active span::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 0%;
+  }
+  .header-overlay.active {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .header .header-mobile .profile {
+    margin-top: 8px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header .header-mobile .profile .profile-user {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: calc(100% - 40px);
+    margin-right: 0;
+  }
+  .header .header-mobile .profile .profile-btn {
+    margin-top: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
 .sidebar {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -382,6 +579,109 @@ html, body {
   width: 2px;
   height: 100%;
   background: #5947B3;
+}
+
+@media screen and (max-width: 768px) {
+  .newObject .wrapiner .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 49px;
+    padding: 20px 24px;
+    -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.08);
+            box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.08);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .35s;
+    transition: -webkit-transform .35s;
+    transition: transform .35s;
+    transition: transform .35s, -webkit-transform .35s;
+  }
+  .newObject .wrapiner .sidebar-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    margin: 0;
+  }
+  .newObject .wrapiner .sidebar-item {
+    margin-right: 0;
+    height: 46px;
+  }
+  .newObject .wrapiner .sidebar-icon {
+    display: block;
+  }
+  .newObject .wrapiner .sidebar-link__active {
+    color: #5947B3;
+  }
+  .newObject .wrapiner .sidebar-link__active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    right: auto;
+    width: 2px;
+    height: 100%;
+    background: #5947B3;
+  }
+  .newObject .wrapiner .sidebar.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .siderbar-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    position: fixed;
+    left: calc(0% + 20px);
+    bottom: 20px;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: left .35s;
+    transition: left .35s;
+  }
+  .siderbar-toggle span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    pointer-events: none;
+    background: #999;
+    -webkit-mask: url("./../image/arrow-down.svg") center/16px no-repeat;
+            mask: url("./../image/arrow-down.svg") center/16px no-repeat;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform .35s;
+    transition: -webkit-transform .35s;
+    transition: transform .35s;
+    transition: transform .35s, -webkit-transform .35s;
+  }
+  .siderbar-toggle.active {
+    left: calc(100% - 60px);
+  }
+  .siderbar-toggle.active span {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .sidebar-overlay.active {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
 }
 
 .card-list {
